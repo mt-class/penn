@@ -1,7 +1,8 @@
 ---
 title: Introduction
-lecturer: All
 slides: true
+upenn: true
+lecturer: Callison-Burch
 reading:
   -
     author: Koehn 
