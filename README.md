@@ -14,6 +14,7 @@ you got it from us:
 * [Matt Post](http://www.cs.jhu.edu/~post)
 * [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb)
 
+
 Homework Assignments
 --------------------
 
@@ -21,6 +22,9 @@ The code and data for the homework assignments are maintained by Adam Lopez
 and distributed under an MIT License. Feel free to reuse them! 
 [DREAMT: Decoding, Reranking, Evaluation, and Alignment for Machine Translation
 ](https://github.com/alopez/dreamt)
+
+We wrote a TACL paper about the outcome of about the outcome of our competitive homework assignments: http://aclweb.org/anthology//Q/Q13/Q13-1014.pdf
+Please cite this paper if you reuse the assignments in academic work.
 
 Web-Based Stack Decoder
 -----------------------
