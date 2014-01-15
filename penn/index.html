@@ -215,8 +215,8 @@ partners carefully.
     <tr><th>Date</th><th>Topics</th><th>Lecturer</th><th>Readings (*=graduate level)</th>
     </tr>
 
-    {{ upenn.posts }}
-    {% for post in upenn.posts reversed %}
+    {{ site.posts }}
+    {% for post in site.posts reversed %}
     <tr>
     <td>{{ post.date | date: "%b %d" }}
     </td>
