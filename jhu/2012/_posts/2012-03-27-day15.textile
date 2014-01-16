@@ -1,6 +1,7 @@
 ---
 title: Syntax-Based Decoding
 lecturer: Post
+course: JHU2012 
 slides: true
 reading:
   -

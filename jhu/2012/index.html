@@ -240,6 +240,7 @@ partners carefully.
 
     {{ site.posts }}
     {% for post in site.posts reversed %}
+    {% if post.course == "JHU2012" %}
     <tr>
     <td>{{ post.date | date: "%b %d" }}
     </td>
@@ -280,6 +281,7 @@ partners carefully.
       {% endif %}
     </td>
     </tr>
+    {% endif %}
     {% endfor %}
 
   </tbody>

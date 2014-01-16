@@ -1,6 +1,7 @@
 ---
 title: Loss-Sensitive Training of Feature-Based Models
 lecturer: Lopez
+course: JHU2012 
 slides: false
 reading:
   -

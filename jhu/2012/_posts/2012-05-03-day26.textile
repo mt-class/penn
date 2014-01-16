@@ -1,6 +1,7 @@
 ---
 title: Course Wrap-up
 lecturer: All
+course: JHU2012 
 slides: false
 ---
 

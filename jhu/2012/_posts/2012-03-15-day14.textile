@@ -1,6 +1,7 @@
 ---
 title: Syntax-Based Translation Part 2&colon; Synchronous Grammars
 lecturer: Callison-Burch
+course: JHU2012 
 slides: true
 reading:
   -

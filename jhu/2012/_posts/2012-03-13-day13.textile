@@ -1,6 +1,7 @@
 ---
 title: Syntax-based Translation Part 1&colon; Reordering for Phrase-Based Translation
 lecturer: Callison-Burch
+course: JHU2012 
 slides: true
 reading:
   -

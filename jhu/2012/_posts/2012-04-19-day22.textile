@@ -1,6 +1,7 @@
 ---
 title: Applications of Word Alignment
 lecturer: Weese
+course: JHU2012 
 slides: false
 ---
 

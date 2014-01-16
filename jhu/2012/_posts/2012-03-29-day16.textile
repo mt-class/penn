@@ -1,7 +1,8 @@
 ---
 title: Syntax-Based Decoding with Weighted Automata
 lecturer: Lopez
-slides: yes
+course: JHU2012 
+slides: true
 reading:
   -
     author: Iglesias et al.

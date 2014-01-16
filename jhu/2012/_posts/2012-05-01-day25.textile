@@ -1,6 +1,7 @@
 ---
 title: Paraphrasing
 lecturer: Callison-Burch
+course: JHU2012 
 slides: true
 reading:
   -

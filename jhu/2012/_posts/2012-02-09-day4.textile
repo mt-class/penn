@@ -1,6 +1,7 @@
 ---
 title: Learning Better Translation Models
 lecturer: Lopez
+course: JHU2012 
 slides: true
 language-in-10: Afrikaans
 reading:

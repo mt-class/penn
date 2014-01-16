@@ -1,6 +1,7 @@
 ---
 title: Syntax-Based Language Models
 lecturer: Post
+course: JHU2012 
 slides: true
 reading:
   -

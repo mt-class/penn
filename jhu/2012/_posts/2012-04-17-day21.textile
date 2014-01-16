@@ -1,6 +1,7 @@
 ---
 title: Representing Huge Translation Models
 lecturer: Lopez
+course: JHU2012 
 slides: true
 reading:
   -

@@ -1,6 +1,7 @@
 ---
 title: Decoding&colon; Predicting Translations
 lecturer: Post
+course: JHU2012 
 slides: true
 reading:
   -

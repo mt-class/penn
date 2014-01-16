@@ -1,6 +1,7 @@
 ---
 title: More Data Collection&colon; Harvesting Translations from the Web
 lecturer: Callison-Burch
+course: JHU2012 
 slides: true
 reading:
   -

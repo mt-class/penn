@@ -1,6 +1,7 @@
 ---
 title: Guest Lecture&colon; Translation with Comparable Corpora
 lecturer: Smith
+course: JHU2012
 slides: false
 reading:
   -

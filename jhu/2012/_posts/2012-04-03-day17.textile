@@ -1,6 +1,7 @@
 ---
 title: Creative Data Collection&colon; Crowdsourcing Translation
 lecturer: Callison-Burch
+course: JHU2012 
 slides: true
 reading:
   -

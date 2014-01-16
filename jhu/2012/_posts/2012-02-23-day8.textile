@@ -1,6 +1,7 @@
 ---
 title: Evaluating Translation Systems
 lecturer: Callison-Burch
+course: JHU2012 
 slides: true
 language-in-10: German
 reading:
