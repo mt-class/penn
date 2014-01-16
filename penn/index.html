@@ -217,7 +217,7 @@ partners carefully.
 
     {{ site.posts }}
     {% for post in site.posts reversed %}
-    {% if post.upenn %}
+    {% if post.course == "UPenn2014" %}
     <tr>
     <td>{{ post.date | date: "%b %d" }}
     </td>
