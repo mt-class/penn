@@ -100,7 +100,8 @@ learning translation models or bilingual dictionaries.
 
 <p><pre>git clone https://github.com/callison-burch/dreamt.git</pre></p>
 
-<p>We have provided you with a very simple aligner written in Python
+<p>We have provided you with a very simple aligner written in Python 
+(<b>Note:</b> the code works with Python 2, not 3) 
 and around two million words of the Canadian Hansards.  
 The source code of the aligner is contained in file called <tt>align</tt>
 under the directory <tt>aligner</tt>.
@@ -169,6 +170,8 @@ to new alignment posteriors, and so on. We recommend developing on a small
 data set (1000 sentenes) and only 
 a few iterations of EM.  When you are finished, you should see some 
 improvements in your alignments.</p>
+
+<p><b>For a more detailed description of IBM Model 1 and its EM algorithm, see the textbookm Chapter 4.</b> Or, if you're ambitious, read <a href="http://acl.ldc.upenn.edu/J/J93/J93-2003.pdf">Brown et al., (1993)</a>.</p>
 
 <p>Developing a Model 1 aligner should be enough to beat our baseline system
 and earn seven points. But alignment isn't a solved problem, and the goal of
