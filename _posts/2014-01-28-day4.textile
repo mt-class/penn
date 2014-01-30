@@ -1,0 +1,26 @@
+---
+title: Language Models
+slides: true
+course: UPenn2014
+lecturer: Callison-Burch
+reading:
+  -
+    author: Koehn 
+    title: chapter 7
+  -
+    author: Google researchers
+    title:  Large Language Models in Machine Translation
+    url: http://acl.ldc.upenn.edu/D/D07/D07-1090.pdf
+    optional: true
+  -
+    author: Pauls and Klein
+    title: Large-Scale Syntactic Language Modeling with Treelets, 
+    url: http://nlp.cs.berkeley.edu/pubs/Pauls-Klein_2012_LM_paper.pdf
+    optional: true
+  -
+    author: Goodman
+    title: A Bit of Progress in Language Modeling
+    url: http://research.microsoft.com/pubs/69869/tr-2001-72.ps
+    optional: true
+---
+
