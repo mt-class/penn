@@ -12,5 +12,10 @@ reading:
     title:  A Tutorial MT Workbook
     url: http://www.isi.edu/natural-language/mt/wkbk.rtf
     optional: true
+  -
+    author: Colins
+    title: Statistical Machine Translation: IBM Models 1 and 2
+    url: http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/ibm12.pdf
+    optional: true
 ---
 
