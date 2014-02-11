@@ -3,15 +3,17 @@ layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 1 | Alignment
+title: Homework 2 | Decoding
 active_tab: homework
 ---
 
 <div class="alert alert-info">
   Implementation due Thursday February 20th, 11:59pm.
 </div>
-Decoding: Challenge Problem 2
-=============================
+
+Decoding:  <span class="text-muted">Challenge Problem 2</span>
+=============================================================
+
 Decoding is process of taking input that looks like this:
 
 *honorables sénateurs , que se est - il passé ici , mardi dernier ?*
