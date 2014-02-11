@@ -27,10 +27,10 @@ real-word artificial intelligence problem.
 </div>
 
 Instructor
-: [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours on Mondays from 10:30am-11:30am in the Levine 506
+: [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours on Mondays from 10:30am-11:30am in Levine 506
 
 Teaching Assistant
-: Jonny Weese  - Office hours on Wednesdays from 2pm-3pm in the Levine 5th floor bump space
+: [Jonny Weese](http://cs.jhu.edu/~jonny/)  - Office hours on Wednesdays from 2pm-3pm in the Levine 5th floor bump space
 
 Discussion Forum
 : [Piazza](https://piazza.com/upenn/spring2014/cis526)
