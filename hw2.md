@@ -1,84 +1,25 @@
----
----
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+Decoding: Challenge Problem 2
+=============================
+Decoding is process of taking input that looks like this:
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Homework 2: Decoding</title>
+*honorables sénateurs , que se est - il passé ici , mardi dernier ?*
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="screen.css" type="text/css" media="screen, projection" />
+...And turning into output that looks like this:
 
-   <!-- MathJax -->
-   <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-   </script>
-</head>
-<body>
+*honourable senators , what happened here on Tuesday ?*
 
-<div class="site">
 
-  <div class="leftsidebar">
-    <img src="img/voynich.jpg" width="180" alt="The Rosetta Stone"/>
-    <p><i>A page from the <a href="http://en.wikipedia.org/wiki/Voynich_manuscript">Voynich Manuscript</a>, an undeciphered 15th century book.<br/>
-   </i></p>
-<hr/>
-      <p>
-        <b>Challenge 2</b>
-        <ul>
-          <li><b><a href="#overview">Overview</a></b></li>
-          <li><b><a href="#starting">Getting Started</a></b></li>
-          <li><b><a href="#challenge">The Challenge</a></b></li>
-          <li><b><a href="#rules">Ground Rules</a></b></li>
-          <li><b><a href="leaderboard.html">Leaderboard</a></b></li>
-          <li><b><a href="https://piazza.com/jhu/spring2012/en600468">Discussion Forum</a></b></li>
-          <li><b><a href="index.html">Course page</a></b></li>
-        </ul>
-      </p>
-  </div>
-
-<div class="content">
-<a name="overview"></a>
-<h1>Decoding <font color="lightgrey">: Challenge Problem 2</font></h1>
-<div id="course" class="cv">
-
-<p>Decoding is process of taking input that looks like this:
-</p>
-
-<center>
-<p><i>honorables sénateurs , que se est - il passé ici , mardi dernier ?</i></p>
-</center>
-
-<p>...And turning into output that looks like this:</p>
-
-<center>
-<p><i>honourable senators , what happened here on Tuesday ?</i></p>
-</center>
-
-<p>In order to decode we need a probability model over pairs
+In order to decode we need a probability model over pairs
 of English and French sentences. You did most of the work of creating
-such a model in <a href="hw1.html">Challenge 1</a>. In this assignment,
+such a model in [Challenge 1](hw1.html). In this assignment,
 we will give you a fixed model consisting of a (phrase-based) translation
-model and a language model. <b>Your challenge is to find the most 
-probable translation.</b>
-</p>
+model and a language model. *Your challenge is to find the most 
+probable translation.*
 
-<a name="starting"></a>
-<h2>Getting Started</h2>
+## Getting Started
 
-<!--
-<p>If you already have a clone of the repository from <a href="hw1.html">homework 1</a>,
-you can update it from anywhere in your project directory by running the command:</p>
 
-<p><pre>git pull origin master</pre></p>
-
-<p>Alternatively, clone a fresh version of the repository by running:</p>
-
-<p><pre>git clone https://github.com/callison-burch/dreamt.git</pre></p>
--->
-<p>Under the <tt>decode</tt> directory, we have provided you with a very 
+Under the <tt>decode</tt> directory, we have provided you with a very 
 simple decoder written in Python (v.2.6-2.7; older versions will not work!) 
 The decoder translates monotonically &mdash; that is, without reordering the
 English phrases &mdash; and by default it also uses very strict pruning limits, 
@@ -86,39 +27,38 @@ which you can vary on the command line.
 There is also a data directory containing a translation model, a language 
 model, and a set of input sentences to translate. Run the decoder using this 
 command:
-</p>
 
-<p><tt>decode &gt; output</tt></p>
 
-<p>This loads the models and decodes the input sentences, storing the
+<tt>decode &gt; output</tt>
+
+This loads the models and decodes the input sentences, storing the
 result in <tt>output</tt>. You can see the translations simply by looking
 at the file. To calculate their true model score, run the command:
-</p>
 
-<p><tt>grade &lt; output</tt></p>
 
-<p>This command computes the probability of the output sentences
+<tt>grade &lt; output</tt>
+
+This command computes the probability of the output sentences
 according to the model. It works by summing over all possible ways that
 the model could have generated the English from the French. In general this
 is intractable, but because the phrase dictionary is fixed and sparse, the
 specific instances here can be computed in a few minutes. It is still
 easier to do this exactly than it is to find the optimal translation.
 In fact, if you look at the grade script you may get some hints about 
-how to do the assignment!</p>
+how to do the assignment!
 
-<p>Improving the search algorithm in the decoder &mdash; for instance by enabling
+Improving the search algorithm in the decoder &mdash; for instance by enabling
 it to search over permutations of English phrases &mdash; should permit you 
 to find more probable translations
 of the input French sentences than the ones found by the baseline system. 
-This assignment differs from <a href="hw1.html">Homework 1</a>, in that there
+This assignment differs from Homework 1, in that there
 is no hidden evaluation measure.
 The <tt>grade</tt> program will tell you the probability of your output, and
-whoever finds the most probable output will receive the most points.</p>
+whoever finds the most probable output will receive the most points.
 
-<a name="challenge"></a>
-<h2>The Challenge</h2>
+## The Challenge
 
-<p>Your task for this assignment is to <b>find the English sentence
+Your task for this assignment is to <b>find the English sentence
 with the highest possible probability</b>.
 Formally, this means your goal is to solve the problem:
 \( \mathop{\arg\,\max}\limits_e~ p(f|e) \times p(e) \), where \(f\) is a
@@ -142,9 +82,9 @@ as a sum over all possible alignments with the French sentence:
 \( p(f|e) = \sum_a p(f,a|e) \). A nearly universal approximation is to
 instead search for the English string together with a single alignment, 
 \(\mathop{\arg\,\max}\limits_{e,a}~ p(f,a|e) \times p(e) \).
-This is the approach taken by the monotone baseline decoder.</p>
+This is the approach taken by the monotone baseline decoder.
 
-<p>Since this involves multiplying together many small probabilities, it is 
+Since this involves multiplying together many small probabilities, it is 
 helpful to work in logspace to avoid numerical underflow. We instead solve for
 \(e,a\) that maximizes:
 \( \log p(f,a|e) + \log p(e) = 
@@ -164,9 +104,9 @@ translations will always have negative scores, and you will be looking for
 the one with the <b>smallest absolute value</b>. In other words, we have
 transformed the problem of finding the most probable translation into a 
 problem of finding the shortest path through a large graph of possible
-outputs.</p>
+outputs.
 
-<p>Under the phrase-based model we've given you, the goal is to 
+Under the phrase-based model we've given you, the goal is to 
 find a phrase segmentation, translation of each resulting phrase,
 and permutation of those phrases such that the product of the phrase
 translation probabilities and the language model score of the resulting
@@ -179,30 +119,30 @@ method like stack decoding, discussed in Chapter 6 of the textbook. You
 can trade efficiency for search effectiveness
 by implementing histogram pruning or threshold pruning, or by playing around
 with reordering limits as described in the textbook. Or, you might
-consider implementing other approaches to solving the search problem:</p>
+consider implementing other approaches to solving the search problem:
 
-<ul class="real">
+<ul>
   <li><a href="http://www.iro.umontreal.ca/~felipe/bib2webV0.81/cv/papers/paper-tmi-2007.pdf">Implement a greedy decoder</a>.</li>
   <li><a href="http://aclweb.org/anthology-new/P/P09/P09-1038.pdf">Reduce the problem to a traveling salesman problem (TSP) and decode using an off-the-shelf TSP solver</a>.</li>
   <li><a href="http://mi.eng.cam.ac.uk/~wjb31/ppubs/ttmjnle.pdf">Reformulate the problem as a shortest-path problem through a finite-state lattice and decode using finite-state devices</a>.</li>
   <li><a href="http://aclweb.org/anthology-new/D/D11/D11-1003.pdf">Decode using Lagrangian relaxation</a> (often finds exact solutions!)</li>
 </ul>
 
-<p>Several techniques used for the IBM Models (which have very similar 
+Several techniques used for the IBM Models (which have very similar 
 search problems as phrase-based models) could also be adapted:
-<ul class="real">
+<ul>
   <li><a href="http://aclweb.org/anthology-new/W/W01/W01-1408.pdf">Implement A* Search</a>.</li>
   <li><a href="http://aclweb.org/anthology-new/C/C02/C02-1050.pdf">Implement a bidirectional decoder</a>.</li>
   <li><a href="http://aclweb.org/anthology-new/N/N09/N09-2002.pdf">Decode using an integer linear programming (ILP) solver</a>.</li>
 </ul>
 
-<p>But the sky's the limit! There are many, many ways to try to solve the decoding
+But the sky's the limit! There are many, many ways to try to solve the decoding
 problem, and you can try anything you want as long as you follow the ground rules:
 
-<a name="rules"></a>
-<h2>Ground Rules</h2>
 
-<ul class="real">
+## Ground Rules
+
+<ul>
 <li>
    You may work in independently or in groups of any size, under these 
    conditions: 
@@ -216,14 +156,12 @@ problem, and you can try anything you want as long as you follow the ground rule
    <li>
    You can add people or merge groups at any time before you post your
    final submission. HOWEVER, you cannot drop people from your group once 
-   you've added them. <b>Collaboration is fine with us</b>, but 
-   adjudicating Rashomon-style stories about who did or did not
-   contribute is not. 
+   you've added them. Collaboration is fine with us.
    </li>
   </ol>
 </li>
 <li> You must turn in three things:
-  <ol class="real">
+  <ol>
   <li>
   Your translations of the entire dataset, uploaded to BASE_URL/assignment2.txt
   following the <a href="assignment0.html">Assignment 0 instructions</a>. 
@@ -273,21 +211,6 @@ problem, and you can try anything you want as long as you follow the ground rule
    something is permitted, ask us.
 </li>
 </ul>
-<p>If you have any questions or you're confused about anything, 
+If you have any questions or you're confused about anything,
 <a href="https://piazza.com/upenn/spring2014/cis526/home">just ask</a>.
 
-<div class="footer">
-  <p>Last updated on {{ site.time | date: "%B %d, %Y" }}.  Site created using 
-  <a href="http://git-scm.com/">git</a>,
-  <a href="http://github.com/mojombo/jekyll/tree/master">jekyll</a>,
-  and <a href="http://www.vim.org/">vim</a>, and hosted on <a href="https://github.com/">github</a>.</p>
-  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
-    <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
-      Except where noted, the lectures, assignments, and other material hosted on this page were created by
-      <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Adam Lopez, Chris Callison-Burch, and Matt Post</span> and are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-  That means you're free to reuse the 
-  <a href="http://github.com/mt-class/mt-class.github.com">source code</a>, though please acknowledge that you got it from us. Thanks!</p>
-</div>
-
-
-</body></html>
