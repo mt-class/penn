@@ -1,7 +1,0 @@
----
-title: No class today (canceled due to snow)
-slides: false
-course: UPenn2014
-lecturer: None
----
-

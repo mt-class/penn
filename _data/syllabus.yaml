@@ -1,0 +1,118 @@
+-
+  date: 2014-01-16
+  title: Introduction
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/1-intro.pdf 
+  reading:
+    -
+      author: Koehn 
+      title: chapter 1
+    -
+      author: Knight
+      title:  Automating Knowledge Acquisition for Machine Translation
+      url: http://www.isi.edu/natural-language/mt/aimag97.pdf
+      optional: true
+    -
+      author: Weaver
+      title: Translation
+      url: http://www.mt-archive.info/Weaver-1949.pdf
+      optional: true
+    -
+      author: Kay
+      title: Translation
+      url: http://www.stanford.edu/~mjkay/CurrentState.pdf
+      optional: true
+-
+  date: 2014-01-16
+  title: No class today (canceled due to snow)
+  lecturer: None
+-
+  date: 2014-01-23
+  title: Probability and Statistics 
+  slides: http://mt-class.org/penn/slides/2-probability.pdf
+  lecturer: Callison-Burch 
+  reading:
+    -
+      author: Koehn 
+      title: chapters 3
+-
+  date: 2014-01-28
+  title: Language Models
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/3-lm.pdf 
+  reading:
+    -
+      author: Koehn 
+      title: chapter 7
+    -
+      author: Google researchers
+      title:  Large Language Models in Machine Translation
+      url: http://acl.ldc.upenn.edu/D/D07/D07-1090.pdf
+      optional: true
+    -
+      author: Pauls and Klein
+      title: Large Language Models in Machine Translation
+      url: http://acl.ldc.upenn.edu/D/D07/D07-1090.pdf
+      optional: true
+    -
+      author: Goodman
+      title: A Bit of Progress in Language Modeling
+      url: http://research.microsoft.com/pubs/69869/tr-2001-72.ps
+      optional: true
+-
+  date: 2014-01-30
+  title: Lexical Translation Models&colon; Part 1
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/4-lexical_translation.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 4
+    -
+      author: Knight
+      title: A Tutorial MT Workbook
+      url: http://www.isi.edu/natural-language/mt/wkbk.rtf
+    -
+      author: Collins
+      title: Statistical Machine Translation&colon; IBM Models 1 and 2
+      url: http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/ibm12.pdf
+    -
+      author: Brown et al.
+      title: A Statistical Approach to Machine Translation
+      url: http://aclweb.org/anthology-new/J/J90/J90-2002.pdf
+      optional: true
+-
+  date: 2014-02-06
+  title: Lexical Translation Models&colon; Part 2
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/5-lexical_translation2.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 4
+    -
+      author: Brown et al.
+      title: The Mathematics of Statical Machine Translation&colon; Parameter Estimation
+      url: http://aclweb.org/anthology-new/J/J93/J93-2003.pdf
+      optional: true
+    -
+      author: Vogel and Ney
+      title: HMM-based word alignment in statistical translation
+      url: http://aclweb.org/anthology-new/C/C96/C96-2141.pdf
+      optional: true
+    -
+      author: Liang et al.
+      title: Alignment by Agreement
+      url: http://aclweb.org/anthology-new/N/N06/N06-1014.pdf
+      optional: true
+-
+  date: 2014-02-11
+  title: Discriminative alignment models
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/6-discriminative_alignment.pdf
+  reading:
+    -
+      author: Blunsom and Cohn
+      url: http://acl.ldc.upenn.edu/P/P06/P06-1009.pdf
+      title: Discriminative Word Alignment with Conditional Random Fields
+      optional: true
