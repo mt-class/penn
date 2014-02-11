@@ -23,7 +23,7 @@
       url: http://www.stanford.edu/~mjkay/CurrentState.pdf
       optional: true
 -
-  date: 2014-01-16
+  date: 2014-01-21
   title: No class today (canceled due to snow)
   lecturer: None
 -
@@ -82,7 +82,7 @@
       url: http://aclweb.org/anthology-new/J/J90/J90-2002.pdf
       optional: true
 -
-  date: 2014-02-06
+  date: 2014-02-04
   title: Lexical Translation Models&colon; Part 2
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/5-lexical_translation2.pdf
@@ -106,7 +106,7 @@
       url: http://aclweb.org/anthology-new/N/N06/N06-1014.pdf
       optional: true
 -
-  date: 2014-02-11
+  date: 2014-02-06
   title: Discriminative alignment models
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/6-discriminative_alignment.pdf
@@ -116,3 +116,12 @@
       url: http://acl.ldc.upenn.edu/P/P06/P06-1009.pdf
       title: Discriminative Word Alignment with Conditional Random Fields
       optional: true
+-
+  date: 2014-02-11
+  title: Phrase-based Machine Translation
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/7-phrase-based-mt.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 5
