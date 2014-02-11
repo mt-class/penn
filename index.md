@@ -27,10 +27,10 @@ real-word artificial intelligence problem.
 </div>
 
 Instructor
-: [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/)
+: [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours on Mondays from 10:30am-11:30am in the Levine 506
 
 Teaching Assistant
-: Jonny Weese
+: Jonny Weese  - Office hours on Wednesdays from 2pm-3pm in the Levine 5th floor bump space
 
 Discussion Forum
 : [Piazza](https://piazza.com/upenn/spring2014/cis526)
@@ -38,14 +38,10 @@ Discussion Forum
 Time and place
 : Tuesdays and Thursdays 4:30-6pm, Towne 303
 
-Office hours
-: Chris - Mondays from 10:30am-11:30am in the Levine 506
-: Jonny - Wednesdays from 2pm-3pm in the Levine 5th floor bump space
-
 Textbook
 : [Statistical Machine Translation](http://www.statmt.org/book/) (<a href="http://statmt.org/book/errata.html">errata</a>) 
 by <a href="http://homepages.inf.ed.ac.uk/pkoehn/">Philipp Koehn</a> 
-You can purchase from <a href="http://www.amazon.com/Statistical-Machine-Translation-Philipp-Koehn/dp/0521874157">Amazon</a>.
+You can purchase <a href="http://www.amazon.com/Statistical-Machine-Translation-Philipp-Koehn/dp/0521874157">the Statistical Machine Translation textbook from Amazon</a>.
 
 Grading
 : To understand how machine translation works, you must build a translation system.

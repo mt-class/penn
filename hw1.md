@@ -8,8 +8,7 @@ active_tab: homework
 ---
 
 <div class="alert alert-info">
-  Implementation due February 17, at 6pm.
-  Writeup due February 18 in class.
+  Implementation due Thursday February 6th, 11:59pm.
 </div>
 
 Alignment <span class="text-muted">Challenge Problem 1</span>
@@ -63,7 +62,7 @@ Getting Started
 You must have git and python (2.7) on your system to run the assignments.
 Once you've confirmed this, run this command:
 
-    git clone https://github.com/alopez/en600.468.git
+    git clone https://github.com/callison-burch/dreamt.git
 
 In the `aligner` directory you will find a python program called
 `align`, which contains a complete but very simple alignment algorithm.
@@ -161,9 +160,7 @@ Ground Rules
   1. You must announce the group publicly on piazza.
   1. You agree that everyone in the group will receive the same grade on the assignment. 
   1. You can add people or merge groups at any time before the assignment is
-     due. **You cannot drop people from your group once you've added them.**
-  We encourage collaboration, but we will not adjudicate Rashomon-style 
-  stories about who did or did not contribute.
+     due. You cannot drop people from your group once you've added them.
 * You must turn in three things:
   1. An alignment of the entire dataset, uploaded to the [leaderboard submission site](http://jhumtclass.appspot.com) according to <a href="assignment0.html">the Assignment 0 instructions</a>. You can upload new output as often
      as you like, up until the assignment deadline. The output will be evaluated 
