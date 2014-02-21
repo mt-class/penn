@@ -133,3 +133,12 @@
   date: 2014-02-13
   title: No class today (instructor is at a conference)
   lecturer: None
+-
+  date: 2014-02-20
+  title: Phrase-based Machine Translation part 2
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/8-phrase-based-mt-part2.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 6
