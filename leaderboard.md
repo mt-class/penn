@@ -147,18 +147,6 @@ $("#oracle").css({'background-color': 'LimeGreen'});
   </div>
 </div>
 
-<div class="footer">
-  <p>Last updated on {{ site.time | date: "%B %d, %Y" }}.  Site created using 
-  <a href="http://git-scm.com/">git</a>,
-  <a href="http://github.com/mojombo/jekyll/tree/master">jekyll</a>,
-  and <a href="http://www.gnu.org/software/emacs/">emacs</a>, and hosted on <a href="https://github.com/">github</a>.</p>
-  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
-    <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
-      Except where noted, the lectures, assignments, and other material hosted on this page were created by
-      <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Adam Lopez, Chris Callison-Burch, and Matt Post</span> and are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-  That means you're free to reuse the 
-  <a href="http://github.com/mt-class/mt-class.github.com">source code</a>, though please acknowledge that you got it from us. Thanks!</p>
-</div>
 
 </div>
 </div>
