@@ -3,8 +3,8 @@ layout: default
 img: dore_babel
 img_link: http://en.wikipedia.org/wiki/Confusion_of_tongues
 caption: Gustav Dore, The Confusion of Tongues
-title: Final Project
-active_tab: project
+title: Leaderboard
+active_tab: leaderboard
 ---
 
    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
