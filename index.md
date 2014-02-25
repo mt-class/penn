@@ -22,8 +22,8 @@ language theory, showing how they apply to a difficult
 real-word artificial intelligence problem.
 
 <div class="alert alert-info" markdown="span">
-  [Homework 2](hw2.html) is posted.
-  It is due on February 20th by 11:59pm.
+  [Homework 3](hw3.html) is posted.
+  It is due on March 6th by 11:59pm.
 </div>
 
 Instructor
