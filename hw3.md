@@ -28,6 +28,7 @@ ranking. For instance, given the following German sentences:
 *After the steep drop in the morning the Prague stock exchange could correct the losses.*
 
 ...And a second machine translation system produces this output:
+
 *The Prague stock exchange risks geschäftsschluss against the down.*
 
 *After the steilen waste on the stock market Prague, was aez almost half of the normal tagesgeschäfts.*
@@ -77,10 +78,10 @@ human ranking of the same set of systems, run the command:
 <tt>grade &lt; output</tt>
 
 This command computes 
-(Spearman's rank correlation coefficient)[http://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient]
+<a href="http://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient">Spearman's rank correlation coefficient</a>
 (\(\rho\)) between the automatic ranking
 and a human ranking of the systems (see Section 4 of 
-(this paper)[http://aclweb.org/anthology-new/W/W11/W11-2103.pdf] for an explanation
+<a href="http://aclweb.org/anthology-new/W/W11/W11-2103.pdf">this paper</a> for an explanation
 of how the human rankings were obtained). A \( \rho \) of 1 means that the rankings
 are identical; a rank of zero means that they are uncorrelated; and a negative
 rank means that they are inversely correlated.
@@ -107,7 +108,7 @@ points.
 
 
 One way to improve over the default system is to implement the 
-well-known (BLEU)[http://aclweb.org/anthology-new/P/P02/P02-1040.pdf]
+well-known <a href="http://aclweb.org/anthology-new/P/P02/P02-1040.pdf">BLEU</a>
 metric. You may find it useful to experiment with BLEU's parameters,
 or to retokenize the data in some way. However, there are many, many 
 alternatives to BLEU &mdash; the topic of evaluation is so popular that
@@ -197,7 +198,7 @@ you can try anything you want as long as you follow the ground rules:
    of python code. If you aren't sure whether something is permitted, ask us.
 </li>
 </ul>
-<
+
 If you have any questions or you're confused about anything,
 <a href="https://piazza.com/upenn/spring2014/cis526/home">just ask</a>.
 
