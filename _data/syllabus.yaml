@@ -125,6 +125,11 @@
     -
       author: Koehn 
       title: chapter 5
+    -
+      author:   Koehn, Och and Marcu
+      url: http://acl.ldc.upenn.edu/N/N03/N03-1017.pdf
+      title: Statistical Phrase-Based Translation
+      optional: true
 -
   date: 2014-02-13
   title: No class today (canceled due to snow)
@@ -142,3 +147,15 @@
     -
       author: Koehn 
       title: chapter 6
+-
+  date: 2014-02-25
+  title: Evaluating translation quality
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/9-evaluating-translation-quality.pdf
+  reading:
+    -
+      author: Papineni, Roukos, Ward and Zhu
+      url: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.9416
+      title: BLEU&colon; a Method for Automatic Evaluation of Machine Translation
+      optional: true
+-
