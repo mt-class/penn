@@ -12,10 +12,6 @@ active_tab: project
    <script type="text/javascript" src="http://cs.jhu.edu/~jonny/upenn/mt/leaderboard-old.js"></script>
 
 <div class="site">
-  <div class="leftsidebar">
-    <p><a href="http://www.flickr.com/photos/nationaalarchief/3198249977/"><img src="img/race.jpg" width="180" alt="mechanical brain"/></a></p>
-  </div>
-
   <div class="content">
     <h1>Leaderboard</h1>
     <div id="course" style="width: 800px">
