@@ -79,10 +79,10 @@ human ranking of the same set of systems, run the command:
 
 This command computes 
 <a href="http://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient">Spearman's rank correlation coefficient</a>
-(\(\rho\)) between the automatic ranking
+(rho) between the automatic ranking
 and a human ranking of the systems (see Section 4 of 
 <a href="http://aclweb.org/anthology-new/W/W11/W11-2103.pdf">this paper</a> for an explanation
-of how the human rankings were obtained). A \( \rho \) of 1 means that the rankings
+of how the human rankings were obtained). A rho of 1 means that the rankings
 are identical; a rank of zero means that they are uncorrelated; and a negative
 rank means that they are inversely correlated.
 
@@ -100,10 +100,10 @@ Your ranking should be a total ordering of the systems &mdash; ties are not allo
 
 ## The Challenge
 
-Improving the evaluation algorithm should cause \(\rho\)
+Improving the evaluation algorithm should cause rho
 to increase. Your task for this assignment is to <b>obtain a
 Spearman's rank correlation coefficient that is as high as possible on the 
-test data.</b> Whoever obtains the highest \(\rho\) will receive the most 
+test data.</b> Whoever obtains the highest rho will receive the most 
 points. 
 
 
