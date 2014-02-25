@@ -11,12 +11,7 @@ active_tab: project
    <script type="text/javascript" src="http://cs.jhu.edu/~jonny/upenn/mt/leaderboard.js"></script>
    <script type="text/javascript" src="http://cs.jhu.edu/~jonny/upenn/mt/leaderboard-old.js"></script>
 
-<div class="site">
-  <div class="leftsidebar">
-    <p><a href="http://www.flickr.com/photos/nationaalarchief/3198249977/"><img src="img/race.jpg" width="180" alt="mechanical brain"/></a></p>
-  </div>
 
-  <div class="content">
     <h1>Leaderboard</h1>
     <div id="course" style="width: 800px">
 
@@ -162,8 +157,7 @@ $("#oracle").css({'background-color': 'LimeGreen'});
       <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Adam Lopez, Chris Callison-Burch, and Matt Post</span> and are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
   That means you're free to reuse the 
   <a href="http://github.com/mt-class/mt-class.github.com">source code</a>, though please acknowledge that you got it from us. Thanks!</p>
-</div>
 
-</div>
-</div>
+
+
 
