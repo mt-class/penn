@@ -154,8 +154,9 @@
   slides: http://mt-class.org/penn/slides/9-evaluating-translation-quality.pdf
   reading:
     -
+      author: Koehn 
+      title: chapter 8
+    -
       author: Papineni, Roukos, Ward and Zhu
       url: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.9416
-      title: BLEU&colon; a Method for Automatic Evaluation of Machine Translation
-      optional: true
--
+      title: BLEU&colon; a Method for Automatic Evaluation of Machine Translation-
