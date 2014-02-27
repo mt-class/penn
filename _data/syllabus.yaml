@@ -51,8 +51,8 @@
       optional: true
     -
       author: Pauls and Klein
-      title: Large Language Models in Machine Translation
-      url: http://acl.ldc.upenn.edu/D/D07/D07-1090.pdf
+      title: Large-Scale Syntactic Language Modeling with Treelets
+      url: http://www.cs.berkeley.edu/~adpauls/PAPERS/acl2012.pdf
       optional: true
     -
       author: Goodman
