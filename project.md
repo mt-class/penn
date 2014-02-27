@@ -26,6 +26,7 @@ You should identify what topic you would like to work on, and then email your in
 * Transliteration
 * Feature engineering for discriminative word alignment
 * Language modelling
+* Predict the right translation given a context
 * Phrase pair extraction
 * SCFG rule extraction
 * Implement the CKY algorithm for decoding SCFGs
