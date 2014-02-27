@@ -17,9 +17,7 @@ Your term project is to design a homework assignment for next year’s class.  Y
 1. A scoring script that implements an objective function that will allow us to score submissions on the leaderboard
 1. An implementation of the simplest possible baseline, along with commented sample code
 1. An implementation of a published baseline, along with commented sample code that removes the parts that students should implement
-1. Additional extensions that attempt improve on the baseline, along with a 1 paragraph writeup describing each extension and whether it worked.
-
-The number of additional extensions depends on the number of people in your group, and whether you are a graduate or an undergrad.
+1. If you work in a team: One extension that attempts improve on the baseline per team member, along with a 1 paragraph writeup describing each extension and whether it worked.
 
 You should identify what topic you would like to work on, and then email your instructor or schedule a meeting to go over the details.  Here are some ideas of topics that you could use for your final project: 
 
