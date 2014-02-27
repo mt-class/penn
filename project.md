@@ -53,11 +53,11 @@ You are welcome to choose your own topic, provided that it is related to machine
 1. What type of data you will need to evaluate
 * March 25 - HW4 is due
 * March 27 - your data must be collected and submitted
-* April 1 - final write-up is due
+* April 1 - revised write-up is due, taking into account any feedback from instructor and TA
 * April 3 - objective function must be implemented (it is OK to use an existing implementation if you need to)
 * April 8 - your default system is due
 * April 10 - your baseline system is due
-* April 15 - your completed project must be published on the class web site, and used as the final homework for other students
+* April 15 - your completed project is due (final writeup, data, objective fn, default system, and baseline system).  It Will be published on the class web site, and used as the final homework for other students.
 * April 17 - HW5 assigned: do one of the other student’s term projects
 * April 29 - HW5 due: turn in your implementation of another student’s term project
 * final exam date - *extra credit* implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
