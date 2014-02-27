@@ -29,8 +29,9 @@ You should identify what topic you would like to work on, and then email your in
 * Phrase pair extraction
 * SCFG rule extraction
 * Implement the CKY algorithm for decoding SCFGs
-* Domain adaptation
+* Chinese word segmentation
 * System combination
+* Domain adaptation
 * Mining parallel documents from Common Crawl
 * Extracting parallel sentences from Wikipedia
 * Monolingual text-to-text generation 
