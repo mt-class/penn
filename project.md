@@ -3,14 +3,14 @@ layout: default
 img: dore_babel
 img_link: http://en.wikipedia.org/wiki/Confusion_of_tongues
 caption: Gustav Dore, The Confusion of Tongues
-title: Final Project
+title: Term Project
 active_tab: project
 ---
 
-Final Project <span class="text-muted">The Ultimate Challenge</span>
+Term Project <span class="text-muted">The Ultimate Challenge</span>
 =============================================================
 
-Your final project is to design a homework assignment for next year’s class.  You project will consist of the following components:
+Your term project is to design a homework assignment for next year’s class.  You project will consist of the following components:
 
 1. A description of the problem, similar to the descriptions on the HW assignments
 1. A collection of data used to train a model, tune its parameters, and/or evaluate its performance
@@ -21,7 +21,7 @@ Your final project is to design a homework assignment for next year’s class.  
 
 The number of additional extensions depends on the number of people in your group, and whether you are a graduate or an undergrad.
 
-You should identify what topic you would like to work on, and schedule a meeting with your instructor to go over the details.  Here are some ideas of topics that you could use for your final project: 
+You should identify what topic you would like to work on, and then email your instructor or schedule a meeting to go over the details.  Here are some ideas of topics that you could use for your final project: 
 
 * Sentence alignment
 * Language identification
@@ -42,5 +42,20 @@ You should identify what topic you would like to work on, and schedule a meeting
 
 You are welcome to choose your own topic, provided that it is related to machine translation.
 
-Details TBD.
-
+# Dates
+* February 27 - term project assigned
+* During Spring break - Select your topic and email your instructor to say what you’ve selected
+* March 18 - draft write-up is due.  Your write-up should include 
+1. A problem definition
+1. A pointer to or more more papers or sections textbook that describes the problem
+1. What objective functions you are considering
+1. What type of data you will need to evaluate
+* March 27 - your data must be collected and submitted
+* April 1 - final write-up is due
+* April 3 - objective function must be implemented (it is OK to use an existing implementation if you need to)
+* April 8 - your default system is due
+* April 10 - your baseline system is due
+* April 15 - your completed project must be published on the class web site, and used as the final homework for other students
+* April 17 - HW6 assigned: do one of the other student’s term projects
+* April 29 - HW6 due: turn in your implementation of another student’s term project
+* final exam date - *extra credit* implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
