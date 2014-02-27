@@ -42,7 +42,7 @@ You should identify what topic you would like to work on, and then email your in
 
 You are welcome to choose your own topic, provided that it is related to machine translation.
 
-# Dates
+## Milestones and Due Dates
 * February 27 - term project assigned
 * March 6 - HW4 assigned
 * During Spring break (March 8-16) - Select your term project topic and email your instructor to say what you’ve selected

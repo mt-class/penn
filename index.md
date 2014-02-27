@@ -47,8 +47,8 @@ Grading
 : To understand how machine translation works, you must build a translation system.
 We will mainly grade hands-on work.
 
-* 6 programming assignments (10% each)
-* Final project (30%)
+* 5 programming assignments (10% each)
+* Term project (40%)
 * In-class presentation: Language in ten minutes (10%)
 
 
