@@ -55,7 +55,7 @@ Run this command:
 It is possible to do much better than the 
 default reranker! To see this, run the command:
 
-oracle | grade
+    oracle | grade
 
 The oracle uses the human reference translations to choose sentences from
 the N-best list that yield the highest BLEU score. The algorithm that does
