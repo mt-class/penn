@@ -55,7 +55,7 @@ Run this command:
 It is possible to do much better than the 
 default reranker! To see this, run the command:
 
-<tt>oracle | grade</tt>
+oracle | grade
 
 The oracle uses the human reference translations to choose sentences from
 the N-best list that yield the highest BLEU score. The algorithm that does
@@ -81,7 +81,7 @@ product of the weight vector and the feature values to rank the candidate
 translations, choosing the best one for each sentence. To run this
 process, type:
 
-<tt>learn | rerank -w - | grade</tt>
+    learn | rerank -w - | grade
 
 You should observe that the BLEU score improves slightly. The <tt>learn</tt>
 program contains several parameters that you can optionally vary, which may
