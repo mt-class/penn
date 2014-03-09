@@ -105,7 +105,7 @@ algorithm will yield an improvement. However, there are many other ways
 that you might improve the reranker. These might include:
 
 <ul class="real">
-<li><a href="http://aclweb.org/anthology-new/W/W08/W08-0302.pdf">Adding new, informative features!</a>
+<li><a href="http://aclweb.org/anthology-new/W/W08/W08-0302.pdf">Adding new, informative features!</a></li>
 <li><a href="http://aclweb.org/anthology-new/P/P03/P03-1021.pdf">
 Implementing Och's minimum error rate algorithm</a> 
 (Note: there are many alternative descriptions of this algorithm, 
