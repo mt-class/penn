@@ -32,8 +32,9 @@ translations.*
 The original data for this homework is unfair: the nbest lists are in the order
 that the MT system output them, which is a strong signal for quality.
 See Section 6 of <a href="http://www.transacl.org/wp-content/uploads/2013/05/paper165.pdf">this paper</a>.
-*Do not use the given nbest lists; download the shuffled lists
-<a href="hw4-shuffled-nbest.tgz">here</a>.*
+
+<b>Do not use the given nbest lists; download the shuffled lists
+<a href="hw4-shuffled-nbest.tgz">here</a>.</b>
 </div>
 
 Under the <tt>rerank</tt> directory, we have provided you with a very 
