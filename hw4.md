@@ -43,7 +43,7 @@ There is also a directory containing training and test datasets. Each dataset
 consists of many alternative machine translations for each sentence of the 
 input data. To see the available translations of the 500 French sentences in
 <tt>data/test.fr</tt>, take a look at the file
-<tt>data/test.nbest</tt>. Each line contains a sentence number, a translation,
+<tt>data/test.nbest.shuffled</tt>. Each line contains a sentence number, a translation,
 and a set of feature values for that translation that were provided by a
 state-of-the-art translation model. The goal of the reranking program is to choose the
 best translation from among the many alternatives in the file. By default, 
