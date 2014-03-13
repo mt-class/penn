@@ -8,7 +8,7 @@ active_tab: homework
 ---
 
 <div class="alert alert-info">
-This homework is due Tuesday March 25th, 11:59pm.
+This homework is due Thursday March 27th, 11:59pm.
 </div>
 
 Reranking:  <span class="text-muted">Challenge Problem 4</span>
