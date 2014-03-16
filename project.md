@@ -44,14 +44,13 @@ You are welcome to choose your own topic, provided that it is related to machine
 
 ## Milestones and Due Dates
 * February 27 - term project assigned
-* March 6 - HW4 assigned
 * During Spring break (March 8-16) - Select your term project topic and email your instructor to say what you’ve selected
 * March 18 - draft write-up is due.  Your write-up should include 
 1. A problem definition
 1. A pointer to or more more papers or sections textbook that describes the problem
 1. What objective functions you are considering
 1. What type of data you will need to evaluate
-* March 25 - HW4 is due
+* March 27 - HW4 is due
 * March 27 - your data must be collected and submitted
 * April 1 - revised write-up is due, taking into account any feedback from instructor and TA
 * April 3 - objective function must be implemented (it is OK to use an existing implementation if you need to)
