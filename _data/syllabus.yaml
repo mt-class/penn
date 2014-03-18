@@ -221,3 +221,22 @@
   date: 2014-03-13
   title: No class today (Spring Break)
   lecturer: None
+-
+  date: 2014-03-18
+  title: Re-ordering for phrase-based translation 
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/12-reordering-phrase-based-mt.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 10.3
+    -
+      author: Koehn et al
+      url: http://www.cis.upenn.edu/~ccb/publications/iwslt05-report.pdf
+      title: Description of lexialized reordering in Edinburgh System Description for the 2005 IWSLT Speech Translation Evaluation
+      optional: true
+    -
+      author: Collins, Koehn, Kucerova
+      url: http://people.csail.mit.edu/mcollins/papers/clause.pdf
+      title: Clause Restructuring for Statistical Machine Translation
+      optional: true
