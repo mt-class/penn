@@ -76,6 +76,7 @@
       author: Collins
       title: Statistical Machine Translation&colon; IBM Models 1 and 2
       url: http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/ibm12.pdf
+      optional: true
     -
       author: Brown et al.
       title: A Statistical Approach to Machine Translation
@@ -213,7 +214,7 @@
       title: Tuning as Ranking
       optional: true
 -
-  date: 2014-03-13
+  date: 2014-03-11
   title: No class today (Spring Break)
   lecturer: None
 -
