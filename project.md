@@ -33,6 +33,8 @@ You should identify what topic you would like to work on, and then email your in
 * Chinese word segmentation
 * System combination
 * Domain adaptation
+* Lexicalized re-ordering
+* Clause re-structring for better re-ordering
 * Mining parallel documents from Common Crawl
 * Extracting parallel sentences from Wikipedia
 * Monolingual text-to-text generation 
