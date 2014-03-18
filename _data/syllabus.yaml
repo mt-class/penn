@@ -147,6 +147,11 @@
     -
       author: Koehn 
       title: chapter 6
+    -
+      author: Och and Ney
+      url: http://aclweb.org/anthology/J/J04/J04-4002.pdf
+      title: The Alignment Template Approach to Statistical Machine Translation
+      optional: true
 -
   date: 2014-02-25
   title: Evaluating translation quality
@@ -159,4 +164,59 @@
     -
       author: Papineni, Roukos, Ward and Zhu
       url: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.9416
-      title: BLEU&colon; a Method for Automatic Evaluation of Machine Translation-
+      title: BLEU&colon; a Method for Automatic Evaluation of Machine Translation
+-
+  date: 2014-02-27
+  title: Evaluating translation quality - part 2
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/10-evaluating-translation-quality-2.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 8
+    -
+      author: Callison-Burch, Fordyce, Koehn, Monz and Schroeder
+      url: http://www.cis.upenn.edu/~ccb/publications/meta-evaluation-of-machine-tranlsion.pdf
+      title: (Meta-) Evaluation of Machine Translation
+      optional: true
+-
+  date: 2014-03-04
+  title: Discriminative training
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/11-discriminative-training.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 9
+    -
+      author: Och and Ney
+      url: http://acl.ldc.upenn.edu/P/P02/P02-1038.pdf
+      title: Discriminative Training And Maximum Entropy Models For Statistical Machine Translation
+      optional: true
+-
+  date: 2014-03-06
+  title: Discriminative training - part 2
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/11-discriminative-training.pdf
+  reading:
+    -
+      author: Koehn 
+      title: chapter 9
+    -
+      author: Och
+      url: http://acl.ldc.upenn.edu/acl2003/main/pdfs/Och.pdf
+      title: Minimum Error Rate Training In Statistical Machine Translation
+      optional: true
+    -
+      author: Hopkins and May
+      url: http://www.aclweb.org/anthology/D/D11/D11-1125.pdf
+      title: Tuning as Ranking
+      optional: true
+-
+  date: 2014-03-13
+  title: No class today (Spring Break)
+  lecturer: None
+-
+  date: 2014-03-13
+  title: No class today (Spring Break)
+  lecturer: None
