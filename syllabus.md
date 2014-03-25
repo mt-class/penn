@@ -6,7 +6,7 @@ title: Syllabus
 active_tab: syllabus
 ---
 
-Subject to change as the term progresses.
+
 
 <table class="table table-striped"> 
   <tbody>
@@ -49,3 +49,4 @@ Subject to change as the term progresses.
   </tbody>
 </table>
 
+Many of the lectures from this course were adapted (or stolen wholesale) from [Chris Dyer](http://www.cs.cmu.edu/~cdyer/), [Adam Lopez](http://www.cs.jhu.edu/~alopez/) and [Matt Post](http://cs.jhu.edu/~post/).  I am grateful to them for making their lecture materials available. 
