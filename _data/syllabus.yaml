@@ -280,3 +280,8 @@
       url: http://www.isi.edu/natural-language/teaching/cs562/2009/readings/deductive.pdf
       title: Principles and Implementation of Deductive Parsing
       optional: true
+    -
+      author: Dan Klein and Chris Manning
+      url: http://www.cs.berkeley.edu/~klein/papers/klein_and_manning-parsing_and_hypergraphs-IWPT_2001.pdf
+      title: Parsing and Hypergraphs
+      optional: true
