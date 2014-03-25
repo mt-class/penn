@@ -1,8 +1,7 @@
 ---
 layout: default
-img: dore_babel
-img_link: http://en.wikipedia.org/wiki/Confusion_of_tongues
-caption: Gustav Dore, The Confusion of Tongues
+img: rage
+img_link: http://www.flickr.com/photos/nationaalarchief/3198249977/
 title: Leaderboard
 active_tab: leaderboard
 ---
