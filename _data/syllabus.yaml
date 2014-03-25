@@ -240,6 +240,11 @@
       url: http://people.csail.mit.edu/mcollins/papers/clause.pdf
       title: Clause Restructuring for Statistical Machine Translation
       optional: true
+    -
+      author: Mark Twain
+      url: http://www.crossmyt.com/hc/linghebr/awfgrmlg.html
+      title: The Awful German Language
+      optiona: true
 -
   date: 2014-03-20
   title: Synchronous Grammars
@@ -254,4 +259,24 @@
       url: http://aclweb.org/anthology//J/J07/J07-2003.pdf
       title: Hierarchical Phrase-Based Translation
       optional: true
-
+    -
+      author: Heidi Fox
+      url: http://acl.ldc.upenn.edu/W/W02/W02-1039.pdf
+      title: Phrasal Cohesion and Statistical Machine Translation
+      optional: true
+-
+  date: 2014-03-25
+  title: Decoding and Inference with Syntactic Translation Models
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/15-decoding-and-inference.pdf
+  reading:
+    -
+      author: Dekai Wu
+      url: http://aclweb.org/anthology//J/J97/J97-3002.pdf
+      title: Stochastic Inversion Transduction Grammars and Bilingual Parsing of Parallel Corpora
+      optional: true
+    -
+      author: Stu Shieber, Yves Schabes, and Ferndando Pereira
+      url: http://www.isi.edu/natural-language/teaching/cs562/2009/readings/deductive.pdf
+      title: Principles and Implementation of Deductive Parsing
+      optional: true
