@@ -22,8 +22,11 @@ language theory, showing how they apply to a difficult
 real-word artificial intelligence problem.
 
 <div class="alert alert-info" markdown="span">
-  [Homework 4](hw4.html) is posted.
-  It is due on March 27th by 11:59pm.
+Upcoming deliverables for your [term project](project.html):
+* Thursday April 3rd: Implementation of your objective function (this is the scoring fn that will be used on the leaderboard)
+* Tuesday April 8th: Your default system is due
+* Thursday April 10th: your baseline system is due
+* Tuesday April 15th: your completed project is due (final writeup, data, objective fn, default system, and baseline system). 
 </div>
 
 Instructor
