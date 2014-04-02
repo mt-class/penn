@@ -23,6 +23,7 @@ real-word artificial intelligence problem.
 
 <div class="alert alert-info" markdown="span">
 Upcoming deliverables for your [term project](project.html):
+
 * Thursday April 3rd: Implementation of your objective function (this is the scoring fn that will be used on the leaderboard)
 * Tuesday April 8th: Your default system is due
 * Thursday April 10th: your baseline system is due
