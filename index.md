@@ -23,12 +23,12 @@ real-word artificial intelligence problem.
 
 <div class="alert alert-info" markdown="span">
 Upcoming deliverables for your [term project](project.html):
+</div>
 
 * Thursday April 3rd: Implementation of your objective function (this is the scoring fn that will be used on the leaderboard)
 * Tuesday April 8th: Your default system is due
 * Thursday April 10th: your baseline system is due
 * Tuesday April 15th: your completed project is due (final writeup, data, objective fn, default system, and baseline system). 
-</div>
 
 Instructor
 : [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours on Mondays from 10:30am-11:30am in Levine 506
