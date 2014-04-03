@@ -287,7 +287,7 @@
       optional: true
 -
   date: 2014-04-01
-  title: Synchronous Parsing
+  title: Synchronous Parsing (guest lecture by Jonny Weese)
   lecturer: Jonny Weese
 -
   date: 2014-04-03
@@ -298,7 +298,7 @@
     -
       author: Philip Resnik and Noah Smith
       url: http://acl.ldc.upenn.edu/J/J03/J03-3002.pdf
-      title: The Web as a Parallel 	Corpus
+      title: The Web as a Parallel Corpus
       optional: true
     -
       author: Jakob Uszkoreit, Jay Ponte, Ashok Popat, and Moshe Dubiner
@@ -310,3 +310,54 @@
       url: http://aclweb.org/anthology//D/D11/D11-1126.pdf
       title: Watermarking the Outputs of Structured Prediction with an application in Statistical Machine Translation
       optional: true
+-
+  date: 2014-04-07
+  title: Crowdsourcing translation
+  lecturer: Callison-Burch
+  slides: 
+  reading:
+    -
+      author: Omar Zaidan and Chris Callison-Burch
+      url: http://aclweb.org/anthology/P/P11/P11-1122.pdf
+      title: Crowdsourcing Translation&colon; Professional Quality from Non-Professionals.
+      optional: true
+    -
+      author: Chris Callison-Burch
+      url: http://aclweb.org/anthology//D/D09/D09-1030.pdf
+      title: Fast, Cheap, and Creative&colon; Evaluating Translation Quality Using Amazon's Mechanical Turk 
+      optional: true
+    -
+      author: Ellie Pavlick, Matt Post, Ann Irvine, Dmitry Kachaev, and Chris Callison-Burch
+      url: http://www.cis.upenn.edu/~ccb/publications/language-demographics-of-mechanical-turk.pdf
+      title: The Language Demographics of Amazon Mechanical Turk
+      optional: true
+-
+  date: 2014-04-10
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2014-04-15
+  title: Miles Osborne guest lecture of large scale LMs
+  lecturer: Miles Osborne
+  slides: 
+-
+  date: 2014-04-17
+  title: Matt Post guest lecture on syntactic LMs
+  lecturer: Matt Post
+  slides: 
+-
+  date: 2014-04-22
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2014-04-24
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2014-04-29
+  title: Course wrap-up
+  lecturer: Callison-Burch
+  slides: 
