@@ -285,3 +285,28 @@
       url: http://www.cs.berkeley.edu/~klein/papers/klein_and_manning-parsing_and_hypergraphs-IWPT_2001.pdf
       title: Parsing and Hypergraphs
       optional: true
+-
+  date: 2014-04-01
+  title: Synchronous Parsing
+  lecturer: Jonny Weese
+-
+  date: 2014-04-02
+  title: Harvesting Parallel Documents from the Web
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/17-harvesting-parallel-corpora.pdf
+  reading:
+    -
+      author: Philip Resnik and Noah Smith
+      url: http://acl.ldc.upenn.edu/J/J03/J03-3002.pdf
+      title: The Web as a Parallel 	Corpus
+      optional: true
+    -
+      author: Jakob Uszkoreit, Jay Ponte, Ashok Popat, and Moshe Dubiner
+      url: http://acl.ldc.upenn.edu/J/J03/J03-3002.pdf
+      title: Large Scale Parallel Document Mining for Machine Translation
+      optional: true
+    -
+      author: Ashish Venugopal, Jakob Uszkoreit, David Talbot, Franz Och, Juri Ganitkevitch
+      url: http://aclweb.org/anthology//D/D11/D11-1126.pdf
+      title: Watermarking the Outputs of Structured Prediction with an application in Statistical Machine Translation
+      optional: true
