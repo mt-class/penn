@@ -119,7 +119,7 @@ $("#project_name").css({'background-color': 'LimeGreen'});
 </table>
   </div>
 
-  <div style="position: relative; left: 20px; z-index: -1; margin-top: 10px">
+  <div style="position: relative; bottom: 20px; z-index: -1; margin-top: 10px">
     <h3>Legend</h3>
     <p>
       A value of -1 indicates that the assignment file was found but
