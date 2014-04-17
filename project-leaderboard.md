@@ -24,7 +24,7 @@ active_tab: leaderboard
         is rescored if it changed.
       </p>
 
-      <div style="float: left">
+      <div>
 <table>
 <!--
   <thead style="background-color: lightgrey">
