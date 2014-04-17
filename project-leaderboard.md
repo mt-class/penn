@@ -119,6 +119,7 @@ $("#project_name").css({'background-color': 'LimeGreen'});
 </table>
   </div>
 
+<!--
   <div style="position: relative; bottom: 20px; z-index: -1; margin-top: 10px">
     <h3>Legend</h3>
     <p>
@@ -138,7 +139,6 @@ $("#project_name").css({'background-color': 'LimeGreen'});
       at or near the top of the rankings.
     </p>
 
-<!--
     <p>
       The <span style="background-color: LimeGreen">oracle
       system</span> is a metric-aware composite of the best results
