@@ -146,8 +146,8 @@ $("#project_name").css({'background-color': 'LimeGreen'});
       oracle, but it gives you an idea of how much improvement there
       is for your system to find.
     </p>
--->
   </div>
+-->
 </div>
 
 
