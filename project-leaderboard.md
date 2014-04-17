@@ -102,11 +102,9 @@ for (i=0; i<data.length; i++){
   else
     document.write('<td></td>');
   document.write('<td>' + data[i][0] + '</td>');
-  document.write('<td align="right">' + data[i][1] + '</td>');
-  document.write('<td align="right">' + data[i][2] + '</td>');
-  document.write('<td align="right">' + data[i][3] + '</td>');
-  document.write('<td align="right">' + data[i][4] + '</td>');
-  document.write('<td align="right">' + data[i][5] + '</td>');
+  for (j = 1; j < data[i].length; j++) {
+    document.write('<td align="right">' + data[i][j] + '</td>');
+  }
   document.write('</tr>');
 }
 
