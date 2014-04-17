@@ -12,7 +12,7 @@ active_tab: leaderboard
 
 <div class="site">
   <div class="content">
-    <h1>Leaderboard</h1>
+    <h1>Project Leaderboard</h1>
     <div id="course" style="width: 800px">
 
       <p>
@@ -24,7 +24,6 @@ active_tab: leaderboard
         is rescored if it changed.
       </p>
 
-      <div>
 <table>
 <!--
   <thead style="background-color: lightgrey">
@@ -117,7 +116,6 @@ $("#project_name").css({'background-color': 'LimeGreen'});
 </script>
   </tbody>
 </table>
-  </div>
 
 <!--
   <div style="position: relative; bottom: 20px; z-index: -1; margin-top: 10px">
