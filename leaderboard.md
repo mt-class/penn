@@ -7,8 +7,6 @@ active_tab: leaderboard
 ---
 
    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
-   <script type="text/javascript" src="http://cs.jhu.edu/~jonny/upenn/mt/leaderboard.js"></script>
-   <script type="text/javascript" src="http://cs.jhu.edu/~jonny/upenn/mt/leaderboard-old.js"></script>
 
 <div class="site">
   <div class="content">
