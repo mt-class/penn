@@ -1,5 +1,5 @@
 -
-  date: 2014-01-16
+  date: 2015-01-15
   title: Introduction
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/1-intro.pdf 
@@ -23,11 +23,7 @@
       url: http://www.stanford.edu/~mjkay/CurrentState.pdf
       optional: true
 -
-  date: 2014-01-21
-  title: No class today (canceled due to snow)
-  lecturer: None
--
-  date: 2014-01-23
+  date: 2015-01-20
   title: Probability and Statistics 
   slides: http://mt-class.org/penn/slides/2-probability.pdf
   lecturer: Callison-Burch 
@@ -36,7 +32,7 @@
       author: Koehn 
       title: chapters 3
 -
-  date: 2014-01-28
+  date: 2015-01-22
   title: Language Models
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/3-lm.pdf 
@@ -60,7 +56,7 @@
       url: http://research.microsoft.com/pubs/69869/tr-2001-72.ps
       optional: true
 -
-  date: 2014-01-30
+  date: 2015-01-27
   title: Lexical Translation Models&colon; Part 1
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/4-lexical_translation.pdf
@@ -83,7 +79,7 @@
       url: http://aclweb.org/anthology-new/J/J90/J90-2002.pdf
       optional: true
 -
-  date: 2014-02-04
+  date: 2015-01-29
   title: Lexical Translation Models&colon; Part 2
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/5-lexical_translation2.pdf
@@ -107,7 +103,7 @@
       url: http://aclweb.org/anthology-new/N/N06/N06-1014.pdf
       optional: true
 -
-  date: 2014-02-06
+  date: 2015-02-03
   title: Discriminative alignment models
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/6-discriminative_alignment.pdf
@@ -118,7 +114,7 @@
       title: Discriminative Word Alignment with Conditional Random Fields
       optional: true
 -
-  date: 2014-02-11
+  date: 2015-02-05
   title: Phrase-based Machine Translation
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/7-phrase-based-mt.pdf
@@ -131,16 +127,8 @@
       url: http://acl.ldc.upenn.edu/N/N03/N03-1017.pdf
       title: Statistical Phrase-Based Translation
       optional: true
--
-  date: 2014-02-13
-  title: No class today (canceled due to snow)
-  lecturer: None
--
-  date: 2014-02-13
-  title: No class today (instructor is at a conference)
-  lecturer: None
--
-  date: 2014-02-20
+--
+  date: 2015-02-10
   title: Phrase-based Machine Translation part 2
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/8-phrase-based-mt-part2.pdf
@@ -154,7 +142,7 @@
       title: The Alignment Template Approach to Statistical Machine Translation
       optional: true
 -
-  date: 2014-02-25
+  date: 2015-02-12
   title: Evaluating translation quality
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/9-evaluating-translation-quality.pdf
@@ -167,7 +155,7 @@
       url: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.9416
       title: BLEU&colon; a Method for Automatic Evaluation of Machine Translation
 -
-  date: 2014-02-27
+  date: 2015-02-17
   title: Evaluating translation quality - part 2
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/10-evaluating-translation-quality-2.pdf
@@ -181,7 +169,7 @@
       title: (Meta-) Evaluation of Machine Translation
       optional: true
 -
-  date: 2014-03-04
+  date: 2015-02-19
   title: Discriminative training
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/11-discriminative-training.pdf
@@ -195,7 +183,7 @@
       title: Discriminative Training And Maximum Entropy Models For Statistical Machine Translation
       optional: true
 -
-  date: 2014-03-06
+  date: 2015-02-24
   title: Discriminative training - part 2
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/12-discriminative-training-part2.pdf
@@ -214,15 +202,7 @@
       title: Tuning as Ranking
       optional: true
 -
-  date: 2014-03-11
-  title: No class today (Spring Break)
-  lecturer: None
--
-  date: 2014-03-13
-  title: No class today (Spring Break)
-  lecturer: None
--
-  date: 2014-03-18
+  date: 2015-02-26
   title: Re-ordering for phrase-based translation 
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/13-reordering-phrase-based-mt.pdf
@@ -246,7 +226,7 @@
       title: The Awful German Language
       optiona: true
 -
-  date: 2014-03-20
+  date: 2015-03-03
   title: Synchronous Grammars
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/14-synchronous-context-free-grammars.pdf
@@ -265,7 +245,7 @@
       title: Phrasal Cohesion and Statistical Machine Translation
       optional: true
 -
-  date: 2014-03-25
+  date: 2015-03-05
   title: Decoding and Inference with Syntactic Translation Models
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/15-decoding-and-inference.pdf
@@ -286,11 +266,20 @@
       title: Parsing and Hypergraphs
       optional: true
 -
-  date: 2014-04-01
+
+  date: 2015-03-10
+  title: No class today (Spring Break)
+  lecturer: None
+-
+  date: 2015-03-12
+  title: No class today (Spring Break)
+  lecturer: None
+-
+  date: 2015-03-17
   title: Synchronous Parsing (guest lecture by Jonny Weese)
   lecturer: Jonny Weese
 -
-  date: 2014-04-03
+  date: 2015-03-19
   title: Harvesting Parallel Documents from the Web
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/17-harvesting-parallel-corpora.pdf
@@ -311,27 +300,12 @@
       title: Watermarking the Outputs of Structured Prediction with an application in Statistical Machine Translation
       optional: true
 -
-  date: 2014-04-10
-  title: No class today (canceled because of instructor illness)
-  lecturer: None
-  slides: 
--
-  date: 2014-04-10
+  date: 2015-03-24
   title: Paraphrasing
   lecturer: Callison-Burch
   slides: 
 -
-  date: 2014-04-15
-  title: Miles Osborne guest lecture on large scale LMs
-  lecturer: Miles Osborne
-  slides: 
--
-  date: 2014-04-17
-  title: Matt Post guest lecture on syntactic LMs
-  lecturer: Matt Post
-  slides: 
--
-  date: 2014-04-22
+  date: 2015-03-26
   title: Crowdsourcing translation
   lecturer: Callison-Burch
   slides: 
@@ -352,12 +326,47 @@
       title: The Language Demographics of Amazon Mechanical Turk
       optional: true
 -
-  date: 2014-04-24
-  title: Philipp Koehn guest lecture on computer aided human translation
+  date: 2015-03-31
+  title: TBD
   lecturer: Callison-Burch
   slides: 
 -
-  date: 2014-04-29
+  date: 2015-04-02
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2015-04-07
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2015-04-09
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2015-04-14
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2015-04-16
+  title: Guest lecture by Will Lewis (Microsoft Research) on the Skype speech-to-speech translation system
+  lecturer: Will Lewis
+  slides: 
+-
+  date: 2015-04-21
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2015-04-23
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
+  date: 2015-04-28
   title: Course wrap-up
   lecturer: Callison-Burch
   slides: 
