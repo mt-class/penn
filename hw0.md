@@ -7,6 +7,10 @@ title: Homework 0 | Setup
 active_tab: homework
 ---
 
+<div class="alert alert-info">
+  Submissions will close at 11:59 pm on Tuesday, January 27.
+</div>
+
 Alien Translation & Leaderboard Setup
 =============================================================
 
@@ -35,8 +39,8 @@ using the following instructions.
 
 ## Submission Instructions
 
-Note: Submissions for this assignment will be accepted starting at 11:59 pm on
-January 20, 2015.
+<b>Note: Submissions for this assignment will be accepted starting at 11:59 pm on
+January 20, 2015.</b>
 
 1. Create two additional text files of one line each with your desired leaderboard
 alias (the name by which you will be identified on the leaderboard) and preferred
