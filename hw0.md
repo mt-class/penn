@@ -18,7 +18,7 @@ Alien Translation & Leaderboard Setup
 
 In this course, the coding portion of each assignment will be graded automatically
 in real-time, with results being made available on the website leaderboard upon
-submission. You may submit as many times as you like before the deadline, and only
+submission. You may submit as many times as you like before the deadline, but only
 your final result will be used when assigning an overall grade for the assignment.
 
 ## Homework 0
