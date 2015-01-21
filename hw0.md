@@ -44,24 +44,24 @@ You'll use this data to translate some alien words and sentences.
    alias (the name by which you will be identified on the leaderboard) and preferred
    email address. Name them alias.txt and email.txt, respectively.
 
-2. Log in to Biglab, either directly using the command
+2. Log in to Biglab Server 17, either directly using the command
 
-        ssh PENNKEY@biglab.seas.upenn.edu
+        ssh PENNKEY@big17.seas.upenn.edu
 
-   or by first logging into Eniac, then logging into Biglab using the command sequence
+   or through Eniac using the command sequence
 
         ssh PENNKEY@eniac.seas.upenn.edu
-        ssh biglab
+        ssh big17
 
-3. From Biglab, submit your alias, email address, and translation files using the
-   following command:
+3. Submit your alias, email address, and translation files using the following
+   command:
 
         turnin -c cis526 -p hw0 alias.txt email.txt hw0.txt
 
-It is crucial that you submit from Biglab, as this is the server on which the
-leaderboard monitor script will be running. If you submit from another location,
-your submission will be recorded, but your score will not be updated on the
-leaderboard, and you will not receive an email confirmation.
+It is crucial that you submit from Biglab Server 17, as this is the server on
+which the leaderboard monitor script will be running. If you submit from another
+location, your submission will be recorded, but your score will not be updated on
+the leaderboard, and you will not receive an email confirmation.
 
 Any questions should be be posted on the
 [course Piazza page](https://piazza.com/upenn/spring2015/cis526).
