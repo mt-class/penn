@@ -24,7 +24,7 @@ active_tab: leaderboard
   <thead style="background-color: lightgrey">
     <tr>
       <th colspan="2"></th>
-      <th colspan="1" align="center">
+      <th colspan="6" align="center">
         Assignments
       </th>
     </tr>
@@ -36,8 +36,28 @@ active_tab: leaderboard
         Alias
       </th>
       <th valign="top">
-        <a href="hw0.html">#0</a>
+        <a href="hw0.html">HW 0</a><br/>
         <span class="small"># Correct</span>
+      </th>
+      <th valign="top">
+        <a href="hw1.html">HW 1</a><br/>
+        <span class="small">AER</span>
+      </th>
+      <th valign="top">
+        <a href="hw2.html">HW 2</a><br/>
+        <span class="small">Model Score</span>
+      </th>
+      <th valign="top">
+        <a href="hw3.html">HW 3</a><br/>
+        <span class="small"><a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman's</a></span>
+      </th>
+      <th valign="top">
+        <a href="hw4.html">HW 4</a><br/>
+        <span class="small">BLEU</span>
+      </th>
+      <th valign="top">
+        <a href="hw5.html">HW 5</a><br/>
+        <span class="small">Accuracy</span>
       </th>
     </tr>
   </thead>
@@ -57,6 +77,11 @@ for (i = 0; i < data.length; i++){
   document.write('<td>' + rank + '</td>');
   document.write('<td>' + alias + '</td>');
   document.write('<td align="right">' + data[i][2] + '</td>');
+  document.write('<td></td>');
+  document.write('<td></td>');
+  document.write('<td></td>');
+  document.write('<td></td>');
+  document.write('<td></td>');
 
   document.write('</tr>');
 }
