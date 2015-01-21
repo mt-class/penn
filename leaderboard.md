@@ -6,145 +6,97 @@ title: Leaderboard
 active_tab: leaderboard
 ---
 
-   <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
 
-<div class="site">
-  <div class="content">
-    <h1>Leaderboard</h1>
-    <div id="course" style="width: 800px">
+Leaderboard
+=============================================================
 
-      <p>
-        This page contains the assignment leaderboard.  The
-        leaderboard is updated as follows.  Every five minutes, on the
-        five-minute mark, every assignment not yet past its due date is
-        downloaded according the base URL and assignment number you turned
-        in with <a href="assignment0.html">Assignment 0</a>.  The output
-        is rescored if it changed.
-      </p>
+This page contains the assignment leaderboard, which is updated automatically
+whenever a submission is received.
 
-      <div style="float: left">
-<table>
+<table style="width: 100%">
   <thead style="background-color: lightgrey">
     <tr>
-      <th colspan="3"></th>
-      <th colspan="5" align="center">
-        Assignments
-      </th>
-    </tr>
-    <tr>
-      <th colspan="2">
+      <th style="text-align: center; width: 75px">
         Rank
       </th>
       <th>
-        Handle
+        Alias
       </th>
-      <th valign="top">
-        <a href="assignment0.html">#0</a>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="hw0.html">HW 0</a><br/>
+        <span class="small"># Correct</span>
       </th>
-      <th valign="top">
-        <a href="hw1.html">#1</a><br/>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="hw1.html">HW 1</a><br/>
         <span class="small">AER</span>
       </th>
-      <th valign="top">
-        <a href="hw2.html">#2</a><br/>
-        <span class="small">model score</span>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="hw2.html">HW 2</a><br/>
+        <span class="small">Model Score</span>
       </th>
-      <th valign="top">
-        <a href="hw3.html">#3</a><br/>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="hw3.html">HW 3</a><br/>
         <span class="small"><a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman's</a></span>
       </th>
-      <th valign="top">
-        <a href="hw4.html">#4</a><br/>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="hw4.html">HW 4</a><br/>
         <span class="small">BLEU</span>
+      </th>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="hw5.html">HW 5</a><br/>
+        <span class="small">Accuracy</span>
       </th>
     </tr>
   </thead>
   <tbody>
 
+<script type="text/javascript" src="http://www.seas.upenn.edu/~cis526/leaderboard.js"></script>
 <script type="text/javascript">
-var assNo = 4;
 
-var old_scoreranks = new Array();
-for (i = 0; i < olddata.length; i++) {
-  var prevscore = (i == 0) ? -1 : olddata[i-1][1+assNo];
-  var score = olddata[i][1+assNo];
-  if (score != prevscore)
-    old_scoreranks[score] = i;
-}
+for (i = 0; i < data.length; i++){
+  var rank = data[i][0];
+  var alias = data[i][1];
 
-var scoreranks = new Array();
-for (i=0; i<data.length; i++){
-  var user = data[i][0];
-
-  document.write('<tr id="' + user + '"');
-  if (i%2==1){ document.write(' bgcolor="lightblue"'); }
+  document.write('<tr id="' + alias + '"');
+  if (i % 2 == 1) { document.write(' bgcolor="lightblue"'); }
   document.write('>');
 
-  var prevscore = (i == 0) ? -1 : data[i-1][1+assNo];
-  var score = data[i][1+assNo];
-  if (score != prevscore) {
-    scoreranks[score] = i;
-    document.write('<td>' + (i+1) + '</td>');
-  } else {
-    document.write('<td></td>');
-  }
+  document.write('<td style="text-align: center">' + rank + '</td>');
+  document.write('<td>' + alias + '</td>');
+  document.write('<td style="text-align: center">' + data[i][2] + '</td>');
+  document.write('<td style="text-align: center"></td>');
+  document.write('<td style="text-align: center"></td>');
+  document.write('<td style="text-align: center"></td>');
+  document.write('<td style="text-align: center"></td>');
+  document.write('<td style="text-align: center"></td>');
 
-  var rank = scoreranks[score];
-  var oldrank = (score in old_scoreranks) ? old_scoreranks[score] : 100000;
-
-  if (rank > oldrank)
-    document.write('<td><img class="arrow" src="img/down.png" /></td>');
-  else if (rank < oldrank)
-    document.write('<td><img class="arrow" src="img/up.png" /></td>');
-  else
-    document.write('<td></td>');
-  document.write('<td>' + data[i][0] + '</td>');
-  document.write('<td align="right">' + data[i][1] + '</td>');
-  document.write('<td align="right">' + data[i][2] + '</td>');
-  document.write('<td align="right">' + data[i][3] + '</td>');
-  document.write('<td align="right">' + data[i][4] + '</td>');
-  document.write('<td align="right">' + data[i][5] + '</td>');
   document.write('</tr>');
 }
 
 $("#baseline").css({'background-color': 'PaleGoldenRod'});
 $("#default").css({'background-color': 'LightCoral'});
 $("#oracle").css({'background-color': 'LimeGreen'});
+
 </script>
+
   </tbody>
 </table>
-  </div>
 
-  <div style="position: relative; left: 20px; z-index: -1; margin-top: 10px">
-    <h3>Legend</h3>
-    <p>
-      A value of -1 indicates that the assignment file was found but
-      contained invalid content.
-    </p>
+### Legend
 
-    <p>
-      The <span style="background-color: LightCoral">light coral</span>
-      line is the default system; it is what you should get if you run
-      the code that was provided for you.  The row highlighted
-      with <span style="background-color: PaleGoldenRod">pale golden
-        rod</span> is the baseline you should strive to beat.  Typically,
-      this line depicts the effort required to earn a B on the project.
-      Additional points will be rewarded for beating the baseline by 
-      a significant amount, and the most points will be awarded for placing
-      at or near the top of the rankings.
-    </p>
+A value of None indicates that an error occurred while processing your submission.
 
-    <p>
-      The <span style="background-color: LimeGreen">oracle
-      system</span> is a metric-aware composite of the best results
-      from each student submission.  It is not possible to beat the
-      oracle, but it gives you an idea of how much improvement there
-      is for your system to find.
-    </p>
-  </div>
-</div>
+The <span style="background-color: LightCoral">default</span> score is what you
+should get if you run the code that was provided for you.
 
+The <span style="background-color: PaleGoldenRod">baseline</span> score is the
+baseline you should strive to beat. Typically, this line depicts the effort
+required to earn a B on the project. Additional points will be rewarded for
+beating the baseline by a significant amount, and the most points will be awarded
+for placing at or near the top of the rankings.
 
-</div>
-</div>
-
+The <span style="background-color: LimeGreen">oracle</span> score is a metric-aware
+composite of the best results from each student submission. It is not possible to
+beat the oracle, but it gives you an idea of how much improvement there is for your
+system to find.
