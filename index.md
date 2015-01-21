@@ -23,11 +23,11 @@ real-word artificial intelligence problem.
 
 #### Instructor
 
-[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours: Monday, 10:30 am - 11:30 am, Levine 506
+[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours: Monday, 10:30 am to 11:30 am, Levine 506
 
 #### Teaching Assistants
 
-Justin Chiu - Office hours: Tuesday, 1:30 pm - 3:00 pm, Levine 5th Floor  
+Justin Chiu - Office hours: Tuesday, 1:30 pm to 3:00 pm, Levine 5th Floor  
 Mitchell Stern - Office hours: Monday, 5:00 pm to 6:30 pm, Levine 5th Floor
 
 #### Discussion Forum
@@ -36,7 +36,7 @@ Mitchell Stern - Office hours: Monday, 5:00 pm to 6:30 pm, Levine 5th Floor
 
 #### Time and Place
 
-Tuesdays and Thursdays 4:30 pm - 6 pm, David Rittenhouse Laboratory (DRL) A5
+Tuesday and Thursday, 4:30 pm to 6 pm, David Rittenhouse Laboratory (DRL) A5
 
 #### Textbook
 
