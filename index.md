@@ -21,25 +21,26 @@ machine learning, algorithms, data structures, and formal
 language theory, showing how they apply to a difficult
 real-word artificial intelligence problem.
 
-Instructor
-: [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours on Mondays from 10:30am-11:30am in Levine 506
+#### Instructor
+[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours: Monday, 10:30 am - 11:30 am, Levine 506
 
-Teaching Assistants
-: Justin Chiu - Office hours TBD
-: Mitchell Stern - Office hours TBD
+#### Teaching Assistants
+Justin Chiu - Office hours: Tuesday, 1:30 pm - 3:00 pm, Levine 5th Floor
+Mitchell Stern - Office hours: Monday, 5:00 pm to 6:30 pm, Levine 5th Floor
 
-Discussion Forum
-: [Piazza](https://piazza.com/upenn/spring2015/cis526)
+#### Discussion Forum
+[Piazza](https://piazza.com/upenn/spring2015/cis526)
 
-Time and place
-: Tuesdays and Thursdays 4:30-6pm, David Rittenhouse Laboratory (DRL) A5
+#### Time and Place
+Tuesdays and Thursdays 4:30 pm - 6 pm, David Rittenhouse Laboratory (DRL) A5
 
-Textbook
-: [Statistical Machine Translation](http://www.statmt.org/book/) (<a href="http://statmt.org/book/errata.html">errata</a>) 
+#### Textbook
+[Statistical Machine Translation](http://www.statmt.org/book/) (<a href="http://statmt.org/book/errata.html">errata</a>) 
 by <a href="http://homepages.inf.ed.ac.uk/pkoehn/">Philipp Koehn</a> 
 You can purchase <a href="http://www.amazon.com/Statistical-Machine-Translation-Philipp-Koehn/dp/0521874157">the Statistical Machine Translation textbook from Amazon</a>.
 
-Grading
-: This is a project-based course.  The grading rubric is TBD. 
-
-
+#### Grading
+* 60% Homework
+* 25% Final Project
+* 10% Language Research
+* 5% Peer Grading
