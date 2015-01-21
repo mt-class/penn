@@ -35,13 +35,10 @@ You'll use this data to translate some alien words and sentences.
    *You do not have to turn anything in for this step.*
 
 2. [This file](hw0_input.txt) contains some words and sentences. Write a text
-   file named hw0.txt with your translations, one per line, and submit it on Biglab
-   using the following instructions.
+   file named hw0.txt containing your translations, one per line, and submit it
+   on Biglab using the following instructions.
 
 ### Submission Instructions
-
-<b>Note: Submissions for this assignment will be accepted starting at 11:59 pm on
-January 20, 2015.</b>
 
 1. Create two additional text files of one line each with your desired leaderboard
    alias (the name by which you will be identified on the leaderboard) and preferred
@@ -51,7 +48,7 @@ January 20, 2015.</b>
 
         ssh PENNKEY@biglab.seas.upenn.edu
 
-   or by first logging into Eniac then logging into Biglab using the command sequence
+   or by first logging into Eniac, then logging into Biglab using the command sequence
 
         ssh PENNKEY@eniac.seas.upenn.edu
         ssh biglab
@@ -64,7 +61,7 @@ January 20, 2015.</b>
 It is crucial that you submit from Biglab, as this is the server on which the
 leaderboard monitor script will be running. If you submit from another location,
 your submission will be recorded, but your score will not be updated on the
-leaderboard.
+leaderboard, and you will not receive an email confirmation.
 
 Any questions should be be posted on the
 [course Piazza page](https://piazza.com/upenn/spring2015/cis526).
