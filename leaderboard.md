@@ -12,16 +12,10 @@ Leaderboard
 =============================================================
 
 This page contains the assignment leaderboard, which is updated automatically
-when a submission is received.
+whenever a submission is received.
 
-<table>
+<table style="width: 100%">
   <thead style="background-color: lightgrey">
-    <tr>
-      <th colspan="2"></th>
-      <th colspan="6" style="text-align: center">
-        Assignments
-      </th>
-    </tr>
     <tr>
       <th style="text-align: center; width: 75px">
         Rank
