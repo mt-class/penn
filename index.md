@@ -28,7 +28,7 @@ real-word artificial intelligence problem.
 #### Teaching Assistants
 
 Justin Chiu - Office hours: Tuesday, 1:30 pm to 3:00 pm, Levine 5th Floor  
-Mitchell Stern - Office hours: Monday, 5:00 pm to 6:30 pm, Levine 5th Floor
+Mitchell Stern - Office hours: Monday, 4:30 pm to 6:00 pm, Levine 5th Floor
 
 #### Discussion Forum
 
