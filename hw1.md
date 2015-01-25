@@ -87,11 +87,11 @@ $$\textbf{g}= \left < \epsilon,g_1,g_2,\ldots,g_n \right >$$ (where $$\epsilon$$
 and a desired target sentence length $$m$$ are given, and conditioned on these, Model 1 defines a distribution
 over translations of length $$m$$ into the target language using the following process:
 
-    \begin{align*}
-    \textrm{For each } i &\in [1,2,\ldots,m]\\
-    a_i &\sim \textrm{Uniform}(0,1,\ldots,n)\\
-    e_i &\sim \textrm{Categorical}(\theta_{g_{a_i}})
-    \end{align*}
+\begin{align\*}
+  \textrm{For each } i &\in [1,2,\ldots,m]\\
+  a_i &\sim \textrm{Uniform}(0,1,\ldots,n)\\
+  e_i &\sim \textrm{Categorical}(\theta_{g_{a_i}})
+\end{align\*}
 
 The random variables $$\textbf{a} = \left < a_1, a_2, \ldots, a_m  \right >$$ are the _alignments_
 that pick out a source word to translate at each position in the target sentence.
@@ -101,7 +101,7 @@ language $$e_i$$ that is generated is generated exactly one time by exactly one 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
 $$\textbf{e} = \left < e_1, e_2, \ldots, e_m \right >$$ given $$\textbf{g}$$ and $$m$$ is:
 
-<p>$$ P({\bf e} \ | \ {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \ | \ f_j) $$</p>
+$$ P({\bf e} \ | \ {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \ | \ f_j) $$
 
 The iterative EM update for this model is straightforward. At each iteration,
 for every pair of an English word type $$e$$ and a French word type $$f$$,
