@@ -95,7 +95,7 @@ over translations of length $$m$$ into the target language using the following p
 \end{align*}
 </div>
 
-The random variables $$\textbf{a} = \langle a_1, a_2, \ldots, a_m  \rangle$$ are the _alignments_
+The random variables $$\textbf{a} = \langle a_1, a_2, \ldots, a_m  \rangle$$ are the **_alignments_**
 that pick out a source word to translate at each position in the target sentence.
 A source word $$g_j$$ may be translated any number of times (0,1,2, etc.), but each word in the target
 language $$e_i$$ that is generated is generated exactly one time by exactly one source word.
