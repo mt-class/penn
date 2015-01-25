@@ -109,7 +109,7 @@ The iterative EM update for this model is straightforward. At each iteration,
 for every pair of an English word type $$e$$ and a French word type $$f$$,
 you count up the expected (fractional) number of times tokens $$f$$ are aligned to tokens of $$e$$
 and divide by the expected number of times that g was chosen as a translation source.
-That will give you a new estimate of the translation probabilities $$p(g∣e)$$,
+That will give you a new estimate of the translation probabilities $$p(f∣e)$$,
 which leads to new alignment expectations, and so on. We recommend developing on a small data set
 (1,000 sentences) and a few iterations of EM (in practice, Model 1 needs only 4 or 5 iterations to give good results).
 When you are finished, you should see both qualitative and quantitative improvements in the alignments.
