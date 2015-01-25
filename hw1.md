@@ -95,13 +95,13 @@ over translations of length $$m$$ into the target language using the following p
 \end{align*}
 </div>
 
-The random variables $$\textbf{a} = \langle a_1, a_2, \ldots, a_m  \rangle >$$ are the _alignments_
+The random variables $$\textbf{a} = \langle a_1, a_2, \ldots, a_m  \rangle$$ are the _alignments_
 that pick out a source word to translate at each position in the target sentence.
 A source word $$g_j$$ may be translated any number of times (0,1,2, etc.), but each word in the target
 language $$e_i$$ that is generated is generated exactly one time by exactly one source word.
 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
-$$\textbf{e} = \left < e_1, e_2, \ldots, e_m \right >$$ given $$\textbf{g}$$ and $$m$$ is:
+$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle >$$ given $$\textbf{g}$$ and $$m$$ is:
 
 $$ P({\bf e} \ | \ {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \ | \ f_j) $$
 
