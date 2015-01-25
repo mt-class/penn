@@ -88,11 +88,11 @@ and a desired target sentence length $$m$$ are given, and conditioned on these, 
 over translations of length $$m$$ into the target language using the following process:
 
 <div>
-\begin{align\*}
+\begin{align*}
   \textrm{For each } i &\in [1,2,\ldots,m]\\
   a_i &\sim \textrm{Uniform}(0,1,\ldots,n)\\
   e_i &\sim \textrm{Categorical}(\theta_{g_{a_i}})
-\end{align\*}
+\end{align*}
 </div>
 
 The random variables $$\textbf{a} = \left < a_1, a_2, \ldots, a_m  \right >$$ are the _alignments_
