@@ -83,7 +83,7 @@ A good way to correct this is with a model where alignments compete against each
 It forces all of the words you are conditioning on to compete to explain each word that is generated.
 
 IBM Model 1 is a simple probabilistic translation model we talked about in class. A source sentence
-$$\textbf{f}= \left < \epsilon,f_1,f_2,\ldots,f_n \right >$$ (where $$\epsilon$$ represents a null token present in every sentence)
+<span>$$\textbf{f}= \left < \epsilon,f_1,f_2,\ldots,f_n \right >$$</span> (where $$\epsilon$$ represents a null token present in every sentence)
 and a desired target sentence length $$m$$ are given, and conditioned on these, Model 1 defines a distribution
 over translations of length $$m$$ into the target language using the following process:
 
