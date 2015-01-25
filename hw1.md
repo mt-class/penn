@@ -15,8 +15,47 @@ active_tab: homework
 Alignment <span class="text-muted">Homework 1</span>
 =============================================================
 
-Word alignment is a fundamental task in statistical machine translation.
-This homework will give you an opportunity to try your hand at developing solutions to this challenging and interesting problem.
+Aligning words is a key task in machine translation. We start with
+a large _parallel corpus_ of aligned sentences. For example, we might
+have the following sentence pair from the proceedings of the bilingual
+Canadian parliament:
+
+*le droit de permis passe donc de $ 25 à $ 500*.
+
+*we see the licence fee going up from $ 25 to $ 500*.
+
+Getting documents aligned at the _sentence_ level like this is
+relatively easy: we can use paragraph boundaries and cues
+like the length and order of each sentence. But to learn a translation
+model we need alignments at the _word_ level. That's where you come
+in. **Your challenge is to write a program that aligns words
+automatically.** For example, given the sentence above, your program
+would ideally output these pairs:
+
+*le -- the,
+droit -- fee,
+permis -- license,
+passe -- going,
+passe -- up,
+donc -- from,
+$ -- $,
+25 -- 25,
+à -- to,
+$ -- $,
+50 -- 50*
+
+Your program can leave words unaligned (e.g. *we* and *see*) or
+multiply aligned (e.g. *passe* aligned to *going up*). It will be
+faced with difficult choices. Suppose it sees this sentence pair:
+
+*I want to make it clear that we have to let this issue come to a vote today*.
+
+*il est donc essentiel que cette question fasse le objet de un vote aujourd' hui .*
+
+Your program must make a choice about how to align the words of the non-literal
+translations *I want to make it clear* and *il est donc essentiel*. Even
+experienced bilinguals will disagree on examples like this. So word alignment
+does not capture every nuance, but it is still very useful.
 
 Getting Started
 ---------------
