@@ -74,7 +74,7 @@ other in a corpus of parallel sentences. The set similarity measure we use is
 [Dice's coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient/), defined 
 in terms of sets $$X$$ and $$Y$$ as follows:
 
-$$$D(X,Y) = \frac{2 \times |X \cap Y|}{|X| + |Y|}$$$
+$$D(X,Y) = \frac{2 \times |X \cap Y|}{|X| + |Y|}$$
 
 Dice's coefficient ranges in value from 0 to 1.
 
