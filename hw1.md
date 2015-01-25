@@ -142,7 +142,7 @@ language $$e_i$$ that is generated is generated exactly one time by exactly one 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
 $$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle $$ given $$\textbf{g}$$ and $$m$$ is:
 
-$$ P({\bf e} \mid {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \midf_j) $$
+$$ P({\bf e} \mid {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \mid f_j) $$
 
 The iterative EM update for this model is straightforward. At each iteration,
 for every pair of an English word type $$e$$ and a French word type $$f$$,
