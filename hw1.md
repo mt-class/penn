@@ -126,13 +126,13 @@ IBM Model 1 is a simple probabilistic translation model we talked about in class
 and a desired target sentence length $$m$$ are given, and conditioned on these, Model 1 defines a distribution
 over translations of length $$m$$ into the target language using the following process:
 
-<div>
+$$
 \begin{align*}
   \textrm{For each } i &\in [1,2,\ldots,m]\\
   a_i &\sim \textrm{Uniform}(0,1,\ldots,n)\\
   e_i &\sim \textrm{Categorical}(\theta_{f_{a_i}})
 \end{align*}
-</div>
+$$
 
 The random variables $$\textbf{a} = \langle a_1, a_2, \ldots, a_m  \rangle$$ are the **_alignments_**
 that pick out a source word to translate at each position in the target sentence.
@@ -142,7 +142,7 @@ language $$e_i$$ that is generated is generated exactly one time by exactly one 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
 $$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle $$ given $$\textbf{g}$$ and $$m$$ is:
 
-$$ P({\bf e} \ | \ {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \ | \ f_j) $$
+$$ P({\bf e} \mid {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \midf_j) $$
 
 The iterative EM update for this model is straightforward. At each iteration,
 for every pair of an English word type $$e$$ and a French word type $$f$$,
@@ -162,7 +162,7 @@ model of your choice and document your work. Here are some ideas:
 * Implement [a model that prefers to align words close to the diagonal](http://aclweb.org/anthology/N/N13/N13-1073.pdf).
 * Implement a [hidden Markov model (HMM) alignment model](http://aclweb.org/anthology-new/C/C96/C96-2141.pdf).
 * Implement [a morphologically-aware alignment model](http://aclweb.org/anthology/N/N13/N13-1140.pdf).
-* [Use *maximum a posteriori* inference under a Bayesian prior](http://aclweb.org/anthology/P/P11/P11-2032.pdf).
+* Use [*maximum a posteriori* (MAP) inference under a Bayesian prior](http://aclweb.org/anthology/P/P11/P11-2032.pdf).
 * Train a French-English model and an English-French model and [combine their predictions](http://aclweb.org/anthology-new/N/N06/N06-1014.pdf).
 * Train a [supervised discriminative alignment model](http://aclweb.org/anthology-new/P/P06/P06-1009.pdf) on the annotated development set.
 * Be Bayesian about it ([variational](http://www.cs.rochester.edu/~gildea/pubs/riley-gildea-acl12.pdf) or [Gibbs](http://aclweb.org/anthology/P/P11/P11-2032.pdf)).
