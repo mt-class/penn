@@ -72,18 +72,18 @@ For every word, it computes the set of sentences that the word appears in.
 This aligner uses **_set similarity_** to determine which words are aligned to each
 other in a corpus of parallel sentences. The set similarity measure we use is
 [Dice's coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient/), defined 
-in terms of sets $X$ and $Y$ as follows:
+in terms of sets $$X$$ and $$Y$$ as follows:
 
-<p>$$D(X,Y) = \frac{2 \times |X \cap Y|}{|X| + |Y|}$$</p>
+$$$D(X,Y) = \frac{2 \times |X \cap Y|}{|X| + |Y|}$$$
 
 Dice's coefficient ranges in value from 0 to 1.
 
 How do we use set similarity to align words? The intuition is that if you look at the set of
-sentence pairs from a parallel corpus that contain an English word $e$, and that set is similar
-to the set of sentence pairs that contain a French word $g$, then these words are likely to be
+sentence pairs from a parallel corpus that contain an English word $$e$$, and that set is similar
+to the set of sentence pairs that contain a French word $$g$$, then these words are likely to be
 translations of each other.
 
-Formally, every pair of word types $(e,g)$ in the parallel corpus receives a Dice “score” $\delta(e,f)$.
+Formally, every pair of word types $$(e,g)$$ in the parallel corpus receives a Dice “score” $$\delta(e,f)$$.
 The alignment algorithm then goes through all pairs of sentences $$(\textbf{e},\textbf{f})$$ and predicts that English
 word $$e_i$$ is aligned to French word $$f_j$$ if $$\delta(e_i,f_j) > \tau$$.
 By making $$\tau$$ closer to 1, fewer points are aligned but with higher precision; by making it closer to 0,
