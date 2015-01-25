@@ -101,7 +101,7 @@ A source word $$g_j$$ may be translated any number of times (0,1,2, etc.), but e
 language $$e_i$$ that is generated is generated exactly one time by exactly one source word.
 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
-$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle >$$ given $$\textbf{g}$$ and $$m$$ is:
+$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle $$ given $$\textbf{g}$$ and $$m$$ is:
 
 $$ P({\bf e} \ | \ {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \ | \ f_j) $$
 
