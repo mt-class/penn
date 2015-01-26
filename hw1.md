@@ -8,8 +8,8 @@ active_tab: homework
 ---
 
 <div class="alert alert-info">
-  Leaderboard submission due Tuesday, February 2nd, 11:59pm.
-  Write-up due Wednesday, February 3rd, 11:59pm.
+  Leaderboard submission due Tuesday, February 3rd, 11:59pm.
+  Write-up due Wednesday, February 4th, 11:59pm.
 </div>
 
 Alignment <span class="text-muted">Homework 1</span>
