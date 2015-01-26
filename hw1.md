@@ -83,7 +83,7 @@ sentence pairs from a parallel corpus that contain an English word $$e$$, and th
 to the set of sentence pairs that contain a French word $$g$$, then these words are likely to be
 translations of each other.
 
-Formally, every pair of word types $$(e,g)$$ in the parallel corpus receives a Dice “score” $$\delta(e,f)$$.
+Formally, every pair of word types $$(e,f)$$ in the parallel corpus receives a Dice “score” $$\delta(e,f)$$.
 The alignment algorithm then goes through all pairs of sentences $$(\textbf{e},\textbf{f})$$ and predicts that English
 word $$e_i$$ is aligned to French word $$f_j$$ if $$\delta(e_i,f_j) > \tau$$.
 By making $$\tau$$ closer to 1, fewer points are aligned but with higher precision; by making it closer to 0,
