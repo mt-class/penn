@@ -60,12 +60,10 @@ does not capture every nuance, but it is still very useful.
 Getting Started
 ---------------
 
-You must have git and python (2.7) on your system to run the assignments.
-Once you've confirmed this, run this command:
+You must have python (2.7) on your system to run the assignments.
+Once you've confirmed this, download the homework 1 zip directory from Piazza.
 
-    git clone https://github.com/callison-burch/dreamt.git
-
-In the `aligner` directory you will find a python program called
+In the downloaded directory you will find a python program called
 `align`, which contains a complete but very simple alignment algorithm.
 
 For every word, it computes the set of sentences that the word appears in.
@@ -177,23 +175,33 @@ Ground Rules
 
 * You must work independently on this assignment.
 * You must turn in three things:
-  1. An alignment of the entire dataset, uploaded to Biglab Server 17 according to <a href="hw0.html">the Assignment 0 instructions</a>. You can upload new output as often
-     as you like, up until the assignment deadline. The output will be evaluated 
-     using a secret metric, but the `score-alignments` program will give you a good
-     idea of how well you're doing, and you can use the `check-alignments` program
-     to see whether your output is formatted correctly. Whoever has
-     the highest score at the deadline will receive the most bonus points.
-  1. Your code. Send us a URL from which we can get the code and git revision
-     history (a link to a tarball will suffice, but you're free to send us a 
-     github link if you don't mind making your code public). This is due at the
-     deadline: when you upload your final answer, send us the code.
+  1. An alignment of the entire dataset, uploaded via turnin with the command
+     `turnin -c cis526 -p hw1 hw1.txt` from any Eniac or Biglab machine.
+     You can upload new output as often as you like, up until the assignment deadline.
+     The output will be evaluated using a secret metric,
+     but the `score-alignments` program will give you a good idea of how well you're doing,
+     and you can use the `check-alignments` program to see whether your output is
+     formatted correctly. The top few positions on the leaderboard will receive bonus points
+     on this assignment.
+  1. Your code. Submit your code with the command `turnin -c cis526 -p hw1-code FILE1 FILE2 ...`.
+     This is due next Wednesday.
      You are free to extend the code we provide or roll your own in whatever
      langugage you like, but the code should be self-contained, 
      self-documenting, and easy to use. 
-  1. A clear, mathematical description of your algorithm and its motivation
-     written in scientific style. This needn't be long, but it should be
-     clear enough that one of your fellow students could re-implement it 
-     exactly. We will review examples in class before the due date.
+  1. A clear report explaining work in scientific style.
+     Turn this in with `turnin -c cis526 -p hw1-report report.pdf` by Wednesday next week.
+     This needn't be long, but it must contain the following points:
+     * Motivation: why did you choose the model you experimented with?
+     * Description of Model or Algorithm: describe mathematically or algorithmically what you did.
+       Your description should be clear enough that someone else in the class could implement it.
+       What is your model? How did you optimize it? How did you align with it?
+       What were the values of any fixed parameters you used?
+     * Results: You most likely experimented with various settings of any models you implemented.
+       We want to know how you decided on the final model that you submitted for us to grade.
+       What parameters did you try, and what were the results?
+       If you evaluated any qualities of the results other than AER, even if
+       you evaluated them qualitatively, how did you do it?
+       Most importantly: what did you learn?
 * You may only use data or code resources other than the ones we
   provide _with advance permission_. We will ask you to make 
   your resources available to everyone. If you have a cool idea 
