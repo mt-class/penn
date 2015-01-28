@@ -8,8 +8,8 @@ active_tab: homework
 ---
 
 <div class="alert alert-info">
-  Leaderboard submission due Tuesday, February 3rd, 11:59pm.
-  Write-up due Wednesday, February 4th, 11:59pm.
+  Leaderboard submission due 11:59 pm, Tuesday, February 3rd.
+  Code and report due 11:59 pm, Wednesday, February 4th.
 </div>
 
 Alignment <span class="text-muted">Homework 1</span>
@@ -60,17 +60,20 @@ does not capture every nuance, but it is still very useful.
 Getting Started
 ---------------
 
-You must have python (2.7) on your system to run the assignments.
-Once you've confirmed this, download the homework 1 zip directory from Piazza.
+To begin, download the [Homework 1 starter kit](http://seas.upenn.edu/~cis526/hw1.zip).
+You may either choose to develop your system locally or on Penn's servers. For the
+latter, we recommend developing on the Biglab machines, which can be accessed directly
+using the command `ssh PENNKEY@biglab.seas.upenn.edu` or from Eniac using the command
+`ssh biglab`.
 
-In the downloaded directory you will find a python program called
+In the downloaded directory you will find a Python program called
 `align`, which contains a complete but very simple alignment algorithm.
 
 For every word, it computes the set of sentences that the word appears in.
 This aligner uses **_set similarity_** to determine which words are aligned to each
 other in a corpus of parallel sentences. The set similarity measure we use is
-[Dice's coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient/), defined 
-in terms of sets $$X$$ and $$Y$$ as follows:
+[Dice's coefficient](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient),
+defined in terms of sets $$X$$ and $$Y$$ as follows:
 
 $$D(X,Y) = \frac{2 \times |X \cap Y|}{|X| + |Y|}$$
 
@@ -86,16 +89,16 @@ The alignment algorithm then goes through all pairs of sentences $$(\textbf{e},\
 word $$e_i$$ is aligned to French word $$f_j$$ if $$\delta(e_i,f_j) > \tau$$.
 By making $$\tau$$ closer to 1, fewer points are aligned but with higher precision; by making it closer to 0,
 more points are aligned, probably improving recall.
-By default, the aligner code we have provided you uses $$\tau=0.5$$ as its threshold.
+By default, the aligner code we have provided you with uses $$\tau=0.5$$ as its threshold.
 
 Run the baseline heuristic model 1,000 sentences using the command:
 
-    python align -n 1000 > dice.a
+    ./align -n 1000 > dice.a
 
 This runs the aligner and stores the output in `dice.a`. To display the alignments visually and score the alignments,
 run this command (use the `-n N` option to display verbose output for only the first $$N$$ sentences):
 
-    python score-alignments < dice.a
+    ./grade < dice.a
 
 This command scores the alignment quality by comparing the output alignments against a
 set of human alignment annotations using a metric called the alignment error rate (AER),
@@ -104,10 +107,10 @@ which balances the precision and recall of the guessed alignments (see Section 6
 output of this heuristic model -- it’s better than chance, but not any good.
 Try training on 10,000 sentences instead of 1,000, by specifying the change on the command line:
 
-    python align -n 10000 | python score-alignments 
+    ./align -n 10000 | ./grade
 
 Performance should improve since the degree of association between words will be estimated from more sentence pairs.
-Another experiment that you can do is change the threshold criterion $$\tau$$ used by the aligner using the `-t X` option.
+Another experiment that you can do is change the threshold criterion $$\tau$$ used by the aligner using the `-t threshold` option.
 How does this affect alignment error rate?
 
 The Challenge
@@ -134,18 +137,18 @@ $$
 
 The random variables $$\textbf{a} = \langle a_1, a_2, \ldots, a_m  \rangle$$ are the **_alignments_**
 that pick out a source word to translate at each position in the target sentence.
-A source word $$g_j$$ may be translated any number of times (0,1,2, etc.), but each word in the target
+A source word $$f_j$$ may be translated any number of times (0,1,2, etc.), but each word in the target
 language $$e_i$$ that is generated is generated exactly one time by exactly one source word.
 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
-$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle $$ given $$\textbf{g}$$ and $$m$$ is:
+$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle $$ given $$\textbf{f}$$ and $$m$$ is:
 
 $$ P({\bf e} \mid {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \mid f_j) $$
 
 The iterative EM update for this model is straightforward. At each iteration,
 for every pair of an English word type $$e$$ and a French word type $$f$$,
 you count up the expected (fractional) number of times tokens $$f$$ are aligned to tokens of $$e$$
-and divide by the expected number of times that g was chosen as a translation source.
+and divide by the expected number of times that $$f$$ was chosen as a translation source.
 That will give you a new estimate of the translation probabilities $$p(f∣e)$$,
 which leads to new alignment expectations, and so on. We recommend developing on a small data set
 (1,000 sentences) and a few iterations of EM (in practice, Model 1 needs only 4 or 5 iterations to give good results).
@@ -168,42 +171,44 @@ model of your choice and document your work. Here are some ideas:
 * Seek out additional [inspiration](http://scholar.google.com/scholar?q=word+alignment).
 
 But the sky's the limit! You are welcome to design your own model, as long 
-as you follow the ground rules:
+as you follow the ground rules laid out below.
 
 Ground Rules
 ------------
 
-* You must work independently on this assignment.
-* You must turn in three things:
-  1. An alignment of the entire dataset, uploaded via turnin with the command
-     `turnin -c cis526 -p hw1 hw1.txt` from any Eniac or Biglab machine.
-     You can upload new output as often as you like, up until the assignment deadline.
+* You must work **independently** on this assignment.
+* You should submit each of the following:
+  1. An alignment of the entire dataset, uploaded from any Eniac or Biglab machine
+     using the command `turnin -c cis526 -p hw1 hw1.txt`.
+     You may submit new results as often as you like, up until the assignment deadline.
      The output will be evaluated using a secret metric,
-     but the `score-alignments` program will give you a good idea of how well you're doing,
-     and you can use the `check-alignments` program to see whether your output is
-     formatted correctly. The top few positions on the leaderboard will receive bonus points
-     on this assignment.
-  1. Your code. Submit your code with the command `turnin -c cis526 -p hw1-code FILE1 FILE2 ...`.
-     This is due next Wednesday.
-     You are free to extend the code we provide or roll your own in whatever
+     but the `grade` program will give you a good idea of how well you're doing.
+     The top few positions on the leaderboard will receive bonus points on this assignment.
+  1. Your code, uploaded using the command `turnin -c cis526 -p hw1-code file1 file2 ...`.
+     This is due 24 hours after the leaderboard closes.
+     You are free to extend the code we provide or write your own in whatever
      langugage you like, but the code should be self-contained, 
-     self-documenting, and easy to use. 
-  1. A clear report explaining work in scientific style.
-     Turn this in with `turnin -c cis526 -p hw1-report report.pdf` by Wednesday next week.
-     This needn't be long, but it must contain the following points:
-     * Motivation: why did you choose the model you experimented with?
-     * Description of Model or Algorithm: describe mathematically or algorithmically what you did.
+     self-documenting, and easy to use.
+  1. A report describing the models you designed and experimented with, uploaded
+     using the command `turnin -c cis526 -p hw1-report hw1-report.pdf`. This is
+     due 24 hours after the leaderboard closes. Your report does not need to be
+     long, but it should at minimum address the following points:
+     * **Motivation**: why did you choose the model you experimented with?
+     * **Description of model or algorithm**: describe mathematically or algorithmically what you did.
        Your description should be clear enough that someone else in the class could implement it.
        What is your model? How did you optimize it? How did you align with it?
        What were the values of any fixed parameters you used?
-     * Results: You most likely experimented with various settings of any models you implemented.
+     * **Results**: You most likely experimented with various settings of any models you implemented.
        We want to know how you decided on the final model that you submitted for us to grade.
        What parameters did you try, and what were the results?
        If you evaluated any qualities of the results other than AER, even if
        you evaluated them qualitatively, how did you do it?
        Most importantly: what did you learn?
-* You may only use data or code resources other than the ones we
-  provide _with advance permission_. We will ask you to make 
+     Since we have already given you a concrete problem and dataset, you do not
+     need describe these as if you were writing a full scientific paper. Instead,
+     you should focus on an accurate technical description of the above items.
+* You may only use data or code outside of what is provided
+  _with advance permission_. We will ask you to make 
   your resources available to everyone. If you have a cool idea 
   using the Berkeley parser, or a French-English dictionary, that's 
   great. But we want everyone to have access to the same resources, 
@@ -214,7 +219,8 @@ Ground Rules
   already does the alignment for you. You must write your
   own code.
 
-If you have any questions or you're confused about anything, just ask.
+Any questions should be be posted on the
+[course Piazza page](https://piazza.com/upenn/spring2015/cis526).
 
 *Credits: This assignment is adapted from one originally developed by 
 [Philipp Koehn](http://homepages.inf.ed.ac.uk/pkoehn/)
