@@ -1,4 +1,4 @@
----
+--
 layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
@@ -61,10 +61,11 @@ Getting Started
 ---------------
 
 To begin, download the [Homework 1 starter kit](http://seas.upenn.edu/~cis526/hw1.zip).
-You may either choose to develop your system locally or on Penn's servers. For the
-latter, we recommend developing on the Biglab machines, which can be accessed directly
-using the command `ssh PENNKEY@biglab.seas.upenn.edu` or from Eniac using the command
-`ssh biglab`.
+You may either choose to develop locally or on Penn's servers. For the latter, we
+recommend using the Biglab machines, whose memory and runtime restrictions are much
+less stringent than those on Eniac. The Biglab servers can be accessed directly
+using the command `ssh PENNKEY@biglab.seas.upenn.edu`, or from Eniac using the
+command `ssh biglab`.
 
 In the downloaded directory you will find a Python program called
 `align`, which contains a complete but very simple alignment algorithm.
@@ -85,8 +86,9 @@ to the set of sentence pairs that contain a French word $$g$$, then these words 
 translations of each other.
 
 Formally, every pair of word types $$(e,f)$$ in the parallel corpus receives a Dice “score” $$\delta(e,f)$$.
-The alignment algorithm then goes through all pairs of sentences $$(\textbf{e},\textbf{f})$$ and predicts that English
-word $$e_i$$ is aligned to French word $$f_j$$ if $$\delta(e_i,f_j) > \tau$$.
+The alignment algorithm then goes through all pairs of sentences
+$$(\textbf{e},\textbf{f}) = (\langle e_1, e_2, \ldots, e_m \rangle, \langle f_1, f_2, \ldots, f_n \rangle)$$
+and predicts that English word $$e_i$$ is aligned to French word $$f_j$$ if $$\delta(e_i,f_j) > \tau$$.
 By making $$\tau$$ closer to 1, fewer points are aligned but with higher precision; by making it closer to 0,
 more points are aligned, probably improving recall.
 By default, the aligner code we have provided you with uses $$\tau=0.5$$ as its threshold.
@@ -141,7 +143,7 @@ A source word $$f_j$$ may be translated any number of times (0,1,2, etc.), but e
 language $$e_i$$ that is generated is generated exactly one time by exactly one source word.
 
 The marginal (marginalizing over all possible alignments) likelihood of a sentence
-$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle $$ given $$\textbf{f}$$ and $$m$$ is:
+$$\textbf{e} = \langle e_1, e_2, \ldots, e_m \rangle$$ given $$\textbf{f}$$ and $$m$$ is:
 
 $$ P({\bf e} \mid {\bf f}, m) = \prod_{i=1}^m \sum_{j=0}^n p(a_i = j) \times p(e_i \mid f_j) $$
 
