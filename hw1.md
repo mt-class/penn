@@ -195,8 +195,8 @@ Ground Rules
      using the command `turnin -c cis526 -p hw1-report hw1-report.pdf`. This is
      due 24 hours after the leaderboard closes. Your report does not need to be
      long, but it should at minimum address the following points:
-     * **Motivation**: why did you choose the model you experimented with?
-     * **Description of model or algorithm**: describe mathematically or algorithmically what you did.
+     * **Motivation**: Why did you choose the model you experimented with?
+     * **Description of model or algorithm**: Describe mathematically or algorithmically what you did.
        Your description should be clear enough that someone else in the class could implement it.
        What is your model? How did you optimize it? How did you align with it?
        What were the values of any fixed parameters you used?
