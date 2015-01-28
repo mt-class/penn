@@ -21,6 +21,12 @@ machine learning, algorithms, data structures, and formal
 language theory, showing how they apply to a difficult
 real-word artificial intelligence problem.
 
+#### Announcements 
+
+<div class="alert alert-info">
+[Homework 1](hw1.html) has been released. Your system's output is due by 11:59 pm, Tuesday, February 3rd. Your code and write up are due one day later.
+</div>
+
 #### Instructor
 
 [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours: Monday, 10:30 am to 11:30 am, Levine 506
