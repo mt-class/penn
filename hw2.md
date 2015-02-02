@@ -8,10 +8,11 @@ active_tab: homework
 ---
 
 <div class="alert alert-info">
-This homework is due Thursday February 20th, 11:59pm.
+  Leaderboard submission due 11:59 pm, Tuesday, February 10rd.
+  Code and report due 11:59 pm, Wednesday, February 11th.
 </div>
 
-Decoding:  <span class="text-muted">Challenge Problem 2</span>
+Decoding:  <span class="text-muted">Homework 2</span>
 =============================================================
 
 Decoding is process of taking input that looks like this:
@@ -43,14 +44,14 @@ model, and a set of input sentences to translate. Run the decoder using this
 command:
 
 
-<tt>decode &gt; output</tt>
+<pre>decode &gt; output</pre>
 
 This loads the models and decodes the input sentences, storing the
 result in <tt>output</tt>. You can see the translations simply by looking
 at the file. To calculate their true model score, run the command:
 
 
-<tt>grade &lt; output</tt>
+<pre>grade &lt; output</pre>
 
 This command computes the probability of the output sentences
 according to the model. It works by summing over all possible ways that
@@ -75,36 +76,36 @@ whoever finds the most probable output will receive the most points.
 Your task for this assignment is to <b>find the English sentence
 with the highest possible probability</b>.
 Formally, this means your goal is to solve the problem:
-\( \mathop{\arg\,\max}\limits_e~ p(f|e) \times p(e) \), where \(f\) is a
-French sentence and \(e\) is an English sentence. In the model we have 
-provided you, \( p(e) = p(e_1|START) \times \prod_{j=2}^J p(e_j|e_{j-1}e_{j-2}) \times p(END|e_J,e_{J-1}) \)
-and \( p(f|e) = p(segmentation) \times p(reordering) \times p(phrase~translation) \).
+\\( \mathop{\arg\,\max}\limits_e~ p(f|e) \times p(e) \\), where \\(f\\) is a
+French sentence and \\(e\\) is an English sentence. In the model we have 
+provided you, \\( p(e) = p(e_1|START) \times \prod_{j=2}^J p(e_j|e_{j-1}e_{j-2}) \times p(END|e_J,e_{J-1}) \\)
+and \\( p(f|e) = p(segmentation) \times p(reordering) \times p(phrase~translation) \\).
 We will make the simplifying assumption that segmentation and reordering
 probabilities are uniform across all sentences, and hence constant. This results
 in a model whose probability density function does not sum to one. But from a
 practical perspective, it slightly simplifies the implementation without
 substantially harming empirical accuracy. This means that you only need
 consider the product of the phrase translation probabilities 
-\( p(f|e) = \prod_{\langle i,i',j,j' \rangle \in a} p(f_{\langle i,i' \rangle}|e_{\langle j,j' \rangle}) \)
-where \( \langle i,i' \rangle \) and \( \langle j,j' \rangle \) index phrases
-in \(f\) and \(e\), respectively.
+\\( p(f|e) = \prod_{\langle i,i',j,j' \rangle \in a} p(f_{\langle i,i' \rangle}|e_{\langle j,j' \rangle}) \\)
+where \\( \langle i,i' \rangle \\) and \\( \langle j,j' \rangle \\) index phrases
+in \\(f\\) and \\(e\\), respectively.
 
 Unfortunately, even with all of these simplifications, finding the most
 probable English sentence is completely intractable! To compute it
-exactly, for each English sentence you would need to compute \( p(f|e) \) 
+exactly, for each English sentence you would need to compute \\( p(f|e) \\) 
 as a sum over all possible alignments with the French sentence:
-\( p(f|e) = \sum_a p(f,a|e) \). A nearly universal approximation is to
+\\( p(f|e) = \sum_a p(f,a|e) \\). A nearly universal approximation is to
 instead search for the English string together with a single alignment, 
-\(\mathop{\arg\,\max}\limits_{e,a}~ p(f,a|e) \times p(e) \).
+\\(\mathop{\arg\,\max}\limits_{e,a}~ p(f,a|e) \times p(e) \\).
 This is the approach taken by the monotone baseline decoder.
 
 Since this involves multiplying together many small probabilities, it is 
 helpful to work in logspace to avoid numerical underflow. We instead solve for
-\(e,a\) that maximizes:
-\( \log p(f,a|e) + \log p(e) = 
+\\(e,a\\) that maximizes:
+\\( \log p(f,a|e) + \log p(e) = 
 \log p(e_1|START) + \sum_{j=2}^J \log p(e_j|e_{j-1}e_{j-2}) + \log p(END|e_J) +
 \sum_{\langle i,i',j,j' \rangle \in a} \log p(f_{\langle i,i' \rangle}|e_{\langle j,j' \rangle})
-\). 
+\\). 
 The baseline decoder already works with log probabilities, so it is 
 not necessary for you to perform any additional conversion; you can simply work
 with the sum of the scores that the model provides for you. Note that
