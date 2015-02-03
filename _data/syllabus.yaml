@@ -110,7 +110,7 @@
   reading:
     -
       author: Blunsom and Cohn
-      url: http://acl.ldc.upenn.edu/P/P06/P06-1009.pdf
+      url: http://www.aclweb.org/anthology/P/P06/P06-1009.pdf
       title: Discriminative Word Alignment with Conditional Random Fields
       optional: true
 -
@@ -124,7 +124,7 @@
       title: chapter 5
     -
       author:   Koehn, Och and Marcu
-      url: http://acl.ldc.upenn.edu/N/N03/N03-1017.pdf
+      url: http://www.aclweb.org/anthology/N/N03/N03-1017.pdf
       title: Statistical Phrase-Based Translation
       optional: true
 -
@@ -179,7 +179,7 @@
       title: chapter 9
     -
       author: Och and Ney
-      url: http://acl.ldc.upenn.edu/P/P02/P02-1038.pdf
+      url: http://www.aclweb.org/anthology/P/P02/P02-1038.pdf
       title: Discriminative Training And Maximum Entropy Models For Statistical Machine Translation
       optional: true
 -
@@ -193,7 +193,7 @@
       title: chapter 9
     -
       author: Och
-      url: http://acl.ldc.upenn.edu/acl2003/main/pdfs/Och.pdf
+      url: http://www.aclweb.org/anthology/acl2003/main/pdfs/Och.pdf
       title: Minimum Error Rate Training In Statistical Machine Translation
       optional: true
     -
@@ -241,7 +241,7 @@
       optional: true
     -
       author: Heidi Fox
-      url: http://acl.ldc.upenn.edu/W/W02/W02-1039.pdf
+      url: http://www.aclweb.org/anthology/W/W02/W02-1039.pdf
       title: Phrasal Cohesion and Statistical Machine Translation
       optional: true
 -
@@ -286,12 +286,12 @@
   reading:
     -
       author: Philip Resnik and Noah Smith
-      url: http://acl.ldc.upenn.edu/J/J03/J03-3002.pdf
+      url: http://www.aclweb.org/anthology/J/J03/J03-3002.pdf
       title: The Web as a Parallel Corpus
       optional: true
     -
       author: Jakob Uszkoreit, Jay Ponte, Ashok Popat, and Moshe Dubiner
-      url: http://acl.ldc.upenn.edu/J/J03/J03-3002.pdf
+      url: http://www.aclweb.org/anthology/J/J03/J03-3002.pdf
       title: Large Scale Parallel Document Mining for Machine Translation
       optional: true
     -
