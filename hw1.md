@@ -38,7 +38,7 @@ permis -- license,
 passe -- going,
 passe -- up,
 donc -- from,
-$ -- $,
+\$ -- \$,
 25 -- 25,
 à -- to,
 \$ -- \$,
@@ -186,29 +186,29 @@ Ground Rules
      The output will be evaluated using a secret metric,
      but the `grade` program will give you a good idea of how well you're doing.
      The top few positions on the leaderboard will receive bonus points on this assignment.
-  1. Your code, uploaded using the command `turnin -c cis526 -p hw1-code file1 file2 ...`.
+  2. Your code, uploaded using the command `turnin -c cis526 -p hw1-code file1 file2 ...`.
      This is due 24 hours after the leaderboard closes.
      You are free to extend the code we provide or write your own in whatever
      langugage you like, but the code should be self-contained, 
      self-documenting, and easy to use.
-  1. A report describing the models you designed and experimented with, uploaded
+  3. A report describing the models you designed and experimented with, uploaded
      using the command `turnin -c cis526 -p hw1-report hw1-report.pdf`. This is
      due 24 hours after the leaderboard closes. Your report does not need to be
      long, but it should at minimum address the following points:
-     * **Motivation**: Why did you choose the model you experimented with?
-     * **Description of model or algorithm**: Describe mathematically or algorithmically what you did.
-       Your description should be clear enough that someone else in the class could implement it.
-       What is your model? How did you optimize it? How did you align with it?
-       What were the values of any fixed parameters you used?
-     * **Results**: You most likely experimented with various settings of any models you implemented.
-       We want to know how you decided on the final model that you submitted for us to grade.
-       What parameters did you try, and what were the results?
-       If you evaluated any qualities of the results other than AER, even if
-       you evaluated them qualitatively, how did you do it?
-       Most importantly: what did you learn?
-     Since we have already given you a concrete problem and dataset, you do not
-     need describe these as if you were writing a full scientific paper. Instead,
-     you should focus on an accurate technical description of the above items.
+         * **Motivation**: Why did you choose the model you experimented with?
+         * **Description of model or algorithm**: Describe mathematically or algorithmically what you did.
+           Your description should be clear enough that someone else in the class could implement it.
+           What is your model? How did you optimize it? How did you align with it?
+           What were the values of any fixed parameters you used?
+         * **Results**: You most likely experimented with various settings of any models you implemented.
+           We want to know how you decided on the final model that you submitted for us to grade.
+           What parameters did you try, and what were the results?
+           If you evaluated any qualities of the results other than AER, even if
+           you evaluated them qualitatively, how did you do it?
+           Most importantly: what did you learn?
+      Since we have already given you a concrete problem and dataset, you do not
+      need describe these as if you were writing a full scientific paper. Instead,
+      you should focus on an accurate technical description of the above items.
 * You may only use data or code outside of what is provided
   _with advance permission_. We will ask you to make 
   your resources available to everyone. If you have a cool idea 
