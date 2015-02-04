@@ -179,18 +179,22 @@ Ground Rules
 ------------
 
 * You must work **independently** on this assignment.
+
 * You should submit each of the following:
+
     1.  An alignment of the entire dataset, uploaded from any Eniac or Biglab machine
         using the command `turnin -c cis526 -p hw1 hw1.txt`.
         You may submit new results as often as you like, up until the assignment deadline.
         The output will be evaluated using a secret metric,
         but the `grade` program will give you a good idea of how well you're doing.
         The top few positions on the leaderboard will receive bonus points on this assignment.
+
     2.  Your code, uploaded using the command `turnin -c cis526 -p hw1-code file1 file2 ...`.
         This is due 24 hours after the leaderboard closes.
         You are free to extend the code we provide or write your own in whatever
         langugage you like, but the code should be self-contained, 
         self-documenting, and easy to use.
+
     3.  A report describing the models you designed and experimented with, uploaded
         using the command `turnin -c cis526 -p hw1-report hw1-report.pdf`. This is
         due 24 hours after the leaderboard closes. Your report does not need to be
@@ -214,9 +218,10 @@ Ground Rules
         need describe these as if you were writing a full scientific paper. Instead,
         you should focus on an accurate technical description of the above items.
 
-	**Note:** These reports will be made available via hyperlinks on the leaderboard.
+        **Note:** These reports will be made available via hyperlinks on the leaderboard.
         Therefore, you are not required to include your real name if you would prefer not
-	to do so.
+        to do so.
+
 * You may only use data or code outside of what is provided
   _with advance permission_. We will ask you to make 
   your resources available to everyone. If you have a cool idea 
