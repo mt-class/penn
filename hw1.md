@@ -20,9 +20,9 @@ a large _parallel corpus_ of aligned sentences. For example, we might
 have the following sentence pair from the proceedings of the bilingual
 Canadian parliament:
 
-*le droit de permis passe donc de <span>$</span> 25 à <span>$</span> 500*.
+*le droit de permis passe donc de $ 25 à $ 500*.
 
-*we see the licence fee going up from <span>$</span> 25 to <span>$</span> 500*.
+*we see the licence fee going up from $ 25 to $ 500*.
 
 Getting documents aligned at the _sentence_ level like this is
 relatively easy: we can use paragraph boundaries and cues
@@ -38,10 +38,10 @@ permis -- license,
 passe -- going,
 passe -- up,
 donc -- from,
-<span>$</span> -- <span>$</span>,
+$ -- $,
 25 -- 25,
 à -- to,
-<span>$</span> -- <span>$</span>,
+$ -- $,
 50 -- 50*
 
 Your program can leave words unaligned (e.g. *we* and *see*) or
@@ -125,7 +125,7 @@ A good way to correct this is with a model where alignments compete against each
 It forces all of the words you are conditioning on to compete to explain each word that is generated.
 
 IBM Model 1 is a simple probabilistic translation model we talked about in class. A source sentence
-<span>$$\textbf{f}= \langle \epsilon,f_1,f_2,\ldots,f_n \rangle$$</span> (where $$\epsilon$$ represents a null token present in every sentence)
+$$\textbf{f}= \langle \epsilon,f_1,f_2,\ldots,f_n \rangle$$ (where $$\epsilon$$ represents a null token present in every sentence)
 and a desired target sentence length $$m$$ are given, and conditioned on these, Model 1 defines a distribution
 over translations of length $$m$$ into the target language using the following process:
 
