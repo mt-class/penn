@@ -218,8 +218,8 @@ Ground Rules
         need describe these as if you were writing a full scientific paper. Instead,
         you should focus on an accurate technical description of the above items.
 
-        **Note:** These reports will be made available via hyperlinks on the leaderboard.
-        Therefore, you are not required to include your real name if you would prefer not
+        Note: These reports will be made available via hyperlinks on the leaderboard.
+        Therefore, **you are not required to include your real name** if you would prefer not
         to do so.
 
 * You may only use data or code outside of what is provided
