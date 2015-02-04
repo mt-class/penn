@@ -20,9 +20,9 @@ a large _parallel corpus_ of aligned sentences. For example, we might
 have the following sentence pair from the proceedings of the bilingual
 Canadian parliament:
 
-*le droit de permis passe donc de $ 25 à $ 500*.
+*le droit de permis passe donc de \$ 25 à \$ 500*.
 
-*we see the licence fee going up from $ 25 to $ 500*.
+*we see the licence fee going up from \$ 25 to \$ 500*.
 
 Getting documents aligned at the _sentence_ level like this is
 relatively easy: we can use paragraph boundaries and cues
