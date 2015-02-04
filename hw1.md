@@ -200,11 +200,11 @@ Ground Rules
         due 24 hours after the leaderboard closes. Your report does not need to be
         long, but it should at minimum address the following points:
 
-        * **Motivation**: Why did you choose the model you experimented with?
+        * **Motivation**: Why did you choose the models you experimented with?
 
-        * **Description of model or algorithm**: Describe mathematically or algorithmically what you did.
-          Your description should be clear enough that someone else in the class could implement it.
-          What is your model? How did you optimize it? How did you align with it?
+        * **Description of models or algorithms**: Describe mathematically or algorithmically what you did.
+          Your descriptions should be clear enough that someone else in the class could implement them.
+          What are your models? How did you optimize them? How did you align with them?
           What were the values of any fixed parameters you used?
 
         * **Results**: You most likely experimented with various settings of any models you implemented.
