@@ -41,7 +41,7 @@ donc -- from,
 $ -- $,
 25 -- 25,
 à -- to,
-$ -- $,
+\$ -- \$,
 50 -- 50*
 
 Your program can leave words unaligned (e.g. *we* and *see*) or
