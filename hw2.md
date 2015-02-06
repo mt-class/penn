@@ -39,14 +39,11 @@ $$
 $$
 
 We also assume that the distribution over all segmentations and all alignments is *uniform*.
-This means that there is **no** distortion model or segmentation model. Unlike in HW2 and the
-next assignment, you will be evaluated not translation quality, BLEU score, or human correlation,
-but simply on how well you execute the above search. The higher the probability of the translation
-you find, the better.
+This means that there is **no** distortion model or segmentation model.
 
 ## Getting Started
 
-To begin, download the [Homework 1 starter kit](http://seas.upenn.edu/~cis526/hw1.zip).
+To begin, download the [Homework 2 starter kit](http://seas.upenn.edu/~cis526/hw2.zip).
 You may either choose to develop locally or on Penn's servers. For the latter, we
 recommend using the Biglab machines, whose memory and runtime restrictions are much
 less stringent than those on Eniac. The Biglab servers can be accessed directly
