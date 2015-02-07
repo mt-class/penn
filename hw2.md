@@ -233,9 +233,6 @@ problem, and you can try anything you want as long as you follow the ground rule
 
 ## Ground Rules
 
-Ground Rules
-------------
-
 * You must work **independently** on this assignment.
 
 * You should submit each of the following:
