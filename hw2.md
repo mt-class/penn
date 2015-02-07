@@ -49,8 +49,6 @@ recommend using the Biglab machines, whose memory and runtime restrictions are m
 less stringent than those on Eniac. The Biglab servers can be accessed directly
 using the command `ssh PENNKEY@biglab.seas.upenn.edu`, or from Eniac using the
 command `ssh biglab`.
-MITCH, SHOULD I TAKE THIS PART OUT:
-If your computer has enough RAM to run your programs, we ask that you do so locally.
 
 In the downloaded directory you will find a Python program called
 `decode`, which is an implementation of a simple stack decoder.
