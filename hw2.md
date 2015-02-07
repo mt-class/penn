@@ -160,7 +160,7 @@ probable English sentence is completely intractable! To compute it
 exactly, for each English sentence you would need to compute
 $$ p(\mathbf{f} \mid \mathbf{e}) $$ 
 as a sum over all possible alignments with the French sentence:
-$$ p(\mathbf{f} \mid \mathbf{e}) = \sum_\mathbf{a} p(\mathbf{f},\mathbf{a} \mid \mathbf{e} $$.
+$$p(\mathbf{f} \mid \mathbf{e}) = \sum_\mathbf{a} p(\mathbf{f},\mathbf{a} \mid \mathbf{e})$$.
 A nearly universal approximation is to
 instead search for the English string together with a single alignment, 
 $$\mathop{\arg\,\max}\limits_{\mathbf{e},\mathbf{a}}~ p(\mathbf{f},\mathbf{a} \mid \mathbf{e})
