@@ -238,20 +238,19 @@ Ground Rules
 * You should submit each of the following:
 
     1.  Your translations of the entire dataset, uploaded from any Eniac or Biglab machine
-        using the command `turnin -c cis526 -p hw1 hw1.txt`.
+        using the command `turnin -c cis526 -p hw2 hw2.txt`.
         You may submit new results as often as you like, up until the assignment deadline.
-        The output will be evaluated using a secret metric,
-        but the `grade` program will give you a good idea of how well you're doing.
+        The output will be evaluated using `grade` program.
         The top few positions on the leaderboard will receive bonus points on this assignment.
 
-    2.  Your code, uploaded using the command `turnin -c cis526 -p hw1-code file1 file2 ...`.
+    2.  Your code, uploaded using the command `turnin -c cis526 -p hw2-code file1 file2 ...`.
         This is due 24 hours after the leaderboard closes.
         You are free to extend the code we provide or write your own in whatever
         langugage you like, but the code should be self-contained, 
         self-documenting, and easy to use.
   
     3.  A report describing the models you designed and experimented with, uploaded
-        using the command `turnin -c cis526 -p hw1-report hw1-report.pdf`. This is
+        using the command `turnin -c cis526 -p hw2-report hw2-report.pdf`. This is
         due 24 hours after the leaderboard closes. Your report does not need to be
         long, but it should at minimum address the following points:
 
@@ -259,14 +258,10 @@ Ground Rules
 
         * **Description of models or algorithms**: Describe mathematically or algorithmically what you did.
           Your descriptions should be clear enough that someone else in the class could implement them.
-          What are your models? How did you optimize them? How did you align with them?
-          What were the values of any fixed parameters you used?
 
         * **Results**: You most likely experimented with various settings of any models you implemented.
           We want to know how you decided on the final model that you submitted for us to grade.
           What parameters did you try, and what were the results?
-          If you evaluated any qualities of the results other than AER, even if
-          you evaluated them qualitatively, how did you do it?
           Most importantly: what did you learn?
 
         Since we have already given you a concrete problem and dataset, you do not
