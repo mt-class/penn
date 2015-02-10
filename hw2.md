@@ -212,20 +212,23 @@ by implementing histogram pruning or threshold pruning, or by playing around
 with reordering limits as described in the textbook. Or, you might
 consider implementing other approaches to solving the search problem:
 
-<ul>
-  <li><a href="http://www.iro.umontreal.ca/~felipe/bib2webV0.81/cv/papers/paper-tmi-2007.pdf">Implement a greedy decoder</a>.</li>
-  <li><a href="http://aclweb.org/anthology-new/P/P09/P09-1038.pdf">Reduce the problem to a traveling salesman problem (TSP) and decode using an off-the-shelf TSP solver</a>.</li>
-  <li><a href="http://mi.eng.cam.ac.uk/~wjb31/ppubs/ttmjnle.pdf">Reformulate the problem as a shortest-path problem through a finite-state lattice and decode using finite-state devices</a>.</li>
-  <li><a href="http://aclweb.org/anthology-new/D/D11/D11-1003.pdf">Decode using Lagrangian relaxation</a> (often finds exact solutions!)</li>
-</ul>
+* [Implement a greedy decoder](http://www.iro.umontreal.ca/~felipe/bib2webV0.81/cv/papers/paper-tmi-2007.pdf).
+* [Reduce the problem to a traveling salesman problem (TSP) and decode using an off-the-shelf TSP solver](http://aclweb.org/anthology-new/P/P09/P09-1038.pdf).
+* [Reformulate the problem as a shortest-path problem through a finite-state lattice and decode using finite-state transducers](http://mi.eng.cam.ac.uk/~wjb31/ppubs/ttmjnle.pdf).
+* [Decode using Lagrangian relaxation](http://aclweb.org/anthology-new/D/D11/D11-1003.pdf) (often finds exact solutions!)
+
 
 Several techniques used for the IBM Models (which have very similar 
 search problems as phrase-based models) could also be adapted:
-<ul>
-  <li><a href="http://aclweb.org/anthology-new/W/W01/W01-1408.pdf">Implement A* Search</a>.</li>
-  <li><a href="http://aclweb.org/anthology-new/C/C02/C02-1050.pdf">Implement a bidirectional decoder</a>.</li>
-  <li><a href="http://aclweb.org/anthology-new/N/N09/N09-2002.pdf">Decode using an integer linear programming (ILP) solver</a>.</li>
-</ul>
+
+* [Implement A* Search](http://aclweb.org/anthology-new/W/W01/W01-1408.pdf).
+* [Implement a bidirectional decoder](http://aclweb.org/anthology-new/C/C02/C02-1050.pdf).
+* [Decode using an integer linear programming (ILP) solver](http://aclweb.org/anthology-new/N/N09/N09-2002.pdf).
+
+Also consider marginalizing over the different alignments:
+
+* [Use Monte Carlo techniques](http://www.springerlink.com/content/d55r04j3850h8473).
+* [Use variational techniques](http://www.cs.jhu.edu/~zfli/pubs/variational_decoding_zhifei_acl09.pdf).
 
 But the sky's the limit! There are many, many ways to try to solve the decoding
 problem, and you can try anything you want as long as you follow the ground rules:
