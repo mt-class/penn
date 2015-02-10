@@ -280,7 +280,7 @@ problem, and you can try anything you want as long as you follow the ground rule
   toolkits or generic solvers for traveling salesman problems or
   integer linear programming, that is fine. 
   But machine translation software including (but not limited to)
-  Moses, cdec, Joshua, or phrasal is off-limits. You may of course inspect 
+  Moses, cdec, or Joshua is off-limits. You may of course inspect 
   these systems if you want to understand how they work. But be warned: they are
   generally quite complicated because they provide a great deal of other
   functionality that is not the focus of this assignment.
