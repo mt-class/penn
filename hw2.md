@@ -101,7 +101,7 @@ how to do the assignment!
 Improving the search algorithm in the decoder &mdash; for instance by enabling
 it to search over permutations of English phrases &mdash; should permit you 
 to find more probable translations
-of the input French sentences than the ones found by the baseline system. 
+of the input French sentences than the ones found by the default system. 
 This assignment differs from Homework 1, in that there
 is no hidden evaluation measure.
 The `grade` program will tell you the probability of your output, and
@@ -165,7 +165,7 @@ A nearly universal approximation is to
 instead search for the English string together with a single alignment, 
 $$\mathop{\arg\,\max}\limits_{\mathbf{e},\mathbf{a}}~ p(\mathbf{f},\mathbf{a} \mid \mathbf{e})
 \times p(\mathbf{e}) $$.
-This is the approach taken by the monotone baseline decoder.
+This is the approach taken by the monotone default decoder.
 
 Since this involves multiplying together many small probabilities, it is 
 helpful to work in logspace to avoid numerical underflow. We instead solve for
@@ -182,7 +182,7 @@ $$
     \log p(\mathbf{f}_{\langle i,i' \rangle} \mid \mathbf{e}_{\langle j,j' \rangle}).
 $$
 
-The baseline decoder already works with log probabilities, so it is 
+The default decoder already works with log probabilities, so it is 
 not necessary for you to perform any additional conversion; you can simply work
 with the sum of the scores that the model provides for you. Note that
 since probabilities are always less than or equal to one, their equivalent 
@@ -206,8 +206,9 @@ phrases are allowed, provided that the phrase translations are one-to-one and
 exactly cover the input sentence. Even with all of the simplifications we
 have made, this problem is *still*
 NP-Complete, so we recommend that you solve it using an approximate
-method like stack decoding, discussed in Chapter 6 of the textbook. You 
-can trade efficiency for search effectiveness
+method like stack decoding, discussed in Chapter 6 of the textbook. In fact,
+the baseline score you must beat was achieved using **stack decoding with reordering**.
+You can trade efficiency for search effectiveness
 by implementing histogram pruning or threshold pruning, or by playing around
 with reordering limits as described in the textbook. Or, you might
 consider implementing other approaches to solving the search problem:
