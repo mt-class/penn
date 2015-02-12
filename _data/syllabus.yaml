@@ -113,6 +113,11 @@
       url: http://www.aclweb.org/anthology/P/P06/P06-1009.pdf
       title: Discriminative Word Alignment with Conditional Random Fields
       optional: true
+    -
+      author: Sutton and McCallum
+      url: http://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf
+      title: An Introduction to Conditional Random Fields
+      optional: true
 -
   date: 2015-02-05
   title: Phrase-based Machine Translation
