@@ -23,7 +23,7 @@ and finding the best translation into a target language, according to a model:
 
 *honourable senators , what happened here on Tuesday ?*
 
-**Your task is to find the most probable translation, given the Spanish input,
+**Your task is to find the most probable translation, given the foreign input,
 the translation likelihood model, and the English language model.**
 We assume the traditional noisy channel decomposition:
 
