@@ -24,7 +24,7 @@ real-word artificial intelligence problem.
 #### Announcements 
 
 <div class="alert alert-info">
-Homework 2 has been released. Your system's output is due by 11:59 pm, Thursday, February 19th. Your code and write up are due one day later.
+Homework 3 has been released. Your system's output is due by 11:59 pm, Thursday, March 5th. Your code and write up are due one day later.
 </div>
 
 #### Instructor

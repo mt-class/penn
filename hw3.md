@@ -66,7 +66,7 @@ the same translations.
 ## The Challenge
 
 Your task for this assignment is to **improve the accuracy of automatic evaluation as
-much as possible**.  Improving the metric to use the simple METEOR metric in place of $$\ell(h,e)$$
+much as possible**.  Improving the metric to use the simple [METEOR](http://aclweb.org/anthology/W/W07/W07-0734.pdf) metric in place of $$\ell(h,e)$$
 is sufficient to pass. Simple METEOR computes the harmonic mean of precision and recall. That is:
 
 $$\ell(h,e) = \frac{P(h,e) \cdot R(h,e)}{(1-\alpha)R(h,e)+\alpha P(h,e)}$$
