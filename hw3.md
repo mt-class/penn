@@ -47,7 +47,7 @@ machine translation outputs is better. Test it out using this command:
 
 <pre>evaluate &gt; output</pre>
 
-This assignment uses a very simple evaluation method.
+This program uses a very simple evaluation method.
 Given machine translations $$h_1$$ and $$h_2$$ and reference translation $$e$$,
 it computes $$f(h_1,h_2,e)$$ as follows, where $$\ell(h,e)$$ is the count of words in $$h$$
 that are also in $$e$$.
