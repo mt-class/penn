@@ -154,5 +154,4 @@ Any questions should be be posted on the
 [course Piazza page](https://piazza.com/upenn/spring2015/cis526).
 
 *Credits: This assignment is adapted from one originally developed by 
-[Adam Lopez](https://alopez.github.io). It
-incorporates some ideas from [Chris Dyer](http://www.cs.cmu.edu/~cdyer).*
+[Adam Lopez](https://alopez.github.io).  It is based on the shared task for evaluation metrics that is run at the annual [Workshop on Statistical Machine Translation](http://statmt.org/wmt15). The task was introduced by [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/).*
