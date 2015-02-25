@@ -73,7 +73,7 @@ Submit the archive via turnin before the deadline.
 
 ## Milestones and Due Dates
 * February 27 - term project assigned
-* During Spring break (March 7-15) - Select your term project topic and email your instructor to say what you’ve selected
+* During Spring break (March 7-15) - Select your term project topic and email your instructor to say what you've selected
 * March 17 - draft write-up is due.  Your write-up should include 
 1. A problem definition
 1. A pointer to or more more papers or sections textbook that describes the problem
@@ -85,6 +85,6 @@ Submit the archive via turnin before the deadline.
 * April 7 - your default system is due
 * April 9 - your baseline system is due
 * April 14 - your completed project is due (final writeup, data, objective fn, default system, and baseline system).  It Will be published on the class web site, and used as the final homework for other students.
-* April 15-16 - Read over the other student’s term projects, and vote on the ones that you think should be included. 
-* April 28 - Final HW due: turn in your implementation of another student’s term project
+* April 15-16 - Read over the other students' term projects, and vote on the ones that you think should be included. 
+* April 28 - Final HW due: turn in your implementation of another student's term project
 * final exam date (May 12th) - *extra credit* implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
