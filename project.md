@@ -10,14 +10,26 @@ active_tab: project
 Term Project <span class="text-muted">The Ultimate Challenge</span>
 =============================================================
 
-Your term project is to design a homework assignment for next year’s class.  You project will consist of the following components:
+Your term project is to design a homework assignment similar to the ones you have completed
+in this class. Your project will consist of the following components:
 
-1. A description of the problem, similar to the descriptions on the HW assignments
-1. A collection of data used to train a model, tune its parameters, and/or evaluate its performance
-1. A scoring script that implements an objective function that will allow us to score submissions on the leaderboard
-1. An implementation of the simplest possible baseline, along with commented sample code
-1. An implementation of a published baseline, along with commented sample code that removes the parts that students should implement
-1. If you work in a team: One extension that attempts improve on the baseline per team member, along with a 1 paragraph writeup describing each extension and whether it worked.
+1. A description of the problem, similar to the descriptions on the HW assignments.
+1. Training and evaluation data.
+1. An implementation of the simplest possible baseline, along with commented sample code.
+   This will be the default program provided to the student. Name this file `default`.
+1. An implementation of a published baseline, along with commented sample code that removes the
+   parts that students should implement. Name this file `baseline`.
+1. One extension that attempts improve on the baseline per team member,
+   along with a 1 paragraph writeup describing each extension and whether it worked.
+   Name these `extension-pennkey`.
+1. A scoring script that implements an objective function that will allow us to score submissions
+   on the leaderboard. Obviously, the output of all model implementations should be
+   gradable with this program. Name this file `grade`.
+
+All implementations should be runnable with the following commands:
+<pre>
+./program | ./grade
+</pre>
 
 You should identify what topic you would like to work on, and then email your instructor or schedule a meeting to go over the details.  Here are some ideas of topics that you could use for your final project: 
 
@@ -25,7 +37,7 @@ You should identify what topic you would like to work on, and then email your in
 * Language identification
 * Transliteration
 * Feature engineering for discriminative word alignment
-* Language modelling
+* Language modelling (RNN)
 * Predict the right translation given a context
 * Phrase pair extraction
 * SCFG rule extraction
@@ -43,6 +55,19 @@ You should identify what topic you would like to work on, and then email your in
 * Minimum Bayes risk re-ranking
 
 You are welcome to choose your own topic, provided that it is related to machine translation.
+
+## Final Submission
+Your final submission should consist of the following in a compressed archive:
+<pre>
+README.md
+data/
+test-data/
+default
+baseline
+extension-*
+grade
+</pre>
+Submit the archive via turnin before the deadline.
 
 ## Milestones and Due Dates
 * February 27 - term project assigned
