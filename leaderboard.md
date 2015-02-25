@@ -64,9 +64,13 @@ for (i = 0; i < data.length; i++){
 
   document.write('<td style="text-align: center">' + rank + '</td>');
   document.write('<td>' + alias + '</td>');
-  document.write('<td style="text-align: center">' + data[i][2] + '</td>');
   document.write('<td style="text-align: center">' + data[i][3] + '</td>');
-  document.write('<td style="text-align: center">' + data[i][4] + '</td>');
+  if (data[i][2] != "") {
+    document.write('<td style="text-align: center"><a href="http://www.seas.upenn.edu/~cis526/reports/hw1/' + data[i][2] + '.pdf">' + data[i][4] + '</a></td>');
+  } else {
+    document.write('<td style="text-align: center">' + data[i][4] + '</td>');
+  }
+  document.write('<td style="text-align: center">' + data[i][5] + '</td>');
   document.write('<td style="text-align: center"></td>');
   document.write('<td style="text-align: center"></td>');
   document.write('<td style="text-align: center"></td>');
