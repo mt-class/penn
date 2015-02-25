@@ -13,18 +13,20 @@ Term Project <span class="text-muted">The Ultimate Challenge</span>
 Your term project is to design a homework assignment similar to the ones you have completed
 in this class. Your project will consist of the following components:
 
-1. A description of the problem, similar to the descriptions on the HW assignments.
+1. A description of the problem, in the style and format of the homework write-ups.
 1. Training and evaluation data.
-1. An implementation of the simplest possible baseline, along with commented sample code.
-   This will be the default program provided to the student. Name this file `default`.
-1. An implementation of a published baseline, along with commented sample code that removes the
-   parts that students should implement. Name this file `baseline`.
-1. One extension that attempts improve on the baseline per team member,
-   along with a 1 paragraph writeup describing each extension and whether it worked.
-   Name these `extension-pennkey`.
-1. A scoring script that implements an objective function that will allow us to score submissions
-   on the leaderboard. Obviously, the output of all model implementations should be
-   gradable with this program. Name this file `grade`.
+1. A commented implementation of the simplest possible solution to the problem.
+   This will be the default program provided to students. Name this file `default`.
+1. A commented implementation of a baseline published in the literature, along with
+   skeleton code obtained by removing the parts that students should implement.
+   Name these files `baseline-solution` and `baseline`, respectively.
+1. One extension per team member that attempts to improve on the baseline, along
+   with a brief (one- to three-paragraph) accompanying write-up for each extension
+   describing the general approach and whether it worked. Name these `extension-1`,
+   `extension-2`, etc.
+1. A scoring script implementing an objective function that can be used to score
+   submissions on the class leaderboard. Naturally, the output of all model
+   implementations should be gradeable with this program. Name this file `grade`.
 
 All implementations should be runnable with the following commands:
 <pre>
