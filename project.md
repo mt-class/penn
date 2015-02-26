@@ -81,12 +81,11 @@ Submit the archive via turnin before the deadline.
 1. What type of data you will need to evaluate
 * March 24 - your data must be collected and submitted
 * March 26 HW4 due
-* March 31- revised write-up is due, taking into account any feedback from instructor and TA
-* April 2 - objective function must be implemented (it is OK to use an existing implementation if you need to)
-* April 7 - your default system is due
-* April 9 - your baseline system is due
+* March 31- revised write-up is due, taking into account any feedback from instructor and TA.  This will be published on the course web site.
+* April 2 - objective function must be implemented (it is OK to use an existing implementation if you need to), and your default system is due
+* April 7 - your baseline system is due
 * April 9 HW5 due
-* April 14 - your completed project is due (final writeup, data, objective fn, default system, and baseline system).  It Will be published on the class web site, and used as the final homework for other students.
+* April 14 - no late days allowed for this deadline - your completed project is due (final writeup, data, objective fn, default system, baseline system, and extensions).  It will be published on the class web site, and used as the final homework for other students.
 * April 15-16 - Read over the other students' term projects, and vote on the ones that you think should be included. 
 * April 28 - Final HW due: turn in your implementation of another student's term project
 * final exam date (May 12th) - *extra credit* implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
