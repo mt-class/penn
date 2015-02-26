@@ -66,14 +66,17 @@ the same translations.
 ## The Challenge
 
 Your task for this assignment is to **improve the accuracy of automatic evaluation as
-much as possible**.  Improving the metric to use the simple [METEOR](http://aclweb.org/anthology/W/W07/W07-0734.pdf) metric in place of $$\ell(h,e)$$
-is sufficient to pass. Simple METEOR computes the harmonic mean of precision and recall. That is:
+much as possible**.  Improving the metric to use the simple [METEOR](http://aclweb.org/anthology/W/W07/W07-0734.pdf) metric with the chunking penalty in place of $$\ell(h,e)$$
+is sufficient to pass. METEOR computes the harmonic mean of precision and recall, penalized by the number of chunks. That is:
 
-$$\ell(h,e) = \frac{P(h,e) \cdot R(h,e)}{(1-\alpha)R(h,e)+\alpha P(h,e)}$$
+$$\ell(h,e) = \left(1 - \gamma \left(\frac{c}{m}\right)^\beta\right)\frac{P(h,e) \cdot R(h,e)}{(1-\alpha)R(h,e)+\alpha P(h,e)}$$
 
 where $$P$$ and $$R$$ are precision and recall, defined as:
 
-$$R(h,e) = \frac{|h\cap e|}{|e|} \qquad \mbox{and} \qquad P(h,e) = \frac{|h\cap e|}{|h|}$$
+$$R(h,e) = \frac{|h\cap e|}{|e|} \qquad \mbox{and} \qquad P(h,e) = \frac{|h\cap e|}{|h|},$$
+
+$$\beta,\gamma$$ are tunable parameters, $$c$$ is the number of chunks and $$m$$ is the number of
+matched unigrams.
 
 Be sure to tune the parameter $$\alpha$$ that balances precision and recall.
 This is a very simple baseline to implement. However, evaluation is not solved,
