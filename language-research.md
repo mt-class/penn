@@ -7,7 +7,7 @@ active_tab: language-research
 ---
 
 
-So far in the class we have mainly focused on the mathematics and algorithms that underly machine translation systems,  In this project we will examine properties of languages. Some of these properties make machine translation more challenging.   You will form a team and research a language.  You will:
+So far in the class we have mainly focused on the mathematics and algorithms that underly machine translation systems. In this project, we will examine properties of languages. Some of these properties make machine translation more challenging.   You will form a team and research a language.  You will:
 
 * collect information about the syntax and morphology of the language
 * investigate where it is spoken, and what other languages its speakers are exposed to
@@ -83,6 +83,11 @@ Additional requirements that vary by group size.  Please pick N of these, where 
 - Try implementing [a language proficiency test for the language](https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/download/414/88) or show them images paired with captions in the language (which you could draw from Wikipedia) and ask them to select the correct caption for the image.  
 - Gather some info about the people who participate, like what their native language is, how many years they have spoken English, how many years they have spoken your language, what country were born in, and what country  they live in now.
 - In your writeup give a description of what language tests you implemented, how many crowd workers attempted it, and how many passed.  
+1. Have you language informant label part of speech (POS) information for the language.  
+- Try to use this [universal POS tag inventory](http://universaldependencies.github.io/docs/u/pos/index.html) developed by Slav Petrov.  
+- Read about the project [here](http://www.petrovi.de/data/universal.pdf).
+- Write up your experience trying to annotate parts of speech for the language.  Did the Universal POS tags work for your language?  Were any tags unused?  Do you think it was missing any thing?  
+- Save your data in a file, and give a description of the file format.
 1. Create tables of [inflectional paradigms](http://en.wikipedia.org/wiki/Inflection) for some of the words in your language. 
 - What types of words inflect?  Verbs? Nouns? What are the different things that they inflect for? 
 - Add a description to your writeup that shows how words inflect in the language.  Give your tables, and carefully label the columns to show what features it reflects (things like singular versus plural, masculine versus feminine versus neuter, etc).
