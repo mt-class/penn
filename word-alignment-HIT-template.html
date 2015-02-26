@@ -10,7 +10,6 @@
 <h3>Word alignment</h3>
 <p>The initial alignment that you see was created by a computer, and it contains errors.  Please correct it by clicking on the squares.  Use black boxes to indicate which words are in correspondence.  If there is not a direct correspondence (as in the case of a loose translation) please use the dark gray boxes.  If any of the computer's initial suggestions are wrong please uncheck them.</p>
 <p>Some words may not have any correspondence in the other sentence.  In that case click on it, which will create a pink highlighted region that indicates that the word or phrase doesn't appear in the other sentence</p>
-<p>Here is <a href="http://cs.jhu.edu/~ccb/publications/paraphrase_guidelines.pdf">a full set of annotation guidelines</a> that gives details on tricky cases.</p>
 <p><style type="text/css"> 
 <!-- 
 body,td,div,.p,a{font-family:arial,sans-serif }
@@ -92,7 +91,14 @@ td.highlight  { background-color: #FF00FF; }
 	var initialSourceHighlights = "${sourceHighlights}";
 	var initialTargetHighlights = "${targetHighlights}";
  
- 
+	// EXAMPLE INPUTS:
+ 	initialSureAlignments = "4-1 5-2 6-2 11-3 9-5 2-6 3-7 0-9";
+	initialPossAlignments = "10-4 8-5 1-8 14-10";
+	initialSourceHighlights = "";
+	initialTargetHighlights = "";
+	sourceString = "دھماکے کے فوراً بعد فائر برے گیڈ کا عملہ موقع پر پہنچ گیا تھا .";
+	targetString = "The fire department reached the spot immediately after the explosion .";
+
  
 	if(viewTransposed) {
 		var tmp = sourceString;
