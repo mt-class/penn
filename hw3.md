@@ -66,7 +66,10 @@ the same translations.
 ## The Challenge
 
 Your task for this assignment is to **improve the accuracy of automatic evaluation as
-much as possible**.  Improving the metric to use the simple [METEOR](http://aclweb.org/anthology/W/W07/W07-0734.pdf) metric with the chunking penalty in place of $$\ell(h,e)$$
+much as possible**.  Improving the metric to use the simple
+[METEOR](http://aclweb.org/anthology/W/W07/W07-0734.pdf)
+([Wikipedia](http://en.wikipedia.org/wiki/METEOR) also has a nice description) metric with
+the chunking penalty in place of $$\ell(h,e)$$
 is sufficient to pass. METEOR computes the harmonic mean of precision and recall, penalized by the number of chunks. That is:
 
 $$\ell(h,e) = \left(1 - \gamma \left(\frac{c}{m}\right)^\beta\right)\frac{P(h,e) \cdot R(h,e)}{(1-\alpha)R(h,e)+\alpha P(h,e)}$$
