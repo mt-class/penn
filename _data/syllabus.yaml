@@ -281,10 +281,6 @@
   lecturer: None
 -
   date: 2015-03-17
-  title: Synchronous Parsing (guest lecture by Jonny Weese)
-  lecturer: Jonny Weese
--
-  date: 2015-03-19
   title: Harvesting Parallel Documents from the Web
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/17-harvesting-parallel-corpora.pdf
@@ -305,12 +301,12 @@
       title: Watermarking the Outputs of Structured Prediction with an application in Statistical Machine Translation
       optional: true
 -
-  date: 2015-03-24
+  date: 2015-03-19
   title: Paraphrasing
   lecturer: Callison-Burch
   slides: 
 -
-  date: 2015-03-26
+  date: 2015-03-24
   title: Crowdsourcing translation
   lecturer: Callison-Burch
   slides: 
@@ -331,6 +327,11 @@
       title: The Language Demographics of Amazon Mechanical Turk
       optional: true
 -
+  date: 2015-03-26
+  title: TBD
+  lecturer: Callison-Burch
+  slides: 
+-
   date: 2015-03-31
   title: TBD
   lecturer: Callison-Burch
@@ -347,8 +348,8 @@
   slides: 
 -
   date: 2015-04-09
-  title: TBD
-  lecturer: Callison-Burch
+  title: Guest lecture by Matt Post (Johns Hopkins University HLTCOE)
+  lecturer: Matt Post
   slides: 
 -
   date: 2015-04-14
