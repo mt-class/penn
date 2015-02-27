@@ -29,8 +29,7 @@ This is a group project, and you can work in teams of 2-6 people (the amount of 
 we expect from you will vary depending on the size of your team). Your write-up should be
 completely in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 You can clone the [repo](https://github.com/mt-class/penn) to see how we use Markdown and MathJax.
-We suggest using Jekyll to render your write-up before submission,
-after which they will be posted on this website and publicly available.
+We suggest using Jekyll to render your write-up before submission.
 
 ### Core Requirements
 
