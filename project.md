@@ -39,7 +39,7 @@ You should identify what topic you would like to work on, and then email your in
 * Language identification
 * Transliteration
 * Feature engineering for discriminative word alignment
-* Language modelling (RNN)
+* Language modelling ([RNN](http://rnnlm.org/))
 * Predict the right translation given a context
 * Phrase pair extraction
 * SCFG rule extraction
