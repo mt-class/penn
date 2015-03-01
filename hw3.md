@@ -52,7 +52,7 @@ Given machine translations $$h_1$$ and $$h_2$$ and reference translation $$e$$,
 it computes $$f(h_1,h_2,e)$$ as follows, where $$\ell(h,e)$$ is the count of words in $$h$$
 that are also in $$e$$.
 
-$$f(h1,h2,e)=\left\{\begin{array}{ll}
+$$f(h_1,h_2,e)=\left\{\begin{array}{ll}
   1 & \mbox{if } \ell(h_1,e) > \ell(h_2,e)\\
   0 & \mbox{if } \ell(h_1,e) = \ell(h_2,e)\\
   -1 & \mbox{if } \ell(h_1,e) < \ell(h_2,e)  
