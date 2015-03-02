@@ -39,7 +39,7 @@ You should identify what topic you would like to work on, and then email your in
 * Language identification
 * Transliteration
 * Feature engineering for discriminative word alignment
-* Language modelling ([RNN](http://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf))
+* Language modeling 
 * Predict the right translation given a context
 * Phrase pair extraction
 * SCFG rule extraction
@@ -47,7 +47,7 @@ You should identify what topic you would like to work on, and then email your in
 * System combination
 * Domain adaptation
 * Lexicalized re-ordering
-* Clause re-structring for better re-ordering
+* Clause restructuring for better re-ordering
 * Mining parallel documents from Common Crawl
 * Extracting parallel sentences from Wikipedia
 * Monolingual text-to-text generation 
