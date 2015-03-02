@@ -44,7 +44,6 @@ You should identify what topic you would like to work on, and then email your in
 * Phrase pair extraction
 * SCFG rule extraction
 * Implement the CKY algorithm for decoding SCFGs
-* Chinese word segmentation
 * System combination
 * Domain adaptation
 * Lexicalized re-ordering
@@ -55,6 +54,7 @@ You should identify what topic you would like to work on, and then email your in
 * Predicting the goodness of translation without references
 * Crowdsourcing translation
 * Minimum Bayes risk re-ranking
+* Predict the features in WALS for a language, given a subset of its features
 
 You are welcome to choose your own topic, provided that it is related to machine translation.
 
