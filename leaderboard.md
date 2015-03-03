@@ -71,7 +71,7 @@ for (i = 0; i < data.length; i++){
     document.write('<td style="text-align: center">' + data[i][4] + '</td>');
   }
   document.write('<td style="text-align: center">' + data[i][5] + '</td>');
-  document.write('<td style="text-align: center"></td>');
+  document.write('<td style="text-align: center">' + data[i][6] + '</td>');
   document.write('<td style="text-align: center"></td>');
   document.write('<td style="text-align: center"></td>');
 
