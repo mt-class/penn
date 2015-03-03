@@ -37,7 +37,7 @@ whenever a submission is received.
       </th>
       <th valign="top" style="text-align: center; width: 100px">
         <a href="hw3.html">HW 3</a><br/>
-        <span class="small"><a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman's</a></span>
+        <span class="small">Accuracy</span>
       </th>
       <th valign="top" style="text-align: center; width: 100px">
         <a href="hw4.html">HW 4</a><br/>
