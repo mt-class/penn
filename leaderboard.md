@@ -7,6 +7,8 @@ active_tab: leaderboard
 ---
 
 <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="assets/css/sorttable.js"></script>
+
 
 Leaderboard
 =============================================================
@@ -14,7 +16,7 @@ Leaderboard
 This page contains the assignment leaderboard, which is updated automatically
 whenever a submission is received.
 
-<table style="width: 100%">
+<table class="sortable" style="width: 100%">
   <thead style="background-color: lightgrey">
     <tr>
       <th style="text-align: center; width: 75px">
