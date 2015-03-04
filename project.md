@@ -88,5 +88,5 @@ Submit the archive via turnin before the deadline.
 * April 14 - no late days allowed for this deadline - your completed project is due (final writeup, data, objective fn, default system, baseline system, and extensions).  It will be published on the class web site, and used as the final homework for other students.
 * April 15-16 - Read over the other students' term projects, and vote on the ones that you think should be included. 
 * April 28 - Final HW due: turn in your implementation of another student's term project
-* April 28 - The language research project is due.
+* April 28 - The language research project is also due.
 * final exam date (May 12th) - *extra credit* implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
