@@ -251,6 +251,10 @@
       optional: true
 -
   date: 2015-03-05
+  title: Discussion of final project topics
+  lecturer: Callison-Burch
+-
+  date: 2015-03-05
   title: Decoding and Inference with Syntactic Translation Models
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/15-decoding-and-inference.pdf
