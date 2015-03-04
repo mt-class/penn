@@ -24,7 +24,16 @@ real-word artificial intelligence problem.
 #### Announcements 
 
 <div class="alert alert-info">
-Homework 3 has been released. Your system's output is due by 11:59 pm, Thursday, March 5th. Your code and write up are due one day later.
+<a href="hw3.html">Homework 3</a> has been released. Your system's output is due by 11:59 pm, Thursday, March 5th. Your code and write up are due one day later.
+</div>
+
+<div class="alert alert-info">
+Upcoming deliverables for <a href="project.html">the term project</a>: by the end of Spring Break, form a team and select a topic.  
+</div>
+
+
+<div class="alert alert-info">
+Upcoming deliverables for <a href="project.html">the term project</a>: A draft write-up of your project is due on Tuesday March 17, by 11:59pm.
 </div>
 
 #### Instructor
