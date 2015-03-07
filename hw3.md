@@ -107,7 +107,7 @@ solutions you might invent. You can try anything you want as long as you follow 
     1.  Your translations of the entire dataset, uploaded from any Eniac or Biglab machine
         using the command `turnin -c cis526 -p hw3 hw3.txt`.
         You may submit new results as often as you like, up until the assignment deadline.
-        The output will be evaluated using `grade` program.
+        The output will be evaluated using the `grade` program.
         The top few positions on the leaderboard will receive bonus points on this assignment.
 
     2.  Your code, uploaded using the command `turnin -c cis526 -p hw3-code file1 file2 ...`.
