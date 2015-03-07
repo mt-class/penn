@@ -106,7 +106,7 @@ Ground Rules
      Upload your results with the command `turnin -c cis526 -p hw4 hw4.txt` from
      any Eniac or Biglab machine. You
      can upload new output as often as you like, up until the assignment deadline. 
-     You will be able to see your results on test data after the deadline.
+     You will only be able to see your results on the test data after the deadline.
 
   2. Your code, uploaded using the command `turnin -c cis526 -p hw4-code file1 file2 ...`.
      This is due 24 hours after the leaderboard closes.
