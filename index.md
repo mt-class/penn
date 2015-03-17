@@ -25,8 +25,14 @@ real-word artificial intelligence problem.
 
 
 <div class="alert alert-info">
-Upcoming deliverables for <a href="project.html">the term project</a>: A draft writeup of your project is due on Tuesday March 17, by 11:59pm.  Submit your draft writeup via [this Google form](https://docs.google.com/forms/d/1sRcWY5H9MgCfTfKJHXf3wE7o9VD0dB5GeYqNTBC3Gfs/viewform).
+Upcoming deliverables for <a href="project.html">the term project</a>: A draft writeup of your project is due on Tuesday March 17, by 11:59pm.  Submit your draft writeup via <a href="https://docs.google.com/forms/d/1sRcWY5H9MgCfTfKJHXf3wE7o9VD0dB5GeYqNTBC3Gfs/viewform">this Google form</a>.
 </div>
+
+
+<div class="alert alert-info">
+Upcoming deliverables for <a href="project.html">the term project</a>: Your data must be collected by Tuesday March 23. 
+</div>
+
 
 
 <div class="alert alert-info">

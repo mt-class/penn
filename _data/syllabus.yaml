@@ -269,6 +269,9 @@
   slides: http://mt-class.org/penn/slides/15-decoding-and-inference.key
   reading:
     -
+      author: Koehn 
+      title: chapter 11
+    -
       author: Dekai Wu
       url: http://aclweb.org/anthology//J/J97/J97-3002.pdf
       title: Stochastic Inversion Transduction Grammars and Bilingual Parsing of Parallel Corpora
