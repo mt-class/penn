@@ -251,13 +251,22 @@
       optional: true
 -
   date: 2015-03-05
-  title: Discussion of final project topics
+  title: Class canceled because of snow (instead we held a Google Hangout discussing final project topics)
   lecturer: Callison-Burch
 -
-  date: 2015-03-05
+
+  date: 2015-03-10
+  title: No class today (Spring Break)
+  lecturer: None
+-
+  date: 2015-03-12
+  title: No class today (Spring Break)
+  lecturer: None
+-
+  date: 2015-03-17
   title: Decoding and Inference with Syntactic Translation Models
   lecturer: Callison-Burch
-  slides: http://mt-class.org/penn/slides/15-decoding-and-inference.pdf
+  slides: http://mt-class.org/penn/slides/15-decoding-and-inference.key
   reading:
     -
       author: Dekai Wu
@@ -274,17 +283,9 @@
       url: http://www.cs.berkeley.edu/~klein/papers/klein_and_manning-parsing_and_hypergraphs-IWPT_2001.pdf
       title: Parsing and Hypergraphs
       optional: true
--
 
-  date: 2015-03-10
-  title: No class today (Spring Break)
-  lecturer: None
 -
-  date: 2015-03-12
-  title: No class today (Spring Break)
-  lecturer: None
--
-  date: 2015-03-17
+  date: 2015-03-19
   title: Harvesting Parallel Documents from the Web
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/17-harvesting-parallel-corpora.pdf
@@ -304,11 +305,6 @@
       url: http://aclweb.org/anthology//D/D11/D11-1126.pdf
       title: Watermarking the Outputs of Structured Prediction with an application in Statistical Machine Translation
       optional: true
--
-  date: 2015-03-19
-  title: Paraphrasing
-  lecturer: Callison-Burch
-  slides: 
 -
   date: 2015-03-24
   title: Crowdsourcing translation
@@ -332,7 +328,7 @@
       optional: true
 -
   date: 2015-03-26
-  title: TBD
+  title: Paraphrasing
   lecturer: Callison-Burch
   slides: 
 -
