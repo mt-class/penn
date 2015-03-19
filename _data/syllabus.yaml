@@ -291,7 +291,7 @@
   date: 2015-03-19
   title: Harvesting Parallel Documents from the Web
   lecturer: Callison-Burch
-  slides: http://mt-class.org/penn/slides/17-harvesting-parallel-corpora.pdf
+  slides: http://mt-class.org/penn/slides/16-harvesting-parallel-corpora.pdf
   reading:
     -
       author: Philip Resnik and Noah Smith
@@ -312,7 +312,7 @@
   date: 2015-03-24
   title: Crowdsourcing translation
   lecturer: Callison-Burch
-  slides: 
+  slides: http://mt-class.org/penn/slides/20-crowdsourcing-translation.pdf
   reading:
     -
       author: Omar Zaidan and Chris Callison-Burch
