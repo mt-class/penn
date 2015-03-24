@@ -356,8 +356,8 @@
   slides: 
 -
   date: 2015-04-14
-  title: Guest lecture by Kenneth Heafield (Bloomberg)
-  lecturer: Kenneth Heafield
+  title: TBD
+  lecturer: 
   slides: 
 -
   date: 2015-04-16
@@ -366,13 +366,13 @@
   slides: 
 -
   date: 2015-04-21
-  title: TBD
+  title: Christian Buck (PhD student at the University of Edinburgh)
   lecturer: Callison-Burch
   slides: 
 -
   date: 2015-04-23
-  title: TBD
-  lecturer: Callison-Burch
+  title: Guest lecture by Kenneth Heafield (Bloomberg)
+  lecturer: Kenneth Heafield
   slides: 
 -
   date: 2015-04-28

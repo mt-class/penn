@@ -24,19 +24,21 @@ real-word artificial intelligence problem.
 #### Announcements 
 
 
-<div class="alert alert-info">
-Upcoming deliverables for <a href="project.html">the term project</a>: A draft writeup of your project is due on Tuesday March 17, by 11:59pm.  Submit your draft writeup via <a href="https://docs.google.com/forms/d/1sRcWY5H9MgCfTfKJHXf3wE7o9VD0dB5GeYqNTBC3Gfs/viewform">this Google form</a>.
-</div>
-
 
 <div class="alert alert-info">
-Upcoming deliverables for <a href="project.html">the term project</a>: Your data must be collected by Tuesday March 23. 
+Upcoming deliverables for <a href="project.html">the term project</a>: Your data must be collected by Tuesday March 23. Use <a href="https://docs.google.com/forms/d/1jNwbmgFpPnQ-8uVLj2WvmZyMSul6qZiKZOr2RUlDdYk/viewform?usp=send_form">this form</a> to submit it.
 </div>
 
 
 
 <div class="alert alert-info">
 <a href="hw4.html">Homework 4</a> has been released. Your system's output is due by 11:59 pm, Thursday, March 26th. Your code and write up are due one day later.
+</div>
+
+
+
+<div class="alert alert-info">
+Upcoming deliverables for <a href="project.html">the term project</a>: Your revised writeup is due on Tuesday March 31, by 11:59pm.  It should be written in Markdown format and it should mimic the style of the homework assignments in length, and level of detail for explaining the problem. 
 </div>
 
 
