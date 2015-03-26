@@ -59,23 +59,37 @@ whenever a submission is received.
 for (i = 0; i < data.length; i++){
   var rank = data[i][0];
   var alias = data[i][1];
+  var hash = data[i][2];
 
   document.write('<tr id="' + alias + '"');
-  if (i % 2 == 1) { document.write(' bgcolor="lightblue"'); }
+  if (i % 2 == 1) {
+    document.write(' bgcolor="lightblue"');
+  }
   document.write('>');
 
   document.write('<td style="text-align: center">' + rank + '</td>');
+
   document.write('<td>' + alias + '</td>');
-  document.write('<td style="text-align: center">' + data[i][3] + '</td>');
-  if (data[i][2] != "") {
-    document.write('<td style="text-align: center"><a href="http://www.seas.upenn.edu/~cis526/reports/hw1/' + data[i][2] + '.pdf">' + data[i][4] + '</a></td>');
-  } else {
-    document.write('<td style="text-align: center">' + data[i][4] + '</td>');
+
+  for (j = 0; j <= 5; j++) {
+
+    var index = 3 + 2*j;
+
+    document.write('<td style="text-align: center">');
+
+    if (index < data[i].length) {
+      var reportExists = data[i][index];
+      var score = data[i][index + 1];
+      if (reportExists) {
+        document.write('<a href="http://www.seas.upenn.edu/~cis526/reports/hw' + j + '/' + hash + '.pdf">' + score + '</a>');
+      } else {
+        document.write(score);
+      }
+    }
+
+    document.write('</td>');
+
   }
-  document.write('<td style="text-align: center">' + data[i][5] + '</td>');
-  document.write('<td style="text-align: center">' + data[i][6] + '</td>');
-  document.write('<td style="text-align: center">' + data[i][7] + '</td>');
-  document.write('<td style="text-align: center"></td>');
 
   document.write('</tr>');
 }
