@@ -334,6 +334,22 @@
   title: Paraphrasing
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/18-paraphrasing.pdf
+  reading:
+     -
+      author: Colin Bannard and Chris Callison-Burch
+      url: http://www.aclweb.org/anthology/P/P05/P05-1074.pdf
+      title: Paraphrasing with Bilingual Parallel Corpora
+      optional: true
+     -
+      author: Juri Ganitkevitch, Chris Callison-Burch, Courtney Napoles, and Benjamin Van Durme
+      url: http://www.aclweb.org/anthology/D11-1108.pdf
+      title: Learning Sentential Paraphrases from Bilingual Parallel Corpora for Text-to-Text Generation
+      optional: true
+     -
+      author: Juri Ganitkevitch, Benjamin Van Durme and Chris Callison-Burch,
+      url: http://aclweb.org/anthology/N/N13/N13-1092.pdf
+      title: PPDB&colon; The Paraprhase Database
+      optional: true
 -
   date: 2015-03-31
   title: Guest lecture by Liang Huang - CUNY Queens
