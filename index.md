@@ -23,16 +23,6 @@ real-word artificial intelligence problem.
 
 #### Announcements 
 
-
-
-
-
-
-<div class="alert alert-info">
-<a href="hw4.html">Homework 4</a> has been released. Your system's output is due by 11:59 pm, Thursday, March 26th. Your code and write up are due one day later.
-</div>
-
-
 <div class="alert alert-info">
 Upcoming deliverables for <a href="project.html">the term project</a>: You must implement your scoring function and your default system by Tuesday March 31. 
 </div>
@@ -40,7 +30,6 @@ Upcoming deliverables for <a href="project.html">the term project</a>: You must 
 <div class="alert alert-info">
 Upcoming deliverables for <a href="project.html">the term project</a>: Your revised writeup is due on Thursday April 2, by 11:59pm.  It should be written in Markdown format and it should mimic the style of the homework assignments in length, and level of detail for explaining the problem. 
 </div>
-
 
 #### Instructor
 
