@@ -30,7 +30,7 @@ in this class. Your project will consist of the following components:
 
 ## Implementation Specification
 
-All implementations should be runnable with the following commands:
+All implementations should be runnable using the following command:
 
     ./program | ./grade
 
