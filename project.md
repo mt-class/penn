@@ -28,12 +28,29 @@ in this class. Your project will consist of the following components:
    submissions on the class leaderboard. Naturally, the output of all model
    implementations should be gradeable with this program. Name this file `grade`.
 
-All implementations should be runnable with the following commands:
-<pre>
-./program | ./grade
-</pre>
+## Implementation Specification
 
-You should identify what topic you would like to work on, and then email your instructor or schedule a meeting to go over the details.  Here are some ideas of topics that you could use for your final project: 
+All implementations should be runnable with the following commands:
+
+    ./program | ./grade
+
+More specifically, each implementation should write its results to `stdout`, and
+the grading program should accept its input via `stdin`. Any logging information
+should be printed to `stderr`. If any of your programs require command-line arguments,
+such as paths to the data files, parameters for algorithms, etc., sensible defaults
+should be provided in case they are omitted.
+
+If you are writing your code in a scripting language like Python, be sure to
+include the appropriate [hash-bang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29)
+line at the top of each file, such as `#!/usr/bin/env python`, so that your programs
+can be executed directly.
+
+If you are writing your code in a compiled language like Java, include a `Makefile`
+so that your code can be compiled into the above form by calling `make`.
+
+## Topics
+
+You should identify what topic you would like to work on, and then email the instructor or schedule a meeting to go over the details.  Here are some ideas of topics that you could use for your final project: 
 
 * Sentence alignment
 * Language identification
