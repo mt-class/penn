@@ -81,7 +81,7 @@ Getting Started
   servers (except to upload your output on the test
   data).</div>
 
-Start by downloading the assignment [starter kit](http://seas.upenn.edu/~cis526/inflection.zip).
+Start by downloading the assignment [starter kit](http://seas.upenn.edu/~cis526/inflect.zip).
 In the `inflect` directory, and type the following
 to create symlinks to the training and development data (and
 please observe the warning that began this section):
