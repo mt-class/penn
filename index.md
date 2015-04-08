@@ -23,12 +23,25 @@ real-word artificial intelligence problem.
 
 #### Announcements 
 
+
 <div class="alert alert-info">
-Upcoming deliverables for <a href="project.html">the term project</a>: You must implement your scoring function and your default system by Tuesday March 31. 
+Upcoming deliverables for <a href="language-research.html">your language research project</a>: Core Requirements are due on Thursday, April 9th. 
 </div>
 
 <div class="alert alert-info">
-Upcoming deliverables for <a href="project.html">the term project</a>: Your revised writeup is due on Thursday April 2, by 11:59pm.  It should be written in Markdown format and it should mimic the style of the homework assignments in length, and level of detail for explaining the problem. 
+Upcoming deliverables for <a href="project.html">the term project</a> Tuesday April 14, by 11:59pm (no extensions on this deliverable!): your completed project is due (final writeup, data, objective fn, default system, baseline system, and extensions). It will be published on the class web site, and used as the final homework for other students</div>
+
+<div class="alert alert-info">
+April 15-16 - Read over the other students’ term projects, and vote on the ones that you think should be included.</div>
+
+
+<div class="alert alert-info">
+Tuesday April 28 - Final HW due: turn in your implementation of another student’s term project.  The language research project is also due.</div>
+
+
+
+<div class="alert alert-info">
+Tuesday May 12 - <i>extra credit deadline</i> implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
 </div>
 
 #### Instructor
