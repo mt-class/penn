@@ -7,6 +7,11 @@ title: Term Project
 active_tab: project
 ---
 
+<div class="alert alert-info">
+  Each team's revised project write-up is available at the bottom of the page.
+  Vote on your favorites using the indicated Piazza poll by 11:59 pm on April 16.
+</div>
+
 Term Project <span class="text-muted">The Ultimate Challenge</span>
 =============================================================
 
@@ -111,6 +116,6 @@ Submit the archive via turnin before the deadline.
 ## Revised Project Write-ups
 <p>
 {% for i in (1...16) %}
-<a href="{{site.baseurl}}/projects/team{{i}}.html">{{i}}</a>{% if i < 16 %},{% endif %}
+<a href="{{site.baseurl}}/projects/team{{i}}.html">Team {{i}}</a>{% if i < 16 %},{% endif %}
 {% endfor %}
 </p>
