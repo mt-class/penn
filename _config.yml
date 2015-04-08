@@ -1,3 +1,4 @@
 exclude: ['README.md', '*.key']
 timezone: US/Eastern
 markdown: kramdown
+baseurl: '/penn'

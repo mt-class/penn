@@ -1,3 +1,11 @@
+---
+layout: default
+img: rosetta
+img_url: http://www.flickr.com/photos/calotype46/6683293633/
+caption: Rosetta stone (credit&#59; calotype46)
+title: Homework 5 | Sentence Alignment
+active_tab: homework
+---
 #Quality Estimation: Final Project
 Quality estimation is a topic of increasing interest in Machine Translation. It aims at providing a quality indicator for unseen translated sentences at various granularity levels. In this assignment, we will focus on sentence-level estimation. Different from Machine Translation evaluation, quality estimation systems do not rely on reference translations and are generally addressed using machine learning techniques to predict quality scores.
 

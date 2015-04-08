@@ -7,8 +7,8 @@
     <title>{{ page.title }}</title>
 
     <!-- CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/mt-class.css" rel="stylesheet">   
+    <link href="{{site.baseurl}}/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/mt-class.css" rel="stylesheet">   
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,28 +39,28 @@
             <span class="icon-bar"></span>
           </button>
           <ul class="nav navbar-nav">
-            <li id="main_page"><a href="index.html" class="navbar-brand">Machine Translation</a></li>
+            <li id="main_page"><a href="{{site.baseurl}}/index.html" class="navbar-brand">Machine Translation</a></li>
           </ul>
         </div>
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
-            <li id="syllabus"><a href="syllabus.html">Syllabus</a></li>
+            <li id="syllabus"><a href="{{site.baseurl}}/syllabus.html">Syllabus</a></li>
             <li id="homework">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Homework <span class="caret"></span></a>
               <ol class="dropdown-menu">
-                <li><a href="hw0.html">Setup (due January 27th)</a></li>
-                <li><a href="hw1.html">Alignment (due February 3rd)</a></li>
-                <li><a href="hw2.html">Decoding (due February 19th)</a></li>
-                <li><a href="hw3.html">Evaluation (due March 5th)</a></li>
-                <li><a href="hw4.html">Reranking (due March 26th)</a></li>		
+                <li><a href="{{site.baseurl}}/hw0.html">Setup (due January 27th)</a></li>
+                <li><a href="{{site.baseurl}}/hw1.html">Alignment (due February 3rd)</a></li>
+                <li><a href="{{site.baseurl}}/hw2.html">Decoding (due February 19th)</a></li>
+                <li><a href="{{site.baseurl}}/hw3.html">Evaluation (due March 5th)</a></li>
+                <li><a href="{{site.baseurl}}/hw4.html">Reranking (due March 26th)</a></li>		
 		<!--
-                <li><a href="hw5.html">Inflection</a></li>
-		--!>
+                <li><a href="{{site.baseurl}}/hw5.html">Inflection</a></li>
+		-->
               </ol>
             </li>
-            <li id="leaderboard"><a href="leaderboard.html">Leaderboard</a></li>
-            <li id="project"><a href="project.html">Term Project</a></li>
-            <li id="language-research"><a href="language-research.html">Language Research</a></li>
+            <li id="leaderboard"><a href="{{site.baseurl}}/leaderboard.html">Leaderboard</a></li>
+            <li id="project"><a href="{{site.baseurl}}/project.html">Term Project</a></li>
+            <li id="language-research"><a href="{{site.baseurl}}/language-research.html">Language Research</a></li>
           </ul>
         </nav>
       </div>
@@ -71,8 +71,8 @@
       <div class="row">
         <div class="col-sm-2 hidden-sm hidden-xs">
           {% if page.img_link %}<a href="{{ page.img_link }}">{% endif %} 
-          <img src="assets/img/{{ page.img }}.jpg" class="img-responsive img-rounded" alt="{{ page.picture }}"/>
-          {% if page.img_link %}</a>{% endif %} 
+          {% if page.img %}<img src="{{site.baseurl}}/assets/img/{{ page.img }}.jpg" class="img-responsive img-rounded" alt="{{ page.picture }}"/> {% endif %}
+          {% if page.img_link %}</a>{% endif %}
           <span class="text-muted"><i>{{ page.caption }}</i></span>
         </div>
         <div class="col-sm-10">
