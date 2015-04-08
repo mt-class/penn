@@ -107,3 +107,10 @@ Submit the archive via turnin before the deadline.
 * April 28 - Final HW due: turn in your implementation of another student's term project
 * April 28 - The language research project is also due.
 * final exam date (May 12th) - *extra credit* implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
+
+## Revised Project Write-ups
+<p>
+{% for i in (1...16) %}
+<a href="{{site.baseurl}}/projects/team{{i}}.html">{{i}}</a>{% if i < 16 %},{% endif %}
+{% endfor %}
+</p>
