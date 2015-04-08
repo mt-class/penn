@@ -116,6 +116,6 @@ Submit the archive via turnin before the deadline.
 ## Revised Project Write-ups
 <p>
 {% for i in (1...16) %}
-<a href="{{site.baseurl}}/projects/team{{i}}.html">Team {{i}}</a>{% if i < 16 %},{% endif %}
+<a href="{{site.baseurl}}/projects/team{{i}}.html">{{i}}</a>{% if i < 16 %},{% endif %}
 {% endfor %}
 </p>
