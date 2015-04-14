@@ -372,9 +372,9 @@
   slides: 
 -
   date: 2015-04-14
-  title: TBD
-  lecturer: 
-  slides: 
+  title: Translation without parallel corpora
+  lecturer: Callison-Burch
+  slides: http://mt-class.org/penn/slides/20-translation-without-parallel-corpora.pdf
 -
   date: 2015-04-16
   title: Guest lecture by Will Lewis (Microsoft Research) on the Skype speech-to-speech translation system
