@@ -82,16 +82,21 @@ You are welcome to choose your own topic, provided that it is related to machine
 
 ## Final Submission
 Your final submission should consist of the following in a compressed archive:
-<pre>
-README.md
-data/
-test-data/
-default
-baseline
-extension-*
-grade
-</pre>
-Submit the archive via turnin before the deadline.
+
+1. `report.md`: The final version of your write-up, incorporating any additional changes to your revised draft (if any).
+1. `readme.md`: A brief description of your task and the included code.
+1. `data-train/`: A directory containing the training data.
+1. `data-dev/`: A directory containing the development data for local evaluation.
+1. `data-test/`: A directory containing the test data for leaderboard evaluation.
+1. `default`: A full implementation of the default system.
+1. `baseline`: A skeleton of the baseline system to be provided to students.
+1. `baseline-solution`: A full implementation of the baseline system.
+1. `extension-1`, `extension-2`, ...: Full implementations of the extensions, one per group member.
+1. `extensions.md`: A brief write-up describing your extensions and their performance.
+1. `grade-dev`: A grading script for local evaluation. This may be a wrapper around a generic grading script `grade`.
+1. `grade-test`: A grading script for leaderboard evaluation. This may be a wrapper around a generic grading script `grade`.
+
+Your archive should be submitted using `turnin` before the deadline.
 
 ## Milestones and Due Dates
 * February 27 - term project assigned
