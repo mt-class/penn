@@ -27,8 +27,8 @@ In order to help you score translations, you will be provided with a set of feat
 2. LM probability of source sentence	
 3. LM probability of target sentence	
 4. Number of occurrences of the target word within the target hypothesis (averaged for all words in The hypothesis - type/token ratio)	
-5. Average number of translations per source word in the sentence (as given by IBM 1 table thresholded such that prob(t|s) > 0.2)	
-6. Average number of translations per source word in the sentence (as given by IBM 1 table thresholded such that prob(t|s) > 0.01) weighted by the inverse frequency of each word in the source corpus	
+5. Average number of translations per source word in the sentence (as given by IBM 1 table thresholded such that $$\Pr(t\mid s) > 0.2$$)
+6. Average number of translations per source word in the sentence (as given by IBM 1 table thresholded such that $$\Pr(t\mid s) > 0.01$$) weighted by the inverse frequency of each word in the source corpus	
 7. Percentage of unigrams in quartile 1 of frequency (lower frequency words) in a corpus of the source language (SMT training corpus)	
 8. Percentage of unigrams in quartile 4 of frequency (higher frequency words) in a corpus of the source language
 9. Percentage of bigrams in quartile 1 of frequency of source words in a corpus of the source language
