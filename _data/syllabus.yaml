@@ -386,6 +386,27 @@
   title: Translation without parallel corpora
   lecturer: Callison-Burch
   slides: http://mt-class.org/penn/slides/20-translation-without-parallel-corpora.pdf
+  reading:
+     -
+      author: Reinhard Rapp
+      url: http://www.aclweb.org/anthology/P/P95/P95-1050.pdf
+      title: Identifying Word Translations in Non-Parallel Texts
+      optional: true
+     -
+      author: Reinhard Rapp
+      url: http://www.aclweb.org/anthology/P/P99/P99-1067.pdf
+      title: Automatic identification of word translations from unrelated English and German corpora
+      optional: true
+     -
+      author: Charles Schafer and David Yarowsky
+      url: http://www.aclweb.org/anthology/W/W02/W02-2026.pdf
+      title: Inducing translation lexicons via diverse similarity measures and bridge languages
+      optional: true
+     -
+      author: Alex Klementiev, Ann Irvine, Chris Callison-Burch, and David Yarowsky,
+      url: http://www.cis.upenn.edu/~ccb/publications/toward-statistical-machine-translation-without-parallel-corpora.pdf
+      title: Toward Statistical Machine Translation without Parallel Corpora
+      optional: true
 -
   date: 2015-04-16
   title: Guest lecture by Will Lewis (Microsoft Research) on the Skype speech-to-speech translation system
