@@ -369,7 +369,18 @@
   date: 2015-04-09
   title: Guest lecture by Matt Post (Johns Hopkins University HLTCOE)
   lecturer: Matt Post
-  slides: 
+  slides: http://mt-class.org/penn/slides/guest-lecture-matt-post.pdf
+  reading:
+     -
+      author: Mark Hopkins and Jonathan May
+      url: http://www.aclweb.org/anthology/P13-1139.pdf
+      title: Models of Translation Competitions
+      optional: true
+     -
+      author: Keisuke Sakaguchi, Matt Post, and Ben Van Durme
+      url: http://aclweb.org/anthology/W/W14/W14-3301.pdf
+      title: Efficient Elicitation of Annotations for Human Evaluation of Machine Translation
+      optional: true
 -
   date: 2015-04-14
   title: Translation without parallel corpora
