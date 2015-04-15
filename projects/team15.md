@@ -1,11 +1,12 @@
----
+--
 layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
+title: Homework 5 | CKY
 active_tab: homework
 ---
+
 # Implement the CKY algorithm for decoding SCFGs
 
 
@@ -18,29 +19,34 @@ To begin, download the starter kit. You may either choose to develop locally or 
 
 You can run the default system using the command:
 
-```python
-./default > 1-best.en
-```
+   > ./default > 1-best.en
 
 The default system uses a very simple method to generate a translation based on word-to-word translation and ignores complex grammars and language models. 
 	
 	word_e = argmax_P(word_e|word_f) word_e
 
-To test the result, use the command:
+To grade, use the command:
 
-```python
-	./grade < 1-best.en
-```
-The program will evaluate the translation using BLEU score, and print the BLEU stats features as well as the BLEU score.
+   > ./grade-dev < 1-best.en
+
+The grade program will evaluate the translation using BLEU score, and print the BLEU stats features as well as the BLEU score.
+the BLEU score is counted using the formula:
+	
+	score = exp(min(0,(1 - refcount/hypcount))+ln(grammatch_1...grammatch_4/gramcount_1..gramcount_4)
 
 Your task is to improve the score as much as possible.
 
+To implement the chart decoder, you can use the ./baseline code, which provides the interface to grammar and language models.
 
-####Data
------
-_The './data' including following parts:_
+To run the baseline, use
 
-1. grammar
+   > ./baseline > hw5.txt
+
+_The data you may use:_
+
+1. the file to be translated - './data-dev/test.ur'
+
+2. grammar - './data-train/grammar'
 
   * The format of grammar is as follows:
   
@@ -54,27 +60,33 @@ _The './data' including following parts:_
   
       p(e|f) p(f|e) Lex(e|f) Lex(f|e) rarity phrase-penalty
 
+      The feature value are the negative logarithm of the actual probabilit value, that is:
+
+      -log(p)
+
   * Alignment is:
   
-      source_word-target_word
+      source\_word - target\_word
 
-2. lm
+3. lm - './data-train/lm'
 
   lm contains 1-grams, 2-grams and 3-grams language model. 
+  lm values are the logarithm of language model probabilities. Note this is different from the grammar value.
 
-3. train data, tune data
+4. tune data
+  You may want to tune the parameters. You can use the data in './data-dev/' for tuning.
 
-  tune data are for students to tune the CKY model. 
-  You may want to train your grammar model by yourself. Then you can use the train data to extract the SCFG rules.
-  test data includes the test sentences you need to translate.
-
-_The './test-data' including the sentence to be translated:_
+5. train data
+ 
+  You may want to train your grammar model by yourself. Then you can use the train data in './data-train/train/' to extract the SCFG rules.
 
 
 
 ##The Challenge
 ----
 Your work is to increase the BLEU score as much as you can. Implementing CKY algorithm and integrating language model with some simple feature engineering will help you beat the baseline. Specific algorithm can be found on textbook chapter 11. To improve:
+
+
   * Adding LM, TM, Alignment feature to choose rules
   * Using MERT/PRO to tune the weight of the features
   * Increase the number of candidates hypothesis for original language intervals 

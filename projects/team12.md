@@ -1,9 +1,9 @@
----
+--
 layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
+title: Homework 5 | Quality Estimation
 active_tab: homework
 ---
 Translation Quality Estimation

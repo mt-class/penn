@@ -1,11 +1,3 @@
----
-layout: default
-img: rosetta
-img_url: http://www.flickr.com/photos/calotype46/6683293633/
-caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
-active_tab: homework
----
 # Team members
 Quanze Chen, Brendan Callahan, Chenyang Lei
 
@@ -50,6 +42,8 @@ You're also welcome to experiment with possible extensions to the baseline:
 - Implement feature engineering such as matching proper nouns
 - Improve on the dictionary translation sentence level word set matching. Think of better ways to evaluate what a matching sentence is (instead of just naively matching words)
 - Train a classifier on the given test and development sentences
+- Improve the quality and quantity of negative training data.
+- Try stemming the input into existing features, or working with synonyms via WordNet.
 - Crowdsourcing alignments and training on them
 
 # Ground rules

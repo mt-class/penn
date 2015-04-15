@@ -11,14 +11,14 @@ Sentence Alignment | Homework 5
 =============================================================
 
 
-Given a parallel corpus of sentences with foreign language and the translated language. 
-To convey the information, it is important that the sentences are aligned.
-The paragraphs are aligned correctly most of the times however, the sentences within the paragraph are not.
-The task is to align the sentences correctly like below,
+Given a parallel corpus of sentences with foreign language and the translated language, to convey the information, it is important that the sentences are aligned.
+The paragraphs are aligned correctly most of the times, however, the sentences within the paragraph are not.
 
-*Una delle vittime pi˘ recenti Ë stato Kumar Ponnambalam , che qualche mese fa era venuto in visita qui al Parlamento europeo*.
+The task is to align the sentences correctly like below:
 
-*One of the people assassinated very recently in Sri Lanka was Mr Kumar Ponnambalam , who had visited the European Parliament just a few months ago*.
+> *Una delle vittime pi˘ recenti Ë stato Kumar Ponnambalam , che qualche mese fa era venuto in visita qui al Parlamento europeo*.
+
+> One of the people assassinated very recently in Sri Lanka was Mr Kumar Ponnambalam , who had visited the European Parliament just a few months ago.
 
 This is represented in the output file as, 1st sentence in foreign language (Italian) is equivalent to 1st sentence in translated language (English)
 
@@ -32,12 +32,12 @@ like the length and order of each sentence.
 Your program can align multiple sentences in the foreign language (Italian) to a single sentence in the 
 translated language (English) like below,
 
-*Signora Presidente , un richiamo al Regolamento.*
+> *Signora Presidente , un richiamo al Regolamento.*
 
-*Gradirei avere il suo parere riguardo all ' articolo 143 sull ' inammissibilit‡ .*
+> *Gradirei avere il suo parere riguardo all ' articolo 143 sull ' inammissibilit‡ .*
 
-*Madam President , on a point of order , 
-I would like your advice about Rule 143 concerning inadmissibility .*
+> Madam President , on a point of order , 
+I would like your advice about Rule 143 concerning inadmissibility .
 
 This is represented in the output file as, 1st and 2nd sentence in foreign language (Italian) is equivalent to 1st sentence in translated language (English)
 
@@ -47,11 +47,11 @@ This is represented in the output file as, 1st and 2nd sentence in foreign langu
 
 The other possibility could be a single sentence in foreign language can become multiple sentences in translated language like below,
 
-*Dichiaro ripresa la sessione del Parlamento europeo , interrotta venerdÏ 17 dicembre e rinnovo a tutti i miei migliori auguri nella speranza che abbiate trascorso delle buone vacanze .*
+> *Dichiaro ripresa la sessione del Parlamento europeo , interrotta venerdÏ 17 dicembre e rinnovo a tutti i miei migliori auguri nella speranza che abbiate trascorso delle buone vacanze .*
 
-*I declare resumed the session of the European Parliament adjourned on Friday 17 December 1999.*
+> I declare resumed the session of the European Parliament adjourned on Friday 17 December 1999.
 
-*And I would like once again to wish you a happy new year in the hope that you enjoyed a pleasant festive period .*
+> And I would like once again to wish you a happy new year in the hope that you enjoyed a pleasant festive period .
 
 This is represented in the output file as, 1st sentence in foreign language (Italian) is equivalent to 1st and 2nd sentence in translated language (English)
 
@@ -98,7 +98,7 @@ Your task is to **improve the accuracy as much as possible** (higher is better).
 The default system is just aligning sentences directly according to line number. A simple way to improve accuracy would be to consider length of sentences and align sentences accordingly. This will at least help detecting sentences where one
 foreign language sentence is translated to English language.
 
-Other than considering only the sentence length, you can consider Names, numbers and punctuations to improve accuracy.
+Other than considering only the sentence length, you can consider names, numbers and punctuations to improve accuracy.
 
 Also to compare each sentence in foreign language against the entire translated corpus, one can use dynamic programming. An illustration of how dynamic programming works for edit distance is present [here](http://nlp.stanford.edu/IR-book/html/htmledition/edit-distance-1.html). 
 

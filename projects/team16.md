@@ -1,9 +1,9 @@
----
+--
 layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
+title: Homework 5 | Paraphrase Complexity
 active_tab: homework
 ---
 Paraphrase Complexity Differentiation
@@ -22,19 +22,19 @@ In the downloaded directory you will find a Python program called `default`, whi
 
 Run the basic program using the command: 
 
-    ./default > default.out 
+    `./default > default.out`. 
 
 This will produce a file containing a phrase choice for each pair in the file. 
 
 You can produce a score for these choices by running the command: 
 
-    ./grade < default.out
+    `./grade-dev < default.out` 
 
 This score is based on a reference file which contains human decisions about the complexity of phrases. These human decisions, retrieved using a Mechanical Turk task, are assumed to be law for the purposes of this assignment.
 
 Do you think that determining based on length is a good strategy? Run the following command and compare the result against the expected accuracy of randomly guessing (50%). To see the result more rapidly, you can directly run and grade the model using the command:
 
-    ./default | ./grade
+    `./default | ./grade-dev`
 
 
 The Challenge
@@ -54,12 +54,11 @@ Given examples of language at each end of the complexity dimension, we score a p
 
 $$complexity(w) = log(\frac{P(w | COMP)}{P(w|ALL)})$$
 
-There is no limitation to the number of words in a phrase.The baseline model recognizes up to tri-grams, but you can train your model to recognize phrases that contain more than three words. Moreover, phrases which do not occur at all in COMP are treated as though they occurred once.
+There is no limitation to the number of words in a phrase. The baseline model recognizes up to tri-grams, but you can train your model to recognize phrases that contain more than three words. Moreover, phrases which do not occur at all in COMP are treated as though they occurred once. This score can be used as a feature, along with others like phrase length. These features can be combined using a weight vector that you tune yourself.
 
 While this strategy may get you up to the baseline score, it is encouraged to explore other approaches that will allow you to more accurately compare each phrase. Some possible extensions might be:
 
 * Gather additional data for simple and complex phrases
-* Add features to a machine learning model (such as number of phrases, length, etc)
 * Implement a smoothing function to handle phrases that do not occur in data
 * Train a translation model that will map known paraphrases to new ones
 

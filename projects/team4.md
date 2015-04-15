@@ -3,7 +3,7 @@ layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
+title: Homework 5 | Crowd-Sourced
 active_tab: homework
 ---
 # Term Project Writeup
@@ -37,7 +37,7 @@ selected for the task. Without external quality control, naive crowdsourcing
 results in disfluent, low-quality results that do not differ significantly
 from machine output. Some people will attempt to game the system (e.g. by using
 an existing machine translation system like Google Translate), and others will
-simply be insufficiently qualified to produce translations. 
+simply be insufficiently qualified to produce translations.
 
 As a result of these concerns, the evaluations that subsequently provide
 reference tagged data primarily come from human experts. These evaluations can
@@ -58,14 +58,26 @@ locally or on Penn’s servers. For the latter, we recommend using the Biglab
 machines, whose memory and runtime restrictions are much less stringent than
 those on Eniac. The Biglab servers can be accessed directly using the command
 `ssh PENNKEY@biglab.seas.upenn.edu`, or from Eniac using the command
-`ssh biglab`.
+`ssh biglab`. You will also require the SciKit as a dependency.
 
-In the starter kit, you will find a raw data file `formatted.txt`
-(will be renamed and reformatted) containing the translated sentences and their
-associated Turker features. Specifically, this file contains crowdsourced
-evaluations of these crowdsourced sentences and other identifying features
-such as geographic data. You may use this data to generate features for your
-own models.
+In the starter kit, you will find three raw data files: `reference.p`, `translations.p`, and `evaluator_features.p`. These pickle files contain the crowdsourced and reference translations, the crowdsourced evaluations of these translations, and other identifying features about the evaluators such as geographic data. You may use this data to generate features for your own models.  Additionally, you will find a text file `translator_features.tsv` containing feature data about the translators. Please note that `data-train` and `data-dev` are folders with the same exact data.
+
+Specifically, each pickle data file contains a dictionary keyed by `seg_id`, the unique string identifier for an Urdu sentence:
+
+  * The value of each key in `reference.p` is a dictionary of:
+    * ‘`f`’: foreign sentence
+    * ‘`e`’: a list of the four reference english translations
+
+  * The value of each key in `translations.p` is a dictionary of:
+    * ‘`inputs`’: a 4-best list of the candidate translations for which you will be choosing the best single candidate
+    * ‘`input_translators`’: a list of the uids of the Turkers that translated the sentences in `inputs`
+    * ‘`votes`’: a list of (`evaluator_uid`, `best_translator_uid`) tuples
+    * The `evaluator_uid` is the uid of the Turker that evaluated the given 4-best list of input sentences, and the `best_translator_uid` is the uid that the evaluator Turker decided as the best translator, i.e. one of the four uids in `input_translators`.
+
+  * The value of each key in `evaluator_features.p` is a dictionary of:
+    * ‘`time_taken`’: the time taken by the evaluator in seconds
+    * ‘`country`’: the evaluator’s country of origin
+    * ‘`display_language`’: the evaluator’s display language
 
 We have provided a default program that chooses a translation for each sentence
 from a list of candidates.
@@ -85,14 +97,13 @@ the four BLEU scores.
 
     ./grade < english.out
 
-These programs are also designed to be runnable in a pipeline:
+What’s the best you could you do by picking other sentences from the list? To give you an idea, we’ve given you an oracle for the development data. Using knowledge of the reference translation, it chooses candidate sentences that maximize the BLEU score.
 
-    ./default | ./grade
+    ./oracle | ./grade
 
-As you can see, the translations produced by the default do not score
-particularly well. This should convince you that it is possible to do much
-better, for example by learning some features from the crowdsourced evaluations
-of the translations.
+The oracle should convince you that it is possible to do much better than the default reranker. Maybe you can improve it by by learning some features from the crowdsourced evaluations
+of the translations. Try a few different settings. How close can you get to the oracle BLEU score?
+
 
 ### The Challenge
 Your task is to select the best sentences that *improve the corpus level BLEU
@@ -100,7 +111,7 @@ score as much as possible* (higher is better).
 
 For baseline, you can implement a weighted majority vote to choose the best
 translation. You could choose the majority vote vectors by hand, or you could
-employ machine learning techniques you have studied in the class. Features on 
+employ machine learning techniques you have studied in the class. Features on
 the translator should be enough to help learn the weight vector.
 
 Consider using features such as the time it took the evaluator to complete the
@@ -114,6 +125,8 @@ Here are some ideas:
 
   - For each sentence-level feature, compute a corresponding feature over all
     of the respective Turker’s translations (1)
+
+  - Use a binary classifier to best train weights for the feature vector. Some ideas include Powell    method, Hill climb, and Gradient ascent, but feel free to use any other method you are familiar with.
 
   - Remove or penalize translations that may have originated from statistical
     translation systems like Google Translate (2)
@@ -184,3 +197,5 @@ or train against the BLEU score.
     other off-the-shelf resources, feel free to do so. If you aren’t sure
     whether something is permitted, ask us. If you want to do system
     combination, join forces with your classmates.
+
+

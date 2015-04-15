@@ -3,7 +3,7 @@ layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
+title: Homework 5 | Quality Estimation
 active_tab: homework
 ---
 #Quality Estimation: Final Project
@@ -29,7 +29,7 @@ To begin, download the project starter kit. You may either choose to develop loc
 In the downloaded directory, you have a program that evaluates how good a machine translation system output is. Test it out using this command:
 
 ```
-./default.py > output
+./default > output
 ```
 Every translation $$e$$ of an input sentence $$f$$ has an associated feature vector $$h(e, f)$$. The `default` takes a parameter vector $$\theta$$ whose length is equal to that of $$h(e, f)$$. By default, $$\theta = [1, 1, \ldots]$$. For each sentence in the training data, we obtain a weighted sum of the features. Then, for each score we compute the average sum. Then, for each sentence in the test set, we compute a sum of the features and compare it with the average sum. We assign a score based on the minimum difference to the average of each score.
 
@@ -37,7 +37,7 @@ Every translation $$e$$ of an input sentence $$f$$ has an associated feature vec
 To evaluate, use this command:
 
 ```
-./grade.py < output
+./grade < output
 ```
 The scoring is the accuracy measured against human annotated labels.
 
@@ -54,8 +54,8 @@ You can improve the parameter vector by using effective learning algorithms that
 Implement a version of a learning algorithm and some feature engineering to improve accuracy.  Here are some ideas to improve the accuracy:
 
 1. Add new features
-2. Use a conditional random field classifier
-3. Improve label scores using clustering
+2. You could try training different classifers.
+3. You could also develop systems based on referential translation machines and parallel feature decay algorithms. 
 
 But the sky’s the limit! You can try anything you want, as long as you follow the ground rules.
 

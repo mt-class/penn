@@ -1,18 +1,16 @@
----
+--
 layout: default
 img: rosetta
 img_url: http://www.flickr.com/photos/calotype46/6683293633/
 caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 5 | Sentence Alignment
+title: Homework 5 | Transliteration
 active_tab: homework
 ---
 # Transliteration: *The Final Project*
 
-(Joyce Lee, Adnaan Mukadam, Dennis Sell, Terry Sun)
-
 Transliteration is the task of transcribing a word or phrase originally composed in one writing system to another in an understandable form.  Transliteration is used to translate "out of vocabulary" (OOV) words in the source language, which have no actual translation to the target language. Proper nouns - people, placess, and organizations - are the major source of OOVs, making transliteration a crucial problem, since they contain . For example, proper nouns make up [40% of search queries and over 70% of most searches](http://anthology.aclweb.org///D/D08/D08-1107.pdf) and are especially important in interlingual communication in the global media.
 
-This problem manifests between any two languages, even those who employ the same writing system, as it is desired to represent differences in pronunciations. It is even more crucial when moving between writing systems, as the source and target languages may have sets of phonemes that do not map bijectively. That is, the source and target languages may each contain phonemes that do not exist in the other language, but also be missing phonemes from the other language.
+This problem manifests between any two languages, even those who employ the same writing system, as it is most desirable to represent differences in pronunciations. It is even more crucial when moving between writing systems, as the source and target languages may have sets of phonemes that do not map bijectively. That is, the source and target languages may each contain phonemes that do not exist in the other language, but also be missing phonemes from the other language.
 
 > Side note: linguistically, transliteration actually refers to a map between graphemes (units of a writing system) rather than phonemes (units of a language's sound base); _transcription_ is a more accurate term for what you're doing in this assignment. However, in the machine translation literature, transcription typically refers to converting speech to text representation rather than text to text.
 
@@ -22,23 +20,22 @@ The results of transcription and transliteration are often quite similar, as let
 
 Arabic to English transliteration is a particularly interesting problem since the writing scripts and phoneme sets of the two languages are particularly disparate. Additionally, the Arabic writing system may omits vowels, optionally using diacritics to resolve disambiguities.
 
-In this assignment, we will actually be considering the problem of back-transliteration: most of the Arabic text originated as English words, which were then transliterated into Arabic. This simplifies the approach for this assignment without losing the general gist of the problem (and introduces other ambiguities).
+Some examples. Note that all Arabic words are the same length (4 characters) but the English transliterations are variable length. In these examples and the project, all Arabic text is ordered left-to-right.
 
-Some examples:
-
-* 'محمد' would be rendered as 'Muhammad' in the Roman alphabet.
-* 'عامر' would be 'Amir'
-* 'فايز' would be 'Fayiz'
-* 'حكيم' would be 'Hakeem'
+* 'م ح م د' would be rendered as 'Muhammad' in the Roman alphabet. (Note that the Arabic characters refer to the consonants "m", "h", "m", and "d". There are no vowels.)
+* 'ع ا م ر' would be 'Amir'
+* 'ف ا ي ز' would be 'Fayiz'
+* 'ح ك ي م' would be 'Hakeem'
 
 ### Getting Started
+
 Run the default transliteration system:
 
 ```
 ./default > default.out
 ```
 
-The default system assumes a monotonic, one-to-one mapping between characters in the source and target languages. From the training data, it builds a probability map for each Arabic character to the English characters that is most commonly transliterated into. Then, for each character in a test word, it simply chooses the most probable English character.
+The default system assumes a monotonic, one-to-one mapping between characters in the source and target languages. From the training data, it builds a probability map from each Arabic character to the English character it is most commonly aligned to. Then, for each character in a test word, it simply chooses the most probable English character.
 
 However, as we discussed above, the one-to-one assumption of the default system is not always the best assumption to make when designing a transliteration system.
 
@@ -46,7 +43,7 @@ However, as we discussed above, the one-to-one assumption of the default system 
 ./grade < default.out
 ```
 
-The output of your transliteration system will be graded against a reference transliteration using the [Levenshtein edit distance](wiki), which awards a penalty for each single-character edit (insertion, deletion, or replacement) that must be made to the first string so that it matches the second string.
+The output of your transliteration system will be graded against a reference transliteration using the [Levenshtein edit distance](wiki), which awards a penalty for each single-character edit (insertion, deletion, or replacement) that must be made to the first string so that it matches the second string. We award a smaller (0.5) penalty for substitution errors.
 
   [wiki]: http://en.wikipedia.org/wiki/Levenshtein_distance
 
@@ -56,28 +53,24 @@ Alternatively, you can also directly pipe the output into the grader:
 ./default | ./grade
 ```
 
-The training data is provided in `arabic.train`, consisting of 14000 pairs of English and Arabic transliterations. These pairs were taken from Chris Callison-Burch's data set (from [Transliterating From All Languages][tfal]), and were originally generated by scraping Wikipedia article names.
+The training data is provided in `data-train/arabic.train`, consisting of about 14000 pairs of English and Arabic transliterations. These pairs were taken from Chris Callison-Burch's data set (from [Transliterating From All Languages][tfal]), and were originally generated by scraping Wikipedia article names. Each line contains an English word and an Arabic word, separated by a tab.
 
   [tfal]: http://www.cis.upenn.edu/~ccb/publications/transliterating-from-all-languages.pdf
 
-You have 1600 lines of Arabic testing data in `ar-pub.test`. The corresponding English transliterations have been provided for the first 800 lines in `en-pub.test`, so you may score yourself. The remainder will be used to calculate an official score for your submission. For your submission, you should include all 1600 lines so that we can grade appropriately.
+You have 1600 lines of Arabic testing data in `data-dev/ar-pub.test`. The corresponding English transliterations have been provided for the first 800 lines in `data-dev/en-pub.test`, so you may score yourself. The remainder will be used to calculate an official score for your submission. For your submission, you should include all 1600 lines so that we can grade appropriately.
 
 ### The Challenge
 
 Your task is to **minimize the edit distance** of the English transliteration.
 
-To reach baseline, start by extending the default system by:
-
-1. Adding nulls when matching characters between the languages.
-2. Allow characters from the source language to map to multiple characters in the other and vice versa.
-
-(Subject to revision.)
+To reach baseline, extending the default system by allowing characters from the source language to map to multiple characters in the destination language, and vice versa. One method is to identify certain digraphs in one language which will map to a single morpheme in the other language.
 
 To improve beyond this, there are many different approaches that one may take, from using a phonetic intermediary representaton to spelling- or phrase-based algorithms.
 
-An overview of transliteration can be found in [A Comparsion of Different Transliteration Models."](http://arxiv.org/pdf/1110.1391v1.pdf)(2006), which compares hybrid, grapheme-, phoneme-, and correspondence-based systems. Some ideas are:
+A strong extension is applying Hidden Markov Models (HMMs) and alignments of arabic characters to multiple English letters. "[Automatic Transliteration of Proper Nouns from Arabic to English](http://www.cs.sfu.ca/~anoop/papers/pdf/caasl2.pdf)." Here is a simplified (and also somewhat slow) [implementation of Hidden Markov Models](https://github.com/dennis-sell/profectus/blob/master/simple_HMMs.py), which you can choose to use in your project (in particular, the AppliedHMM class will suffice for this project). All that you would need to do then is create correctly formatted training data from the arabic and english word pairs that we have provided and feed it to the HMM.
 
-* [“Automatic Transliteration of Proper Nouns from Arabic to English.”](http://www.cs.sfu.ca/~anoop/papers/pdf/caasl2.pdf)
+An overview of machine transliteration work can be found in [A Comparsion of Different Transliteration Models."](http://arxiv.org/pdf/1110.1391v1.pdf)(2006), which compares hybrid, grapheme-, phoneme-, and correspondence-based systems. Some ideas are:
+
 * [“Machine Transliteration of Names in Arabic Text.”](http://dl.acm.org/citation.cfm?id=1118642)
 * [“Lightly Supervised Transliteration for Machine Translation.”](http://www.aclweb.org/anthology/E09-1050)
 * Comparing different [transliteration systems](http://www.cis.upenn.edu/~ccb/publications/transliterating-from-all-languages.pdf)
@@ -91,20 +84,20 @@ Ground Rules
 * You should submit each of the following:
 
   1.  An alignment of the entire dataset, uploaded from any Eniac or Biglab machine
-      using the command `turnin -c cis526 -p hw5 hw5.txt`.
+      using the command `turnin -c cis526 -p trans-hw5 hw5.txt`.
       You may submit new results as often as you like, up until the assignment deadline.
       The output will be evaluated using a secret metric,
       but the `grade` program will give you a good idea of how well you're doing.
       The top few positions on the leaderboard will receive bonus points on this assignment.
 
-  2.  Your code, uploaded using the command `turnin -c cis526 -p hw5-code file1 file2 ...`.
+  2.  Your code, uploaded using the command `turnin -c cis526 -p trans-hw5-code file1 file2 ...`.
       This is due 24 hours after your leaderboard submission.
       You are free to extend the code we provide or write your own in whatever
       langugage you like, but the code should be self-contained,
       self-documenting, and easy to use.
 
   3.  A report describing the models you designed and experimented with, uploaded
-      using the command `turnin -c cis526 -p hw5-report hw5-report.pdf`. This is
+      using the command `turnin -c cis526 -p trans-hw5-report hw5-report.pdf`. This is
       due 24 hours after your leaderboard submission. Your report does not need to be
       long, but it should at minimum address the following points:
 
@@ -130,7 +123,8 @@ Ground Rules
 * You may only use data or code outside of what is provided _with advance
   permission_. We will ask you to make your resources available to everyone.
   You should not used any pre-existing transliteration systems. However, you
-  aree to use external alignment or translation systems.
+  free to use external alignment or *translation* systems.
 
 Any questions should be be posted on the
 [course Piazza page](https://piazza.com/upenn/spring2015/cis526).
+
