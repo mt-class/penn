@@ -28,7 +28,7 @@ In the downloaded directory you will find a Python program called align, which p
 $$C(e, s) = \frac{|e \cap T(s)|}{|e|}$$
 </center>
 
-Where $$T(s)$$ is the set of English words that correspond to some Spanish word in $$s$$ according to a dictionary. The default system will only pick a sentence pair if this coverage is over a cutoff of $$c = 0.6$$. To pick out sentence pairs, we maximize the coverage for each pair. Observing that sentence have weaker relations when they are farther away from each other, we impose a distance penalty when ordering the scores $$p^{|i - j|}$$ for $$E_i, S_j$$ two sentences with indices $$i$$ and $$j$$.
+Where $$T(s)$$ is the set of English words that correspond to some Spanish word in $$s$$ according to a dictionary. The default system will only pick a sentence pair if this coverage is over a cutoff of $$c = 0.6$$. To pick out sentence pairs, we maximize the coverage for each pair. Observing that sentence have weaker relations when they are farther away from each other, we impose a distance penalty when ordering the scores $$p^{\mid i - j \mid}$$ for $$E_i, S_j$$ two sentences with indices $$i$$ and $$j$$.
 
 The default system, under optimal parameters, may already give you some relatively good matches, but they are far from complete and only match sentences already with high translation agreement.
     
