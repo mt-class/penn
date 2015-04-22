@@ -361,6 +361,16 @@
       url: http://www.cis.upenn.edu/~lhuang3/amta06-sdtedl.pdf
       title: Statistical Syntax-Directed Translation with Extended Domain of Locality
       optional: true
+     -
+      author: Haitao Mi, Liang Huang, and Qun Liu
+      url: http://www.aclweb.org/anthology/P/P08/P08-1023.pdf
+      title: Forest-Based Translation
+      optional: true
+     -
+      author: Haitao Mi and Liang Huang
+      url: http://www.aclweb.org/anthology/D/D08/D08-1022.pdf
+      title: Forest-based Translation Rule Extraction
+      optional: true
 -
   date: 2015-04-02
   title: Guest lecture by Wei Xu - Penn
