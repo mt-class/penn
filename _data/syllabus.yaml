@@ -366,6 +366,7 @@
   title: Guest lecture by Wei Xu - Penn
   lecturer: Wei Xu
   slides: http://mt-class.org/penn/slides/guest-lecture-wei-xu.pdf
+  reading:
      -
       author: Wei Xu, Alan Ritter, Chris Callison-Burch, William B. Dolan and Yangfeng Ji
       url: http://www.cis.upenn.edu/~ccb/publications/extracting-paraphrases-from-twitter.pdf
