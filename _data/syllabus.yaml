@@ -437,8 +437,30 @@
 -
   date: 2015-04-21
   title: Christian Buck (PhD student at the University of Edinburgh)
-  lecturer: Callison-Burch
+  lecturer: Christian Buck
   slides: http://mt-class.org/penn/slides/guest-lecture-christian-buck.pdf
+  reading:
+     -
+      author: Specia et. al 
+      url: http://mt-archive.info/EAMT-2009-Specia.pdf
+      title: Estimating the sentence-level quality of machine translation systems
+      optional: true
+     -
+      author: Specia et. al 
+      url: http://staffwww.dcs.shef.ac.uk/people/K.Shah/papers/Quest.pdf
+      title: QuEst-A translation quality estimation framework
+      optional: true
+     -
+      author: Soricut and Echihabi
+      url: http://dl.acm.org/citation.cfm?id=1858744
+      title: TrustRank&colon; inducing trust in automatic translations via ranking
+      optional: true
+     -
+      author: Bach et. al 
+      url: http://dl.acm.org/citation.cfm?id=2002500
+      title: Goodnessk&colon; a method for measuring machine translation confidence
+      optional: true
+
 -
   date: 2015-04-23
   title: Guest lecture by Kenneth Heafield (Bloomberg)
