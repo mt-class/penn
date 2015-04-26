@@ -46,7 +46,15 @@ whenever a submission is received.
         <span class="small">BLEU</span>
       </th>
       <th valign="top" style="text-align: center; width: 100px">
-        <a href="hw5.html">HW 5</a><br/>
+        <a href="projects/team5.html">HW 5-5</a><br/>
+        <span class="small">F-Score</span>
+      </th>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="projects/team6.html">HW 5-6</a><br/>
+        <span class="small">Cosine Similarity</span>
+      </th>
+      <th valign="top" style="text-align: center; width: 100px">
+        <a href="projects/team7.html">HW 5-7</a><br/>
         <span class="small">Accuracy</span>
       </th>
     </tr>
@@ -71,7 +79,7 @@ for (i = 0; i < data.length; i++){
 
   document.write('<td>' + alias + '</td>');
 
-  for (j = 0; j <= 5; j++) {
+  for (j = 0; j <= 7; j++) {
 
     var index = 3 + 2*j;
 
