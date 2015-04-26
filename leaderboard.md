@@ -51,7 +51,7 @@ whenever a submission is received.
       </th>
       <th valign="top" style="text-align: center; width: 100px">
         <a href="projects/team6.html">HW 5-6</a><br/>
-        <span class="small">Cosine Similarity</span>
+        <span class="small">Cosine Sim.</span>
       </th>
       <th valign="top" style="text-align: center; width: 100px">
         <a href="projects/team7.html">HW 5-7</a><br/>
