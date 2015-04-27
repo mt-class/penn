@@ -466,6 +466,17 @@
   title: Guest lecture by Kenneth Heafield (Bloomberg)
   lecturer: Kenneth Heafield
   slides: http://mt-class.org/penn/slides/guest-lecture-kenneth-heafield.pdf
+  reading:
+     -
+      author: Kenneth Heafield, Mike Kaiser and Chris Manning
+      url: http://kheafield.com/professional/stanford/mtplz_paper.pdf
+      title: Faster Phrase-Based Decoding by Refining Feature State
+      optional: true
+     -
+      author: Kenneth Heafield, Philipp Koehn and Alon Lavie 
+      url: http://kheafield.com/professional/edinburgh/search_paper.pdf
+      title: Grouping Language Model Boundary Words to Speed K–Best Extraction from Hypergraphs
+      optional: true
 -
   date: 2015-04-28
   title: Course wrap-up
