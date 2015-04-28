@@ -141,7 +141,18 @@ Please pick one or more of the projects below, where the point total equals the 
 
 ### Submission Details
 
-Coming soon.
+Your final submission should consist of the following items in a compressed archive:
+
+1. `core.md`: Your write-up of the core requirements.
+1. `project-1/`, `project-2/`, ...: Directories containing the code, data, and/or other resources associated with your selected tasks.
+1. `projects.md`: A write-up discussing your selected tasks and the results you obtained. You should include for each task a brief description of the contents of the associated directory.
+
+Your archive should be submitted using `turnin` before the deadline.
+
+Notes:
+
+1. You may submit either markdown or PDF write-ups, though markdown files are preferred.
+1. You should number the project directories according to their indices in the list above. For example, if you completed tasks 1, 3, and 7, you would submit the directories `project-1/`, `project-3/`, and `project-7/`.
 
 ### Resources
 
@@ -154,6 +165,3 @@ Here are some useful resources for researching languages:
 * [Omniglot](http://www.omniglot.com/)
 * [About World Languages](http://www.aboutworldlanguages.com/)
 * [Machine Translation Archive](http://www.mt-archive.info/)
-
-
-

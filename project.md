@@ -80,7 +80,8 @@ You should identify what topic you would like to work on, and then email the ins
 
 You are welcome to choose your own topic, provided that it is related to machine translation.
 
-## Final Submission
+## Submission Details
+
 Your final submission should consist of the following in a compressed archive:
 
 1. `report.md`: The final version of your write-up, incorporating any additional changes to your revised draft (if any).
