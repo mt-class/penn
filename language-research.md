@@ -151,8 +151,8 @@ Your archive should be submitted using `turnin` before the deadline.
 
 Notes:
 
-1. You may submit either markdown or PDF write-ups, though markdown files are preferred.
-1. You should number the project directories according to their indices in the list above. For example, if you completed tasks 1, 3, and 7, you would submit the directories `project-1/`, `project-3/`, and `project-7/`.
+* You may submit either markdown or PDF write-ups, though markdown files are preferred.
+* You should number the project directories according to their indices in the list above. For example, if you completed tasks 1, 3, and 7, you would submit the directories `project-1/`, `project-3/`, and `project-7/`.
 
 ### Resources
 
