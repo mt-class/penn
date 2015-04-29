@@ -431,7 +431,7 @@
       optional: true
 -
   date: 2015-04-16
-  title: Guest lecture by Will Lewis (Microsoft Research) on the Skype speech-to-speech translation system
+  title: Guest lecture by Will Lewis (Microsoft Research) on the Skype speech-to-speech translation system.  If you would like a copy of the slides, email CCB.
   lecturer: Will Lewis
   slides: 
 -
@@ -481,4 +481,4 @@
   date: 2015-04-28
   title: Course wrap-up
   lecturer: Callison-Burch
-  slides: 
+  slides: http://mt-class.org/penn/slides/26-course-wrapup.pdf
