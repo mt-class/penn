@@ -81,14 +81,16 @@ Getting Started
   servers (except to upload your output on the test
   data).</div>
 
-Start by downloading the assignment [starter kit](http://seas.upenn.edu/~cis526/inflect.zip).
-In the `inflect` directory, and type the following
+Start by downloading the assignment [starter kit](http://seas.upenn.edu/~cis526/inflect.zip)
+onto your eniac account.
+In the `inflect` directory, type the following
 to create symlinks to the training and development data (and
 please observe the warning that began this section):
 
     cd inflect
     bash scripts/link_data.sh
 
+Note that you must be on a Penn server to access the data.
 You will then find three sets of parallel files under `data`:
 training data (for building models), development test data
 (for testing your model), and held-out test data (for
@@ -111,23 +113,24 @@ following suffixes:
   below.
 
 - `*.form` contains the fully inflected form. Note that we
-  provide `dev.form` to you (the grading script needs it),
+  provide `dtest.form` to you (the grading script needs it),
   but you should not look at it or build models over
-  it. `test.form` is kept hidden.
+  it. `etest.form` is kept unreadable and will be used to
+  produce your leaderboard score.
 
 You should use the development data (`dtest`) to test your
 approaches (make sure you don't use the answers except in
 the grader). When you have something that works, you should
-run it on the test data (`etest`) and submit that
+run it on the test data (`etest.*`) and submit that
 output. The `scripts/` subdirectory contains a number of
 scripts, including a grader and a default implementation
 that simply chooses the most likely inflection for each
 word:
 
-    # Baseline: no inflection
+    # Just for fun: no inflection
     cat data/dtest.lemma | ./scripts/grade
 
-    # Choose the most likely inflection
+    # Default: Choose the most likely inflection using the development data
     cat data/dtest.lemma | ./scripts/inflect | ./scripts/grade
 
 The evaluation method is accuracy: what percentage of the
