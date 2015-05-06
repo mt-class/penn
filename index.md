@@ -25,12 +25,6 @@ real-word artificial intelligence problem.
 
 
 <div class="alert alert-info">
-Tuesday April 28 - Final HW due: turn in your implementation of another student’s term project. As with previous assignments, you can turn in your writeup 24 hours later.  You may also use any remaining late days. </div>
-
-<div class="alert alert-info">
-Tuesday April 28 - The extensions to your language research project are due. You may use any remaining late days.</div>
-
-<div class="alert alert-info">
 Tuesday May 12 - <i>extra credit deadline</i> implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
 </div>
 
