@@ -76,7 +76,7 @@ Getting Started
   href="http://ldc.upenn.edu">Linguistic Data Consortium
   (LDC)</a>, and the license agreement prohibits
   direct distribution of the data as we have done for other
-  assignments. You will need a CLSP account to work on this
+  assignments. You will need a SEAS account to work on this
   assignment, and please do not remove the data from those
   servers (except to upload your output on the test
   data).</div>
