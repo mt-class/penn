@@ -21,29 +21,13 @@ machine learning, algorithms, data structures, and formal
 language theory, showing how they apply to a difficult
 real-word artificial intelligence problem.
 
-#### Announcements 
-
-
-<div class="alert alert-info">
-Tuesday May 12 - <i>extra credit deadline</i> implement one or more extensions beyond your own baseline, or do one or more of the new student-written HWs.
-</div>
-
 #### Instructor
 
-[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) - Office hours: Monday, 10:30 am to 11:30 am, Levine 506
-
-#### Teaching Assistants
-
-Justin Chiu - Office hours: Tuesday, 1:30 pm to 3:00 pm, Levine 5th Floor  
-Mitchell Stern - Office hours: Monday, 4:30 pm to 6:00 pm, Levine 5th Floor
-
-#### Discussion Forum
-
-[Piazza](https://piazza.com/upenn/spring2015/cis526)
+[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/) 
 
 #### Time and Place
 
-Tuesday and Thursday, 4:30 pm to 6 pm, David Rittenhouse Laboratory (DRL) A5
+This course will next be offered at Penn in Spring of 2017.
 
 #### Textbook
 
