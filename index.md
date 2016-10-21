@@ -27,7 +27,7 @@ real-word artificial intelligence problem.
 
 #### Time and Place
 
-This course will next be offered at Penn in Spring of 2017.
+This course will next be offered at Penn in Spring of 2018.
 
 #### Textbook
 
